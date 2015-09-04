@@ -1,0 +1,67 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+The user shall see the UI elements in an aggregation hierarchically. 
+
+The user shall see how the elements are aggregated. An example of such a view is a tree view. The interaction design will describe what this view will look like.
+
+Acceptance Criteria
+_	The user shall have a set of UI elements that are aggregated on the canvas
+_	The user shall have a hierarchical view in which he sees all UI elements of a prototype
+_	The user shall have a view in which he can see how the UI elements are aggregated. This means he can clearly see all parent / child relationships of the elements
+_	The user shall see which of the UI elements is or are currently selected
+_	The user shall see which of the UI elements are invisible, i.e. are not visibly rendered on the canvas.
+_	There shall always be at least one element in the hierarchy selected
+_	Identify in the tree, the names (label the groups) of where the UI elements are aggregated.
+
+Preparations
+Setup/Configuration steps (if necessary)
+
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Steps/Procedures
+
+1.  Create a project with 2 pages.  On prototype page, click thumbnail of page 1 to go to composer page.
+    Select a UI element in the left panel, for example, a list control.          
+    Verify that the user shall be able to see how the UI elements are aggregated, i.e. list control has aggregated list item controls.
+
+2. Verify that when an item is selected in Tree view or on the canvas, then the user shall see the elements that are currently selected. 
+   Add footer control into page 1.
+   Check that you see toolbar spacer and two buttons under footer are highlighted on the canvas.
+   Veify that the aggregation is shown on parent-relationship in Tree view. 
+   
+3. Verify that when an item is picked on Tree or on Page, that item should be reflected on canvas. 
+   Drag and drop a list control to page 1.
+   Chack that  the item is highlighted on the canvas.
+   
+4. Verify that invisible element would be shown with eyeball icon. 
+   Drag and drop an icon tab bar control in page 1.
+   In Tree view in left panel, select the Icon Tab Bar element
+   Search for a Text element that has is invisible and is shown with eyeball icon.
+
+5. Verify that label the groups display under aggregation control only. 
+   For example, tree view should have label "Items" that are not clickable.
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome  
+
+Revision History
+Date	Comment	Updated by
+04/12/2015	Initial draft	Lucy Chernobrod
+05/29/2015	Updated	Lucy Chernobrod
+06/08/2015 Updated Joe Cintas

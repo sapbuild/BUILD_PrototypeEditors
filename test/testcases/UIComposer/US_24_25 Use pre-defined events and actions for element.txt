@@ -1,0 +1,60 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to use a pre-defined Action on a UI element level.   
+
+The user shall be able to use pre-defined events on UI element level, like OnClick, OnDrag, etc. Pre-defined events may differ for UI elements.
+For desktop the following events shall be supported: onClick, onDoubleClick, onRightClick, onHover, onFocus. If possible, we should support these two events as well: onMouseIn, onMouseOut.
+For mobile the following events shall be supported: onTap, onTapAndHold, onSwipeLeft, onSwipeRight. If possible, we should also support these events: onScrollDown, onScrollUp, onDoubleTap, onPinchIn, onPinchOut.
+
+The user shall able to a pre-defined action on a UI element level. The following action shall be supported : Link (GoToPage)
+The triggering events of this come from individual UI element and are UI element dependent. (see Backlog #24 ) The actions are available for each of these events without contextual filtering.
+
+Acceptance Criteria	 
+Not available in User story 
+ 
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1 Verify an user be able to select the Action tab in a UI element properties to define the Action.
+ - Create a project with at least one page. Click on the project to open it.
+ - On Prototype pages view, click thumbnail of the page to go to UI composer.
+ - Drag and drop a control(button or list) into the canvas.
+ - Make sure that the control is selected, it has a blue colour highlighting around it -this verifies that the control is selected.
+ - Now Actions tab is seen on the right side of the panel.
+ - Chechk that actions corresponding to the control are visible.
+
+2. Verify page navigations according to page navigation defined in Action for UI element.
+ - Drag and drop a button control into the canvas.
+ - select the button , Now in the actions tab.-change the options from the combo box like (Onlcik,navigateto,page2).
+ - Now click to preview, click on the button and see if its navigated to page2.
+	 
+3. Verify transition of pages according to pre-defined Action at UI element level.
+ - Drag and drop a button control into the canvas.
+ - select the button , Now in the actions tab-change the options from the combo box like (Onlcik,navigateto,page2).
+ - copy the link and paste it in a new tab, and then now click that button to check if the transition is correct
+
+	 
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Chrome and Safari
+
+
+Revision History
+Date	Comment	Updated by:Vijay Enthran Varadarajan Subramanian
+03/12/2015	Initial draft	David Lim
+06/12/2015	Updated	Lucy Chernobrod

@@ -1,0 +1,447 @@
+/* -------------------------------------------------- */
+/* Norman project property panel styling                   */
+/* np: norman project                                 */
+/* p: property panel                                       */
+/* -------------------------------------------------- */
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+
+@delete-skew: 15deg;
+@delete-del-color: white;
+@delete-del-background-color: red;
+@delete-keep-color: gray;
+@delete-keep-background-color: white;
+@delete-border-radius: 10px;
+/*
+ * namespace for property panel styles
+ */
+.np-p {
+    &-properties-sidebar {
+        position: relative;
+
+        &-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            padding: 7px 0px 7px 16px;
+            background-color: @PickledBluewood-700;
+        }
+
+        &-control {
+            font-family: @roboto-font;
+            padding: 16px 10px 16px 16px;
+            &:hover > &-img {
+                display: block;
+            }
+            &-name {
+                display: inline-block;
+                font-size: 16px;
+                color: @White;
+                line-height: 16px;
+            }
+
+            &-two-step {
+                display: inline-block;
+                float: right;
+                &-message {
+                    font-family: @roboto-font;
+                    font-size: 10px;
+
+                }
+                &-del {
+                    position: relative;
+                    display: inline-block;
+                    font-size: 15px;
+                    color: @delete-del-color;
+                    background-color: @delete-del-background-color;
+                    cursor: pointer;
+                    padding-right: 5px;
+                    transform: skew(-@delete-skew);
+                    float: right;
+                }
+                &-keep {
+                    position: relative;
+                    display: inline-block;
+                    font-size: 15px;
+                    color: @delete-keep-color;
+                    background-color: @delete-keep-background-color;
+                    cursor: pointer;
+                    padding: 0px 5px 0px 5px;
+                    transform: skew(-@delete-skew);
+                    margin-left: -4px;
+                    float: right;
+                }
+                &-text-div {
+                    transform: skew(@delete-skew);
+                }
+                &-border-left-div {
+                    position: absolute;
+                    transform: skew(@delete-skew);
+                    color: @delete-del-background-color;
+                    background-color: @delete-del-background-color;
+                    margin-left: -@delete-border-radius;
+                    border-top-left-radius: @delete-border-radius;
+                    border-bottom-left-radius: @delete-border-radius;
+                }
+                &-border-right-div {
+                    position: absolute;
+                    transform: skew(@delete-skew);
+                    color: @delete-keep-background-color;
+                    background-color: @delete-keep-background-color;
+                    margin-left: @delete-border-radius;
+                    border-top-right-radius: @delete-border-radius;
+                    border-bottom-right-radius: @delete-border-radius;
+                }
+            }
+            &-img{
+                display: none;
+                transform: scale(.8);
+                float: right;
+                cursor: pointer;
+                height: 22px;
+                width: 22px;
+            }
+        }
+    }
+
+    &-group-add-child {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    &-group-add-child-select {
+        width: 68%;
+    }
+
+    &-button-block {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+
+        &.ui-button-small {
+            height: 32px;
+            max-height: 32px;
+            line-height: 32px;
+        }
+    }
+
+    &-binding-row {
+        vertical-align: middle;
+        margin-top: 10px;
+        &-key {
+            display: inline-block;
+            width: 47%;
+            color: @White;
+        }
+        &-value {
+            display: inline-block;
+            width: 51%;
+        }
+    }
+    &-group-child {
+        margin: 10px 0;
+        cursor: pointer;
+        &:hover > &-icon {
+                display: block;
+            }
+        &-name {
+            display: inline-block;
+            width: 88%;
+            color: white;
+            line-height: 16px;
+        }
+        &-icon {
+            display: none;
+            float: right;
+            transform: translateX(3px) scale(0.6);
+            height: 18px;
+            width: 16px;
+        }
+    }
+
+    &-data {
+        margin: 10px 5px 10px 16px;
+        white-space: nowrap;
+
+        &-title {
+            display: inline-block;
+            margin-right: 5px;
+            vertical-align: middle;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+          width: 100px;
+            text-align: left;
+            font-weight: normal;
+            font-size: 12px;
+            color: @White;
+            font-family: @roboto-font;
+        }
+        &-input {
+            display: inline-block;
+            margin-right: 5px;
+            vertical-align: middle;
+            width: 124px;
+            height: 35px;
+
+          &-bind {
+            display: inline-block;
+            margin-right: 5px;
+            vertical-align: middle;
+            width: 124px;
+            height: 35px;
+          }
+
+            &-inner-input {
+                color: @White;
+                display: inline-block;
+                border-radius: 3px;
+                border: 1px solid #95a5a6;
+                width: calc(~"100% - 22px");
+                height: 30px;
+                padding: 0 10px;
+                background-color: @PickledBluewood-900;
+            }
+            &-inner-input:hover, &-inner-input:focus {
+                border-color: white;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
+                transition-duration: .75s;
+            }
+            .ui-select {
+                width: 100%;
+            }
+
+            .ui-toggle:checked + label:before {
+                /*
+                 * Change the default green toggle switch to blue
+                 */
+                background: #476EBC;
+                border: 1px solid #476EBC;
+            }
+        }
+
+        &-event-input {
+            color: @White;
+            display: inline-block;
+            border-radius: 3px;
+            border: 1px solid #95a5a6;
+            height: 30px;
+            padding-left: 10px;
+            background-color: @PickledBluewood-900;
+            width: 90px;
+            margin-bottom: 15px;
+        }
+        &-binding-toggle {
+          display: inline-block;
+          padding-bottom: 4px;
+          vertical-align: middle;
+          cursor: pointer;
+          width: 24px;
+        }
+      &-binding-toggle-section {
+        padding-top: 6px;
+        cursor: pointer;
+        width: 24px;
+        float: right;
+      }
+        &-selection {
+            display: inline-block;
+            width: 124px;
+            font-size: 10px;
+        }
+        &-selection-prop {
+            display: inline-block;
+            width: 124px;
+            font-size: 10px;
+            margin-bottom: 15px;
+
+          &-bind {
+            display: inline-block;
+            width: 90px;
+            font-size: 10px;
+            margin-bottom: 15px;
+          }
+        }
+
+        .ui-toggle + label {
+            top: 6px;
+        }
+
+        .ui-select {
+            font-size: 11px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    &-scale-size {
+        margin: 10px 5px 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &-panel-row {
+        margin-bottom: 28px;
+    }
+    &-sizing-panel {
+        display: flex;
+        align-items: center;
+        &-size-text {
+            margin-right: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 105px;
+            text-align: left;
+            font-size: 12px;
+            color: @White;
+            white-space: nowrap;
+        }
+        &-scale-text {
+            margin-right: 5px;
+            position: absolute;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 50px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom:10px;
+            font-size: 12px;
+            color: @PickledBluewood-600;
+        }
+        &-size-input {
+            color: @White;
+            display: inline-block;
+            border-radius: 3px;
+            border: 1px solid #95a5a6;
+            width: 42px;
+            height: 35px;
+            padding: 0 5px;
+            background-color: @PickledBluewood-900;
+
+        }
+        &-height-input {
+            color: @White;
+            display: inline-block;
+            border-radius: 3px;
+            border: 1px solid #95a5a6;
+            width: 42px;
+            height: 35px;
+            padding: 0 5px;
+            background-color: @PickledBluewood-900;
+
+        }
+        &-property-text {
+            display: inline-block;
+        }
+    }
+
+    &-img-margin {
+        margin-right: 17px;
+    }
+
+    &-hotspot-btn {
+        background: #3398DB;
+        background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+        background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+        background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+        background-image: -o-linear-gradient(top, #3498db, #2980b9);
+        background-image: linear-gradient(to bottom, #3498db, #2980b9);
+        -webkit-border-radius: 3;
+        -moz-border-radius: 3;
+        border-radius: 3px;
+        font-family: @roboto-font;
+        color: @White;
+        font-size: 10px;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    &-hotspot-btn:hover {
+        background: #3cb0fd;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+        text-decoration: none;
+    }
+
+    &-property-header {
+
+        width: 100%;
+
+        &-heading {
+            height: 30px;
+            width: 100%;
+            background-color: @PickledBluewood-700;
+            padding: 5px 10px;
+
+            > span {
+                font-family: @roboto-font;
+                font-weight: Regular;
+                font-size: 12px;
+                color: @White;
+                line-height: 16px;
+                text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.30);
+            }
+        }
+
+    }
+
+    &-delete-icon {
+        float: right;
+        padding-right: 20px;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+
+    &-spacing-left {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    &-spacing {
+      padding: 7px 14px 10px 17px;
+    }
+    &-confMessage{
+        border: solid 1px @Red;
+        .ui-popup.white {
+            background-color: white;
+        }
+    }
+
+    &-lockimg {
+        width: 14.0px;
+        margin: 0 2px;
+    }
+
+    &-property-indContainer {
+        height: 1.5rem;
+        padding-top: 0.5rem;
+    }
+
+    &-property-indContainerInner {
+        position: absolute;
+        height: 2rem;
+        width: 100%;
+    }
+
+    &-showmore-ind {
+        cursor: pointer;
+        margin: 4px auto 0 auto;
+    }
+
+    &-property-sep {
+        border-bottom: 1px solid @PickledBluewood-600;
+        height: 0.5rem;
+        margin: 0px 15px;
+    }
+
+    &-property-sepSquare {
+        height: 1rem;
+        width: 2rem;
+        margin: 0 auto;
+        background-color: #132232;
+    }
+}

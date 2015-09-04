@@ -1,0 +1,105 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Business scenario/User Story
+	  
+
+When the user accesses a UI element in an aggregation he shall be able to change the properties for that element
+
+Acceptance Criteria	
+•	Prerequisite is that the user has selected an UI element in an aggregation. It does not matter at what level of the hierarchy this element is
+•	The user can access the properties of this element
+•	The user can modify the properties of this element.
+The user shall have access to the same properties of this type of UI element as when the element is stand-along and not part of an aggregation
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Steps/Procedures
+NOTE:
+Parent control - for example ActionList, Footer are parent control
+Children control - for example, ActionListItem inside ActionList, or button inside Footer is children control.
+
+See Inspector Panel page for details of children tab.	
+	
+_  Verify user could change all and save properties (under properties tab) of parent element of the aggregation.  Try change properties of ListAction control.	
+
+_  Verify user could change and save all events (under events tab) of parent element of the aggregation.  Try to add events in events tab of ListAction.	
+
+
+_  Verify user could change and save all values in Children+ tab (from pop up box) of parent element of the aggregation. 
+        + Drag a Table control in canvas
+        + Right click on Table control, click 'Table' pop up.  Verify Table properties page showed.
+        + Click Children tab, Verify Columns (3) and Rows (3) displayed
+        + Expand Columns by click > sign
+        + Click 'Add Columns' --> Pattern ColumnPattern
+        + Expand by click  items > sign
+        + Click 'Add button near column list item' -->Pattern ColumnListItem.
+        + Click away from canvas to save
+        + Right click on Table control again, click 'Table' pop up.
+        + Click Children tab, verify Column (4) and Rows (4).
+        + Expand each of them and verify displayed correctly
+        
+        
+_Verify user could add and save elements in Children+ tab (from pop up box) of parent element of the aggregation. 
+        + Drag a list control in canvas
+        + Right click on list control, click 'List' pop up.  Verify list properties page showed.
+        + Click Children tab, Verify items(4) and headertoolbar(1) displayed.
+        + Expand items by click > sign in the children tab.
+        + Click 'Add'.
+        + Expand headertoolbar by click > sign.
+		check that the current header is shown and it can be deleted using the cross sign.
+		check header could be added.if and only if no header is already present.
+        + Click away from canvas to save.
+	+Verify the changes took place in the list control present in the canvas.count the item lists inside the list control should be 5 and the search boxes should be 1.
+        + Right click on list control again, click 'List ' pop up.
+        + Click Children tab, verify Listitem(5) and headertoolbar(1).
+        + Expand each of them and verify displayed correctly.
+		
+		
+		
+_ Verify user could add elements (under properties tab) of children control.
+
+_ Verify user could change and save all actions (under actions tab) .
+
+_ Verify user could add elements using Children+ tab (from pop up box) of children control.
+
+_ Verify user could add and save elements using combo box under Children+ tab of list item.  Verify combo box only list controls associated with the selected icon.  For example, if the selected control is UI5 then combo box showed only UI5 controls.
+
+_  Verify user could change and save all properties (under properties tab) for a combo box or text field.	
+
+_ Verify user could change and save all actions (under action tab) for a corresponding control selected.
+
+_Verify user could add field elements under Children+ tab (from pop up box) of a itemlist.
+
+_  Verify friendly error message displayed if user enter incorrect value on any field in properties tab.  If not display message, at least composer should not save the invalid value.
+
+_Drag and drop a list control, select the list control and see its corresponding properties,actions and elements in the children tab are displayed. Now change the options under the actions tab(navigation link to page 2), 
+before preview, add certain field elements using the children tab and check it is displayed during preview and then click the list to verify if its navigating to page 2
+	
+_ Would Children+ tab displayed in single UI element (not part of aggregation)?	
+	
+
+
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+
+Revision History
+Date	Comment	Updated by Vijay Enthran Varadarajan Subramanian
+1/6/2015	Initial draft	Chinh Nguyen

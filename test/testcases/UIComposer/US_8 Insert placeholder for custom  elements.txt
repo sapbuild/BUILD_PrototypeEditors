@@ -1,0 +1,66 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify an user shall be able to insert placeholder for custom UI elements needed 
+
+	  
+The user shall be able to insert a placeholder for custom UI elements needed.
+When the user is missing a needed UI element he can propose a new UI element by adding an image of a UI element to the canvas. That image shall be added to the canvas just like other UI elements can be added.
+
+Acceptance Criteria
+•	The user shall be able to drag and drop and image (PNG, JPG) onto the canvas
+•	When dragging an object on the page the object shall not be moved closer to the right, left, bottom and top edge than 5 pixels. This border shall be maintained at all times.
+•	The user shall be able to use images from the assets stored in Norman
+•	The number of images the user can place on the canvas shall not be limited
+•	The images placed on the canvas may overlap
+  
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Scenarios      
+ 
+Verify an user be able to drag and drop an image (.jpg) externally onto the canvas 
+
+	
+
+Verify the image added on the canvas is showing on the is positioned properly within the page border   
+
+	
+
+Verify the image is added and display on the Images list in Assets     
+
+	
+
+Verify an user can select the image added from the Image list in Assets  
+
+	
+
+Verify multiple images can be dropped onto the canvas and can be overlapped.
+
+	
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+
+Revision History
+Date	Comment	Updated by
+02/12/2015	Initial draft	David Lim
+		
+

@@ -1,0 +1,97 @@
+General  Information:
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5):1
+Automation readiness
+Reviewed by: Norman/UI Composer
+
+Description:
+
+The user shall have a more intuitive way for managing hotspots. 
+The user shall be able to select a hotspot from the palette and drag it onto the canvas. 
+The hotspot control shall be a transparent button that can be resized and moved on the canvas. 
+The hotspot does not become part of an aggregation when placed onto controls. 
+The user shall be able to choose the color of the hotspot. Like any other visible control the hotspot shall always be visible when the user is in Edit mode. When the user is in Preview mode he shall see a indication which areas of the page are covered by a hotspot and are clickable (hand mouse cursor for example). The user shall be able to select a page that the hotspot connects to. The user shall be able to choose if the transition between the pages shall be from left to right or right to left.
+
+Acceptance criteria:
+
+•   The user shall have a hotspot control in the palette.
+•    The user shall be able to drag a hotspot onto the canvas.
+•    The hotspot will always be on top of any image or control on the canvas.
+•    The hotspot will be transparent so the user can still see the image or control underneath.
+•    When the user drags any control onto the canvas and places it on top of a hotspot the hotspot shall
+    remain on top once the control is placed.
+•    When a hotspot is selected on the canvas the user shall see a property panel for the hotspot that
+    includes an identification ("Hotspot"), delete button, the size of the hotspot, a lock button
+    for the aspect ratio of the hotspot, a display of the color that acts also as a button to open the color picker,
+    a drop down for the page to be selected as a target, and a drop down for the transition to be selected.
+•    The user shall be able to delete a hotspot from the canvas by pressing the delete key.
+•    The user shall be able to delete a hotspot from the canvas by clicking on the delete icon in the right side panel.
+•    By default, the aspect ratio of the hotspot size is unlocked.
+•    The user shall be able to resize the hotspot using the mouse.
+•    The user shall be able to resize the hotspot by entering pixel or pct values in the property panel.
+•    The user shall be able to lock the aspect ratio of the hotspot in the properties panel.
+•    The user shall be able to unclock the aspect ratio of the hotspot in the properties panel when it is locked.
+•    The user shall be able to change the color of a hotspot using colors provided by a standard color
+     picker (see examples of color pickers in the comments below).
+•    The user shall be able to select a page as a target for the hotspot, by using the drop down in the property panel.
+•    The drop down shall contain a list of all pages that are part of this prototype.
+•    By default, the page drop down shall not have a page selected and shall display "none" to the user.
+•    When a target page has been set and the user switches to preview mode a click on the hotspot will execute a navigation to
+     the set page.
+•    When no target page has been set and the user switches to preview mode, a click on the hotspot will not result in any 
+     action.
+•    The user shall be able to select a transition for the navigation of the hotspot.
+•    By default the transition is set to "none" and there will be no transition effect when in Preview mode.
+•    The transition options are "left to right" and "right to left".
+•    When the user sets a transition option, the pages will come in with the selected effect when in Preview mode.
+
+Preparations:
+
+Setup/Configuration steps (if necessary)
+A user had signed up to Project Norman with the name, email address and password
+User Logon Information/ Roles
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures:
+
+1.) Verify hot spot properties panel have correct properties and its functionality
+    _  Drag and drop an image from OS file system to Norman/UIComposer page.  Verify there is no option to create hotspot
+        from image properties page.
+    _  Drag and drop a hot spot.
+
+2.) Verify hot spot functions in the canvas.
+
+3.) Verify hot spot functions in the interactive mode.
+
+4.) Verify hot spot functions in snapshot mode/publish mode.
+
+5.) Verify user could add multiple hot spot on the image.
+
+6.) Verify user could add a hot spot before add the image.
+
+7.) Verify user could delete a hot spot by using short cut keyboard.
+
+8.) Verify user could delete a hot spot by click on delete icon.
+
+9.) Verify when the user drags any control onto the canvas and places it on top of a hotspot the hotspot shall
+    remain on top once the control is placed.
+
+10.) Verify that user creates hot spot on multiple pages
+
+11.) Verify there is no aggregation option available in hot spot.
+
+12.) Verify when no target page has been set and the user switches to preview mode, clicking on the hotspot will not result in 
+     any action.
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome
+
+
+
+Revision History
+Date	Comment	Updated by
+04/20/2015	Initial draft	Chinh Nguyen

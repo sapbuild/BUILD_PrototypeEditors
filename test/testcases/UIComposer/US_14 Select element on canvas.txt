@@ -1,0 +1,59 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to select an UI element on the canvas  
+ 
+Business scenario/User Story
+	  
+The user shall be able to select an UI element on the canvas #14
+
+Acceptance Criteria
+•	The user shall select a individual control on the canvas, e.g. a button, and shall get a visual confirmation that it has been selected
+•	Once the user has selected a UI element and decides to select a different UI element the currently selected UI element shall be unselected (exception is if the user is trying to multi-select which is a separate user story)
+
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1. Verify that the user shall select a individual control on the canvas, e.g. a button, and shall get a visual confirmation that it has been selected
+   - Create a project with at least one page. Click on the project to open it.
+   - On Prototype pages view, click thumbnail of the page to go to UI composer.
+   - In the left panel, select an UI element, for example, a button.
+   - Drag and drop the button onto the canvas.
+   - Check that the button is highlighted on the canvas.
+   - Repeat the step with other UI controls.
+	 
+
+2. Verify that once the user decides to select a different UI element the currently selected UI element shall be unselected.
+  - Open a page in the prototype. 
+  - Select Button contrpol in the left panel.
+  - Drag and drop the button onto the canvas.
+  - Check that the button is highlighted on the canvas.
+  - Select another UI element in the left panel, for example, List control.
+  - Check that the list is highlighted, and the button is not highlighted anymore on the canvas.
+  - Repeat the step with other UI controls.
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+Revision History
+Date	Comment	Updated by
+02/09/2015	Initial draft	David Lim
+06/18/2015      Updated         Joe Cintas
+		
+

@@ -1,0 +1,62 @@
+General  Information
+Test case description	Norman – aggregation - copy and paste elements test case
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Business scenario/User Story
+	  
+When the user selects any level of an aggregation he shall be able to copy this level and paste. The acceptance criteria are the same for the aggregation as they are for copy and paste of individual UI elements.
+Acceptance Criteria:	Not avaialble
+
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Steps/Procedures
+                  
+Scenario:  assume there is a list aggregation.  There are 4 list items inside the list.  Each list items has a checkbox, a text field.
+	
+	
+_  Verify user could copy and paste an empty aggregation (list control but does not have list item) in the canvas. 
+
+_  Verify user could copy and paste an aggregation that has 2 deep level (parent -> child).
+_  Verify user could copy and paste an aggregation that has 4 deep level (parent -> child -> child -> sibling1, sibling2).  Select a parent, using keyboard to copy, then paste in the canvas.	
+
+_  Verify user could copy and paste multiple times an aggregation that has 4 deep level (parent -> child -> child -> sibling1, sibling2).  Select a parent, using keyboard to copy, then paste in the canvas.	
+
+_  Verify user copy a child inside an aggregation and paste to another aggregation.	
+
+_  Verify user copy a child inside an aggregation and paste to the canvas.	
+
+_  Verify user copy a sibling and paste in the same parent.
+_  Verify user could copy and paste an aggregation that has 4 deep level (parent -> child -> child -> sibling1, sibling2).  Select a parent, using keyboard to copy, then paste in the different page.
+
+_  Verify user could copy a pattern loaded from UI5 catalog and paste in the same canvas.	
+_  Verify user could copy a pattern loaded from UI5 catalog and paste in the different page.	
+_  Verify user could copy a sibling inside an aggregation (like a list item) and paste to a different page.	
+	
+
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+
+Revision History
+Date	Comment	Updated by:Vijay Enthran Varadarjan Subramanian
+06/1/2015	Initial draft	Chinh Nguyen
+
+

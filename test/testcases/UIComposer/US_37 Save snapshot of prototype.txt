@@ -1,0 +1,89 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to save a snapshot of his design saved 
+
+Business scenario/User Story
+	  
+The user shall be able to save a snapshot of his design and continue working on the design. The saved version will capture the state of the design at that time.. 
+ 
+
+Acceptance Criteria
+•	The user shall be able to explicitly save a snapshot of the prototype
+•	The user shall have an indication that the snapshot was successfully created
+  
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Scenarios 
+                  
+
+Verify the snapshot icon is available for taking snapshot of prototype    
+
+	
+
+Verify an user be able to click on the Snapshot icon for taking snapshot     
+
+	
+
+Verify an user be able to take a snapshot and save the snapshot of the prototype created by the user 
+
+	
+
+Verify an user be able to view the confirmation message info when the snaptshot has been saved successfully     
+
+	
+
+Verify an user be able to take the same snaptshot for the prototype multiple times        
+
+	
+
+Verify an user be able to view the generated URL of the snaptshot for the prototype        
+
+	
+
+Verify different URL is generated for the changes in  the prototype when the snaptshot is taken again       
+
+Verify the following cases:
+	1) create a project with 3 pages. 
+	2) add 2 buttons to each page, and have them pointing to each other.  For example, 
+		page 1: button 1 should navigate to page 2, button 2 should navigate to page 3;
+		page 2: button 1 should navigate to page 1, button 2 should navigate to page 3;
+		page 3: button 1 should navigate to page 1, button 2 should navigate to page 2;
+	3) verfiy each navigation works via snaptshot.
+	4) repeat step 2 with a hotspot control.  
+	5) verify the each hotspot and button works.  
+	
+	
+
+Verify an user shall be able to view and copy the URL of the snaptshot for the prototype        
+
+	
+
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+
+Revision History
+Date	Comment	Updated by
+02/11/2015	Initial draft	David Lim
+		
+

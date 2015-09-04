@@ -1,0 +1,184 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5)	1
+Automation readiness
+Reviewed by	Norman/UI Composer
+Description
+
+When the user enters the UI composer he shall see a map view for his project. He shall see all of his pages on the screen. Each page shall have an accurate representation of its content, e.g. a snapshot of the page. The page map will be in the "City View" state for this story.
+
+
+Acceptance criteria:
+
+.	The city view shall display all pages that are part of the project.
+.	Each page in the map view shall be represented by its thumbnail
+.	The first page of a project shall have a home indicator
+.	The name of the page shall be shown.  
+.	The name of the page shall be in-line editable.
+.	The pages will have a consistent width and height
+.	Remove 'Add New Page' button from Prototype page
+.	User shall be able to come to the City view from the composer
+.	Rearrange pages in City Map shall be possible
+.	Visual rearrangement of pages shall persist
+.	City Map shall show existing navigation per the first occurrence rule:
+
+Preparations
+Setup/Configuration steps (if necessary)
+A user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1.Verify the city view shall display all pages that are part of the project.
+	-Create a Project,Click (View all:Map) to add one blank page to the project.
+	-Go inside that page, make sure you see the canvas, now using add page option add a total of 6 pages.
+	-From the canvas go to the map-view by clicking on the (TO Page map ) icon.
+	-Check if all six pages from page-1 to page-6 can be seen in the map view.
+	
+2.Verify that all six pages are being represented by a thumbnail image in the map view.
+
+3.verify that the thumbnail image of page-1 has a home icon in it.
+
+4.Verify that each Thumbnail images present in the map view has a name.
+	-check the default page names , page1,page2.....are present in the thumbnail images.
+
+5.Verify that all the names of the thumbnail page images are inline editable.
+	-Select any one of the thumbnail image inside the map view.
+	-Click on the thumbnail image name, Make sure the name is highlighted with a blue colour filling over it.
+  	-Now , try to change the existing name to any other random name.Make sure the change has been affected.
+	-Now click the home icon.Go inside the project.Check all the pages that was created are present,with its corresponding names, in the prototype page.
+	-Check if the name of the page that was changed is still consistent and exists.
+
+6.Verify that all the thumbnail images of the pages in the map view, have the same width and height.
+	-Go inside the map view to add one more page, using the Add Blank Page button.
+	-Check that a new page has been added in the page map view.	
+	-check that the Thumbnail image of all the pages that are present in the map view have the same width and height.
+	
+7.Verify that there is no option to add new pages from the prototype page.
+
+8.Verify User shall come to the map view from the composer.
+	-Click on anyone of the pages that are present in the map view.
+	-Make sure you are in the Composer and you can see the canvas.
+	-click on the (To page map icon) to go to the map view.
+	-verify all the pages that have been created are present and are consistent with their corresponding names.
+	-Being present in the map view , click on some other page that was not selected previously, go inside the composer and then verify again , if one can travel back to the map view from the composer.Check the same for all the pages that are present in the map view.  
+
+9.Verify rearrange pages in City Map shall be possible.
+	-From the map view, select the thumbnail image of page 3, drag it and drop it before the thumbnail image of page 2.
+	-After this check that the thumbnail images of the pages are arranged in the order as, page 1, page 3, page 2, page 4, page 5, page 6, page 7.
+	-Select the thumbnail image of Page 2, verify that it is selected-(it has a blue colour highlighting mark around it).
+	-Drag the thumbnail image and drop it at any other coordinate, ensure that the thumbnail image sits in the coordinate where it has been dropped.
+	-Check the same for the other thumbnail images.
+        
+ 
+10. verify that City Map shall show existing navigation per the first occurrence rule
+
+    -Create six pages in the page map.   
+	-Using buttons and hotspot, create the following link between the pages.
+		P1 (Page 1) has a link to P2 and P3 (for example:Let’s call them L12, L13 )
+		P2 has a link to P3, P4, P5, P1
+		P3  - > P5
+		P4 -> P1
+		P5 -> P3
+		P6 -> P2
+	-After the links are created verify that the links works, using the preview button.Now from the composer canvas  go to the page map view using (To PageMap) icon to see the visual representation of links between the pages.
+		L12, L13 are shown
+		L23 is hidden as there is already an incoming link to Page 3(I.e, L13). L24, L25, L21 are shown
+		L35 is hidden as L25 exists
+		L41 is hidden as L21 exists
+		L53 is also hidden as L13 exists.
+		L62 is hidden as L12 exists.
+		
+		Note:In the map view the link between pages will be represented by blue colour lines.
+		
+
+11. Verify Thumbnail images of the pages are consistent with any shape.
+	-Create a new project,Go inside the project and click (View all:Map) to add six blank page to the project.check there are six thumbnail images of the pages with its default name.
+	-Select the Thumbnail images and place them such that they form the following shape in the map view.
+	                                             page1
+					      page2         page3
+					      page4         page5
+					             page6
+    -Verify the above shape can be seen in the map view.
+	-Using hotspots and buttons create the following link between the pages.
+		P1 (Page 1) has a link to P2 and P3 (for example:Let’s call them L12, L13 )
+		P2 has a link to P4, P5
+		P3  - > P5
+		P4 -> P6
+		P5 -> P6
+	-After the links are created verify that the links works, using the preview button.Now from the composer canvas  go to the page map view using (To PageMap) icon to see the visual representation of links between the pages.
+		L12,L13 are shown.
+		L24, L25 are shown.
+		L46 is shown.
+		L35 is hidden.
+		L56 is hidden.
+	-Verify that the shape of the thumbnail images persists in the map view and all the links between the pages are shown.
+	-Go inside page 2 and delete the link that it has with page5.
+	-Check, the following links can be seen between the thumbnail images in the map view.
+		L12,L13 are shown.
+        L24 is shown.
+		L35 is shown.
+		L46 is shown.
+		L56 is hidden.
+
+12. Verify the pages are consistent even after the delete operation is being performed.
+	-Create a new project,Go inside the project and click (View all:Map) to add 8 page to the project.check there are six thumbnail images of the pages with its default name.
+	-Select the Thumbnail images and place them such that they form the following shape in the map view.
+					page1
+		page2					    page3
+			       page4          page5
+		page6					    page7
+					page8
+	 -Verify the above shape can be seen in the map view.
+	 -Using hotspots and buttons create the following link between the pages.
+		P1 (Page 1) has a link to P2 and P3 (for example:Let’s call them L12, L13 )
+		P2 has a link to P4 and P6
+		P3 has a link to P5 and p7
+		P6 has a link to P8.
+		P7 has a link to P8.
+	-After the links are created verify that the links works, using the preview button.Now from the composer canvas  go to the page map view using (To PageMap) icon to see the visual representation of links between the pages.
+		L12,L13 are shown.
+		L24,L26 is shown.
+		L35,L37 is shown.
+		L68 is shown.
+	-Verify that the shape of the thumbnail images persists in the map view and all the links between the pages are shown.
+	-Go inside the Composer canvas , now using the tree view try to delete page 5, Go back to the page map view and verify that the following link between the thumbnail images are seen.
+		L12,L13 are shown.
+		L24, L26 is shown.
+		L37 is shown.
+		L68 is shown.
+	-Verify that in the map view the above links are seen between the thumbnail images.
+	-Go to the prototype page and delete page 7, Go to the page map view and verify that the following link between the thumbnail images are seen.
+		L12,L13 are shown.
+		L24, L26 are shown.
+		L68 is shown.
+	-Verify that in the map view the above links are seen between the thumbnail images.
+	-From the map view delete page4 and verify that the following link between the thumbnail images are seen.
+		L12,L13 are shown.
+		L26 is shown.
+		L68 is shown.
+	-Verify that in the map view the above links are seen between the thumbnail images.
+		
+		
+13. Verify the page map view appearance view when minimize the browser.
+	 -Make sure, you are in the page map view. Ensure that the page map view has Thumbnail image of the pages and link between the page.
+	 -Now minimize the size of the chrome browser.
+	 -Now user should be able to see both horizontal and vertical scroll bars in the browser window,for the page map view.
+	 -With the help of the scroll bars, the thumbnail images of the pages and the the links between them can be seen.
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome
+
+Revision History
+Date	Comment	Updated by
+06/17/2015	Initial draft	Vijay Enthran Varadarajan Subramanian
+06/17/2015	Reviewd by QA team
+

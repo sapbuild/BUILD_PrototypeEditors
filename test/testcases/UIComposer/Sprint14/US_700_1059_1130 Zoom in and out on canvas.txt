@@ -1,0 +1,145 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5)	1
+Automation readiness
+Reviewed by	Norman/UI Composer
+Description
+
+The user shall be able to zoom in and zoom out the canvas. The panels and shell are not zoomed in or out when the canvas is zoomed.
+
+Acceptance criteria:
+
+•	The user shall be able to zoom the canvas in. Everything on the canvas shall be zoomed in and shall keep the relative positions to each other. Elements may be moved outside the available viewport when zooming in
+•	There shall be a maximum zoom in level. When that level is reached the user shall have a visual indication that he can no longer zoom in.
+•	The user shall be able to zoom the canvas out. Everything on the canvas shall be zoomed out and shall keep the relative positions to each other. Elements may be moved into the available viewport when zooming out.
+•	There shall be a maximum zoom out level. When that level is reached the user shall have a visual indication that he can no longer zoom out.
+•	The zoom level shall not be persisted between exiting and entering the UI composer. The reason is that every time the user enters the UI composer we will make sure that the width will fit in the available browser space.
+
+
+The canvas width shall be fully visible when the UI composer is launched. This means that depending on the size of the browser and the display's resolution the canvas width shall be zoomed to fit the available space.
+There is a dependency on zooming being available for the canvas
+
+Acceptance criteria:
+
+•	Every time the user enters the UI composer the canvas shall be rendered to show the full width of the canvas regardless of the size of the browser window and screen resolution, maintaining the aspect ratio of the canvas. 
+•	The exception to the above rule is if the resulting canvas size exceeds the available zoom capabilities that are currently specified to be between 10% and 400%. In this case the canvas shall be rendered at the lowest or highest zoom rate as applicable when you switch the form factor after zoom, 
+
+
+The Common Zoom In/Out Control in UIComposer needs to be integrated for canvas zooming. The control shall be place in the tool bar next to snapping activation icon.
+
+Acceptance criteria:
+
+•	The two quick action links, 1:1 & Fit width, shall work for the canvas
+•	While sliding the zooming scale bar the canvas size changes continuously and smoothly.
+•	When the sliding stops the canvas size shall reflect to the sliding scale.
+•	All UI elements on the canvas change sizes in proportion of the canvas size, but keep the relevant positions on the canvas.
+
+
+Preparations
+Setup/Configuration steps (if necessary)  
+A user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1.  Create a project with two default pages.  On prototype page, click thumbnail of Page 1 to go to composer page.
+    Verify that platform specific zoom controls are enabled, e.g. zoom to selection on mouse scroll. 
+    - Click on zoom controls icon on top menu toolbar 
+    - When zoom popup opens, check slider zoom's canvas to the values shown.
+    - Check that as slider is moved, the zoom percentage value in the menu toolbar is updated.
+
+2.  Verify that the user shall be able to zoom the canvas in.
+    - Increase the sliders zoom's canvas to zoom in
+    - Check that as slider is moved the value displayed in the blue bar changes
+    - Keep increasing the zoom level till the user will have a visual indication that he can no longer zoom in.
+    - Check that available zoom capabilities for zoom in is 400%.
+
+3.  Verify that the user shall be able to zoom the canvas out.
+    - Decrease the sliders zoom's canvas to zoom out
+    - Check that as slider is moved the value displayed in the blue bar changes
+    - Keep decreasing the zoom level till the user will have a visual indication that he can no longer zoom out.
+    - Check that available zoom capabilities for zoom out is 10%.
+    - Click outside the zoom popup to close the zoom controls in top menu toolbar
+
+4. Verify that the zoom level shall not be persisted between exiting and entering the UI composer.
+    - Open a page in UI composer, click on zoom controls icon on top menu toolbar. 
+    - Drag and drop any UI control. Check the zoom factor that is shown on top menu toolbar.
+    - Zoom in to maximum of 400%. Check the zoom factor.
+    - Exit UI Composer and enter it once again. 
+    - Open the same page. Check the zoom factor is back to where was before you zoom in.
+
+5. Verify that when the user enters the UI composer the canvas shall be rendered to show the full width of the canvas.
+    - Create a project with two default pages. On prototype page, click thumbnail of Page 1 to go to UI composer page.
+    - Drag and drop any UI control on canvas to see how the canvas is fit in.
+    - Preview the zoom factor that is shown on top menu toolbar.
+    - Resize the browser window to make it smaller. Check the zoom factor is the same.
+    - Open zoom controls and click on "Fit Width" button. 
+    - Check that the canvas is fit in. Check the zoom factor.
+    - Change the screen resolution. Check that the width of the canvas is fit in.
+ 
+6. Verify that if the resulting canvas size exceeds the available zoom capabilities between 10% and 400%, then the canvas shall be rendered at the lowest or highest zoom rate. 
+    - Open a page in UI composer, drag and drop on canvas a large image of the size 1600px by 1060px.
+    - Preview the zoom factor that is shown on top menu toolbar. Open zoom controls.
+    - Decrease the zoom factor to minimum that should be 10%. Preview the canvas.
+    - Check that the canvas is rendered at the lowest zoom rate.
+    - Increase the zoom factor to maximum that should be 400%. Preview the canvas.
+    - Check that the canvas is rendered at the highest zoom rate.
+    - Repeat the step with other images and UI controls.
+
+7. Verify that two quick action links, 1:1 & Fit Width, shall work for the canvas
+    - Open a page in UI composer, click on zoom controls icon on top menu toolbar. 
+    - Drag and drop any UI control.
+    - Click on "1:1" button. Check the zoom factor of the canvas is 100%.
+    - Check the zoom shown for the canvas.
+    
+8.   Verify that while sliding the zooming scale bar, the canvas size changes continuously and smoothly.
+     - Open a page with an image, check slider zoom's canvas to the values shown.
+     - Open zoom popup, change the zoom factor by sliding the zooming scale bar.
+     - Check that the canvas size changes continuously and smoothly. 
+     - Check that the image size is changing.
+
+9.   Verify that all UI elements on the canvas change sizes in proportion of the canvas size, but keep the relevant positions on the canvas.
+     - Add a new page in UI composer, drag and drop a List control on canvas.
+     - Decrease the zoom factor. Check that list control has moved to the upper left corner on canvas.
+     - Increase the zoom factor. Check that the list control has moved to the lower right corner on canvas.
+     - Scroll the screen to the right and down to find where the list control is shown on the canvas.
+     - Repeat the step with other UI controls.
+     
+10.  Verify that if a new page or project is added then the UI composer shall show the full width of the canvas.
+     - Add a new page in UI composer, open the page and drag and drop any UI control on canvas.
+     - Check that the width of the canvas fits between the the left and right panels.
+     - Increase the zoom factor.  
+     - Go to Home page to add a new project that has two default pages. Open one of the pages. 
+     - Check that the zoom factor is set to Fit Width. 
+
+11.  Verify that in both interactive and edit modes the zoom factor of the canvas is the same.
+     - Add a new page in UI composer, open the page and drag and drop any UI control on canvas.
+     - Decrease the zoom factor. Click on preview icon to switch to interactivew mode. 
+     - Check that the zoom factor of the canvas is the same.
+     - Back to edit mode, increase the zoom factor. Click on preview icon to switch to interactivew mode. 
+     - Check that the zoom factor of the canvas is the same.
+     
+ 12.  Verify that when switching form factors the zoom factor is retained.
+     - Add a new page in UI composer, open the page and drag and drop any UI control on canvas.
+     - Select Desktop option, set zoom factor, for example, to 76%. 
+     - Switch to Tablet option. Check that the zoom factor is the same of 76%.
+     - Switch to Phone option. Check that the zoom factor is the same of 76%.
+     - Click on preview icon to switch to interactivew mode. 
+     - Check that the zoom factor of the canvas is the same.
+     
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome
+
+Revision History
+Date	Comment	Updated by
+05/21/2015	Initial draft	Lucy Chernobrod
+06/04/2015  Updated Lucy Chernobrod
+06/05/2015  Updated Joe Cintas

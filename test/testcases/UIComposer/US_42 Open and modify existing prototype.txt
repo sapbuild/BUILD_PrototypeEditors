@@ -1,0 +1,52 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to open and modify an existing prototype 
+	  
+Users need to be able to open an existing prototype in the environment to modify it. The user shall be able to see existing prototypes and shall be able to open and modify the prototype. The tool shall ensure the user has the proper authorization to view and/or modify the existing prototype.
+There is a dependency to project management.
+
+ Acceptance Criteria
+•	The user shall be able to view pages of an existing prototype. Project management needs to ensure that the user only has access to projects he is authorized to see and modify
+•	Once the user selects a page of an existing prototype he shall see this page on the canvas
+  
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+                  
+1. Verify that the user be able to open and view the existing prototype of any projects created by the user
+    - Open an exisiting prototype that has at least one project.
+    - Click on the Project icon in left toolbar panel.
+    - Preview  "Prototype pages" view.
+    - Check how many pages exist in the project.
+
+2. Verify that once the user selects a page of an existing prototype he shall see this page on the canvas        
+  - Open a project that has at least one page.
+  - Preview  "Prototype pages" view.
+  - Select a page and click on it.
+  - Check that the page is open in UIComposer;
+  - Preview the page canvas.
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+Revision History
+Date	Comment	Updated by
+02/09/2015	Initial draft	David Lim
+06/25/2015      Updated Lucy Chernobrod
+		
+

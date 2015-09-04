@@ -1,0 +1,62 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to view and edit properties of UI element 
+
+Each UI element shall have a set of pre-defined properties from a UI library.
+The user shall be able to see the properties when the user selects a UI element on the canvas.
+The user shall be able to set default values of the properties. The property values shall be persisted so that when the user access the same UI element on the canvas the user shall be able to see the values.
+
+
+Acceptance Criteria
+•	The properties editor shall be fully visible without being cut partially, regardless where the selected UI element is on the canvas
+•	The properties editor shall be vertically scrollable if the properties cannot fill in its fixed height (refer to the visual spec)
+•	The properties editor shall not be horizontally scrollable
+  
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test Scenarios 
+ 
+1. Verify that the properties editor shall be fully visible without being cut partially.
+	- Create a new project that has at least one page.
+	- Click on the page to open it in UIComposer.
+	- Drag and drop any control (i.e. Button) onto the canvas.
+	- User should be able to view properties editor in its entirety in the right panel.
+	
+2. Verify that the properties editor shall be vertically scrollable.
+	- Open an existing project then go into UIComposer.
+	- Drag and drop a Table control onto the canvas.
+	- User should be able to scroll up and down to see the entire properties editor.
+	- Repeat the step with other UI controls.
+	
+3. Verify that the properties editor is not horizontally scrollable.
+	- Open an existing project then go into UIComposer.
+	- Drag and drop a Table control onto the canvas.
+	- User should not be able to scroll the properties editor horizontally.
+	- Repeat the step with other UI controls.
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+Revision History
+Date	Comment	Updated by
+02/09/2015	Initial draft	David Lim
+06/29/2015      Updated         Joe Cintas
+		
+

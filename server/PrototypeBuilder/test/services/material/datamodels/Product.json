@@ -1,0 +1,83 @@
+{
+    "_id" : "ProductID",
+    "name" : "Product",
+    "nameSet" : "ProductSet",
+    "navigationProperties" : [],
+    "properties" : [
+        {
+            "_id" : "e4395f99c9e2af1e0a7baf06",
+            "name" : "ID",
+            "label" : "ID",
+            "order" : 1,
+            "propertyType" : "String",
+            "isReadOnly" : false,
+            "isKey" : true,
+            "isNullable" : true,
+            "isForeignKey" : false,
+            "isAsset" : false,
+            "calculated" : {
+                "inputProperties" : []
+            }
+        },
+        {
+            "_id" : "d9c49576a152c5500a7baf06",
+            "name" : "Description",
+            "label" : "Description",
+            "order" : 2,
+            "propertyType" : "String",
+            "isReadOnly" : false,
+            "isKey" : false,
+            "isNullable" : true,
+            "isForeignKey" : false,
+            "isAsset" : false,
+            "calculated" : {
+                "inputProperties" : []
+            }
+        },
+        {
+            "_id" : "6876ff4de9f140780a7baf06",
+            "name" : "Amount",
+            "label" : "Amount",
+            "order" : 3,
+            "propertyType" : "Decimal",
+            "isReadOnly" : false,
+            "isKey" : false,
+            "isNullable" : true,
+            "isForeignKey" : false,
+            "isAsset" : false,
+            "calculated" : {
+                "inputProperties" : []
+            }
+        },
+        {
+            "_id" : "c31cea0f4b1fe9e50a7baf06",
+            "name" : "Currency",
+            "label" : "Currency",
+            "order" : 4,
+            "propertyType" : "String",
+            "isReadOnly" : false,
+            "isKey" : false,
+            "isNullable" : true,
+            "isForeignKey" : false,
+            "isAsset" : false,
+            "calculated" : {
+                "inputProperties" : []
+            }
+        },
+        {
+            "_id" : "2de6828803bd574d0a7baf06",
+            "name" : "Picture",
+            "label" : "Picture",
+            "order" : 5,
+            "propertyType" : "String",
+            "isReadOnly" : false,
+            "isKey" : false,
+            "isNullable" : true,
+            "isForeignKey" : false,
+            "isAsset" : false,
+            "calculated" : {
+                "inputProperties" : []
+            }
+        }
+    ]
+}

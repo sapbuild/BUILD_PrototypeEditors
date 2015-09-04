@@ -1,0 +1,57 @@
+General  Information
+Test case description	Norman – aggregation – remove elements test case
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Business scenario/User Story
+	  
+
+The user shall be able to remove a UI element from an aggregation
+Acceptance Criteria:
+•	Prerequisite is that the user can select a UI element in an aggregation
+•	The user shall be able to delete the selected UI element
+•	The user shall be able to move the selected UI element outside of the aggregation on the same page
+
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Steps/Procedures
+                  
+Scenario:  assume there is a list aggregation.  There are 4 list items inside the list.  Each list items has a checkbox, a text field.
+	
+	
+_  Verify user could delete an aggregation (parent and all children).  Assume there is a list that has list items.  Select list, then click the 'x' icon next to "List Item" in the right panel.  Verify selected list control and its items deleted successfully.	
+
+_  Verify user could delete a child in a parent aggregation.  Try to delete a list item inside a list.	
+
+_  Verify user could delete an element inside a pattern loaded from UICatalog.	
+	
+	
+
+
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+
+Revision History
+Date	Comment	Updated by Vijay Enthran Varadarjan Subramanian.
+01/06/2015	Initial draft	Chinh Nguyen
+06/08/2015      Updated         Joe Cintas
+		
+

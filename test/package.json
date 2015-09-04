@@ -1,0 +1,46 @@
+{
+  "name": "norman-prototype-editors-test",
+  "version": "0.1.0",
+  "description": "Prototype Editors Test Module",
+  "repository": {
+    "type:": "git",
+    "url": "https://github.com/sapbuild/PrototypeEditors.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/Build/blob/master/LICENSE.txt"
+    }
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "peerDependencies": {
+    "node-sap-app-server": "*",
+    "norman-audit-server": "*",
+    "norman-auth-server": "*",
+    "norman-auth-client": "*",
+    "norman-common-server": "*",
+    "norman-common-client": "*",
+    "norman-projects-client": "*",
+    "norman-projects-server": "*",
+    "norman-prototype-editors-server": "*",
+    "norman-prototype-editors-client": "*",
+    "norman-ui-catalog-manager-server": "*",
+    "norman-testing-server": "*",
+    "norman-testing-tp": "*",
+    "norman-server-tp": "*",
+    "norman-testing-tp-client": "*",
+    "norman-shell-client": "*",
+    "grunt-protractor-runner": "^1.2.1",
+    "superagent": "^0.21.0"
+  },
+  "dependencies": {
+    "xlsx": "0.7.12",
+    "request": "2.51.0",
+    "mocha-steps": "0.0.1",
+    "jszip": "^2.5.0",
+    "htmlparser": "1.7.7",
+    "node-sap-promise": "*"
+  }
+}

@@ -1,0 +1,84 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+	  
+The user shall be able to add a UI pattern to the canvas. The UI patterns available to the user shall be displayed (e.g. on a palette).
+The UX of how patterns are added to the canvas (e.g. drag and drop, click and add) shall be defined in the IxD
+
+Acceptance Criteria
+•	The user shall see UI patterns in the UI composer that are available to be added to the canvas, e.g. in a palette
+•	When moving a UI element onto the canvas the composer shall place the UI element in a manner that is defined by the UI framework used.
+
+The user shall be able to select a UI pattern on the canvas.
+
+Acceptance Criteria		 
+•	The user shall be able to select a pattern on the canvas, consisting of multiple controls, e.g. a footer, and shall get a visual confirmation that it has been selected
+•	Once the user has selected a pattern and decides to select a different pattern or control outside the pattern the currently selected pattern shall be unselected
+ 
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1. Verify an user be able to view the list of available UI patterns in Open UI5 elements panel on the left
+   - Create a project with at least one page. Click on the project to open it.
+   - On Prototype pages view, click thumbnail of the page to go to UI composer.
+   - In the left panel, navigate to UI Elements panel. 
+   - Extend the Library:Open UI5 field where you could choose a library
+   - Search for an UI control that is a pattern, for example, List, Table, etc.
+  
+ 2. Verify that the user shall be able to select an UI Pattern element, drag and drop it onto the canvas
+   - Open a page in prototype, go to UI Elements panel
+   - Scroll down to List control.
+   - Select List and drag and drop it onto the canvas
+   - Repeat the step with other UI elements.
+ 
+ 3. Verify that the user shall be able to copy any pattern elements placed on the canvas
+    - Open a page in prototype, drag and drop an UI Element onto the canvas
+    - Select the UI element. 
+    - Use shortcat command  Ctrl+C (on Windows) and Cmd+C (on Mac) to copy UI element
+    - Use shortcat command  Ctrl+V (on Windows) and Cmd+V (on Mac) to paste UI elemnt onto canvas
+    - Open another page and paste the copied UI elements onto the canvas
+    - Repeat the step with other UI controls.
+
+4. Verify that the user shall be able to select a pattern on the canvas, consisting of multiple controls, e.g. a footer, and shall get a visual confirmation that it has been selected
+    - Create a project with two pages, Page 1 and Page 2.
+    - Open Page 1, navigate to UI Elements panel.
+    - Select Footer control and drag and drop it onto the canvas
+    - Select the "Accept" button on footer, preview its properties in the right panel
+    - Drag and drop Button control from UI Elements panel and place it on footer on the canvas
+    - Select the new button, preview its properties
+    - While in the properties panel, change the new button's type, width, and set Page 2 for "Navigate To" action.
+    - Click on Preview icon, click on the new button to navigate to Page 2. 
+    - Click on Edit button to navigate to prototype
+
+
+5. Verify that once the user has selected a pattern and decides to select a different pattern or control outside the pattern the currently selected pattern shall be unselected
+    - Open Page 1 in prototype, select the footer control
+    - Check that the footer is highlighted on the canvas.
+    - Click any where on the canvas outside the footer.
+    - Check  that the footer is not highlighted anymore.
+    - In UI Elements panel, select Date Picker control and drag and drop it onto the canvas 
+    - Select the date picker on the canvas, check that date picker is highlighted
+    - Select the footer on the canvas, check that the footer is highlighted
+    - Check that the date picker is not highlighted anymore
+
+	 
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Chrome and Safari
+
+Revision History
+Date	Comment	Updated by
+02/11/2015	Initial draft	David Lim
+06/09/2015	Updated Lucy Chernobrod

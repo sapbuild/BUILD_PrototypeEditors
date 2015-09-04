@@ -1,0 +1,51 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify UI  Composer shall provide thumbnail images for prototype pages 
+
+For each page their shall be an image that can be used as thumbnails in the UI composer, the project management page and for creating user studies.
+The thumbnail for the page shall be made available as soon as a new page is created. The thumbnail shall be updated when the page is auto-saved. This is essential for the actual page and thumbnail view to be in synch.
+
+Acceptance Criteria
+•	The user shall be able to view pages of an existing prototype. Project management needs to ensure that the user only has access to projects he is authorized to see and modify
+•	Once the user selects a page of an existing prototype he shall see this page on the canvas
+  
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test Scenarios    
+
+1. Verify that the user shall be able to view pages of an exisitng prototype.
+	- Create a new project that has at least one page.
+	- Click on the page to open it in UIComposer.
+	- Click on Project tab along the left edge of the screen.
+	- User should see pages of an exisitng prototype.
+	
+2. Verify that if the user selects a page of an existing prototype, he shall see the page on the canvas.
+	- Open an existing project and go into Prototype pages.
+	- On Prototype pages, select an exisiting page to go into UIComposer.
+	- User should be navigated to that page on the canvas.
+	
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+Revision History
+Date	Comment	Updated by
+02/12/2015	Initial draft	David Lim
+06/29/2015      Updated         Joe Cintas
+		
+

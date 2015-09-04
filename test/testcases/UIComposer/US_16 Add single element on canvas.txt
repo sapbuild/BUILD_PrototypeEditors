@@ -1,0 +1,72 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	15 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to add a single UI Control to the canvas  
+ 
+
+Business scenario/User Story #16
+	  
+The user shall be able to add individual UI elements (controls in UI5) to the canvas. The UI elements available to the user shall be displayed (e.g. on a palette).
+
+Acceptance Criteria
+•	The user shall see UI elements in the UI composer that are available to be added to the canvas, e.g. in a palette
+•	The user shall have a visual indication if a UI element is a single control to distinguish it from a pattern
+•	When moving a UI element onto the canvas the composer shall place the UI element in a manner that is defined by the UI framework used. A UI framework may not prescribe restrictions in the way of placing controls (e.g. Open UI 5 with absolute positioning), in which case placement is completely free form.
+
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+ 
+1. Verify that the user shall see UI elements in the UI composer that are available to be added to the canvas, e.g. in a palette
+  - Create a project with at least one page. Click on the project to open it.
+  - On Prototype pages view, click thumbnail of the page to go to UI composer.
+  - In the left panel, preview UI controls available to use.
+  - Select an UI element, for example, a button.
+  - Repeat the step with other UI controls.
+ 
+2. Verify that the user The user shall have a visual indication if a UI element is a single control to distinguish it from a pattern
+  - Open a page in the prototype.
+  - In the left panel, preview UI controls available to use.
+  - Find different categories of UI controls, like ACTION, CONTAINER, DISPLAY, LAYOUT and LIST.
+  - Select a simple control, for example, button.
+  - Select a pattern, for example, a List.
+  - Drag and drop the list control onto the canvas.
+  - Select a List Item and drag and drop it onto the list on the canvas.
+  - Preview the list itme proprties in the right panel.
+  - Repeat the step with other UI controls.
+
+3. Verify a user is able to move the UI element and the element is fully displayed within the canvas
+  - Open a page in the prototype.
+  - In the left panel, select a List control.
+  - Drag and drop the list element onto the canvas.
+  - Make sure control is selected on the canvas.
+  - Move the list element around the canvas.
+  - Release mouse button to drop control at the desired location. 
+  - Make sure control can be fully seen on the canvas.
+  - Repeat the step with other UI controls.
+	 
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+
+Revision History
+Date	Comment	Updated by
+02/09/2015	Initial draft	David Lim
+06/18/2015      Updated         Joe Cintas
+		
+

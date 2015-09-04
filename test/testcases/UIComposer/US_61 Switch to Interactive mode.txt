@@ -1,0 +1,88 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify the user be able to share the URL of the prototype internally
+ 
+At the design time the user shall be able to switch to the interactive mode to see actions associated with events.
+In the interactive mode the user shall be able to see the interactions that the user puts into the design.
+
+Acceptance criteria:
+
+•	User shall be able to switch to the Interactive mode and back (Edit mode)
+•	When in the Interactive mode the user shall be able to see interactions that the user defines in the Edit mode. For instance, when the user defines an OnClick event on a tab to show the tab content the user shall be able to see the content of the tab when the user clicks on the tab in the Interactive mode
+•	In the Interactive mode when an action is a navigation the navigation target page is displayed on the canvas in the Interactive mode. When the target is a URL (external page) the a browser window is opened by the target URL and the canvas remains the same
+•	In the navigation cases of the Interactive mode, when the user switches back to the edit mode the canvas goes back to the origin of the navigations. For instance, when the user switch to interactive mode on page 1 of a prototype the user navigates to page 3 via page 2 by a couple of navigation steps. If the user switches back to the edit mode at this point the canvas switches back to page 1 where all these navigation steps originated from and the user will see page 3 in edit mode.
+•	Also in the navigation cases of the Interactive mode when the user navigates to a target page and then clicks on a different page thumbnail on the left side of the canvas where all pages of the prototype are list the user is led to that page in the Interactive mode. For instance, when the user switches to interactive mode on page 1 of a prototype and navigates to page 2. Then the user clicks on the Page 1 thumbnail the user sees Page 1 in the interactive mode.
+
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test scenarios:
+
+1. Verify that the user should be able to switch to Interactive mode and back into Edit mode.
+	- Create a new project that has at least one blank page.
+	- Click on the page to open it in UIComposer.
+	- Drag and drop a control (i.e. Button) onto canvas.
+	- Click on Preview button to go into Interactive mode.
+	_ Check that button element is shown.
+	- Click Editor button to go back into Edit mode.
+	- Repeat the staep with more UI controls.
+	
+2. Verify that the user should be able to see interactions that he defines in the Edit mode.
+	- Open an exisitng project then go into UIComposer.
+	- Drag and drop a control (i.e. Button) onto canvas.
+	- Find  ACTIONS section in button properties shown in the right panel.
+	- Check that the Interaction field has "On Click" value.
+	- Define the Action field value to "Show Alert", and then write any free text in Text field.
+	- Switch into Interactive mode. Check that when you click on Button, the text alert is shown.
+	- Switch back to Edit mode, and repeat the step using different controls.
+
+3. Verify that in the Interactive mode when an action is a navigation the navigation target page is displayed on the canvas in the Interactive mode. When the target is a URL (external page) the a browser window is opened by the target URL and the canvas remains the same
+	- Open an existing project then go into UIComposer.
+	- Drag and drop a Link control onto the canvas. The words "Linked Text" appears on the canvas.
+	- In Properties panel, type in a web address into the URL field, for example: http://www.cnn.com.
+	- Click on Preview button to switch to Interactive mode. Click on "Linked Text."
+	- A second browser window pops up featuring the CNN homepage.
+	- Click the BUILD browser tab. The Interactive page should remain the same. 
+	
+	
+4. Verify that in the navigation cases of the Interactive mode, when the user switches back to the edit mode the canvas goes back to the origin of the navigations. For instance, when the user switches to interactive mode on page 1 of a prototype the user navigates to page 3 via page 2 by a couple of navigation steps. If the user switches back to the edit mode at this point the canvas switches back to page 1 where all these navigation steps originated from and the user can edit page 1 again.
+	- Open exisitng project then go into UIComposer.
+	- Click on New Page in left panel to add Page 2.
+	- Click on New Page in left panel to add Page 3.
+	- While on Page 1,  drag and drop a button onto the canvas. 
+	- Find  ACTIONS section in button properties shown in the right panel.
+	- Define the Action field to "Navigate To", then set Navigation to Page 2.
+	- Click on Page 2 in tree view. Drag and drop a static image from your file system onto the canvas.
+	- Find ACTIONS section in image properties shown in the right panel.
+	- Define the Action field to "Navigate To", then set Navigatio to Page 3.
+	- Click on Page 3 in tree view. Drag and drop a button onto the canvas. 
+	- Find ACTIONS section in hotspot properties shown in the right panel.
+	- Define the Action field to "Navigate To", then set Navigation to Page 1.
+	- Go back to Page 1. Switch to Interactive mode by clicking on Preview button. 
+	- Click on Button. User is navigated to Page 2.
+	- Click on Image on Page 2. User is navigated to Page 3.
+	- Switch back into edit mode,  user will see Page 3 in edit mode.
+	
+	
+Variant (eg. iPhone vs iPad, browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Safari and Chrome  
+
+Revision History
+Date	Comment	Updated by
+02/12/2015	Initial draft	David Lim
+06/15/2015	Updated	     Lucy Chernobrod
+06/29/2015      Updated      Joe Cintas

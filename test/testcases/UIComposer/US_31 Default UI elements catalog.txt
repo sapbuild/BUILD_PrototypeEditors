@@ -1,0 +1,63 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able view a default UI Catalog
+
+There shall be a default UI Catalog available (initially UI5 controls). The user shall be able to see a default UI catalog when working on a project.
+
+Acceptance Criteria
+•	The user shall see a list of available UI elements
+•	The list of UI elements shall contain individual controls
+•	The list of UI elements shall contain patterns, if the UI catalog makes them available
+
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1. Verify that the user shall see a list of available UI elements.  
+	- Create a new project that has at least one page.
+	- Click on the page to open it in UIComposer.
+	- User should see UI5 Library controls in the left panel of the canvas.
+	- User can select a certain control from UI5 Library (i.e. Button) and drag it onto the canvas.
+
+2. Verify that the list of UI elements shall contain individual controls
+	- Open an existing project then go into UIComposer.
+	- Preview a list of Controls that is shown in the left panel. 
+	- Find which library the controls belong to, for example, Open UI5.
+	- Preview the categories of the controls, for example, ACTIONB, CONTAINER, etc.
+	- Identify  UI elements that are individual controls, for example, Button, Hotspot, Text, etc.
+	- Drag and drop Button onto canvas, preview its properties in the right panel
+	- Repeat the step with other individual controls
+
+3. Verify that  UI elements shall contain patterns, if the UI catalog makes them available
+	- Open an existing project then go into UIComposer.
+	- Preview a list of Controls that is shown in left panel. 
+	- Identify UI elements that are patterns, for example, Icon Tab Bar, List, Table, etc.
+	- Drag and drop List onto canvas, preview its properties in the right panel
+	- Repeat the step with other patterns
+
+	
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+Revision History
+Date	Comment	Updated by
+02/09/2015	Initial draft	David Lim
+06/25/2015      Updated         Joe Cintas
+		
+

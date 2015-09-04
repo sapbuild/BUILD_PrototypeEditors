@@ -1,0 +1,73 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to have his work automatically saved 
+
+The user shall have his work automatically saved. The user shall not have to explicitly save his work.
+In case he leaves the project, e.g. by navigating to a different URL, by closing the browser, by loosing connection to the Norman server, he shall not loose the work progress. When he returns to his project he shall see the changes he made during the previous session. 
+
+Acceptance Criteria
+•	The user shall be able to close the browser window and not lose any work he has completed. This means when he reenters the project the changes he had made were preserved
+•	The user shall be able to navigate away from the UI composer and not lose any work he has completed. This means when he reenters the project the changes he had made were preserved.
+•	The user may lose his network connection to Norman and not lose any work he has completed. This means when he reenters the project the changes he had made were preserved.
+•	The user shall be able to navigate between pages in the UI composer and not lose any work he has completed. This means when he returns to the page he left the changes he had made were preserved.
+  
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test Scenarios  
+                  
+1. Verify a user be able to automatically save his work whenever closing the browser.
+	- Create a new project that has at least one page.
+	- Click on the page to open it in UIComposer.
+	- Drag and drop some controls onto the canvas.
+	- Wait a few seconds and watch for the indicator in upper left corner of canvas that work has been saved automatically.
+	- Close the browser then sign back into Project BUILD.
+	- Open the same project.
+	- Check that the changes you had made were preserved.
+
+2. Verify that the user can navigate away from the UIComposer and not lose any work.
+	- Open an existing project then go into UIComposer.
+	- Drag and drop some controls onto the canvas.
+	- Navigate away from the UIComposer by, for example, clicking on the Project tab.
+	- Click on Page 1 thumbnail in Prototype pages to navigate back to UIComposer.
+	- Check that the changes you had made were preserved.
+	
+3. Verify a user be able to automatically save his work whenever the network connection is interrupted.
+	- Open an existing project then go into UIComposer.
+	- Drag and drop some controls onto the canvas.
+	- Wait a few seocnds until work is saved.
+	- Access the network connection menu and disable internet connection.
+	- Wait a few seocnds and then restore your network connection.
+  	- Check that the work completed before network connection was lost is preserved.
+	
+4. Verify that user can navigate between pages in UIComposer and not lose any work.
+	- Open an existing project that has at least two pages (Page 1 and Page 2) then go into UIComposer.
+	- Drag and drop some controls onto the canvas on Page 1.
+	- Click on Page 2 thumbnail in left panel to navigate to Page 2.
+	- Click on Page 1 thumbnail to navigate back to Page 1.
+	- Check that the work you had done on Page 1 is preserved.
+	
+	 
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+Revision History
+Date	Comment	Updated by
+02/11/2015	Initial draft	David Lim
+06/29/2015      Updated         Joe Cintas
+		

@@ -1,0 +1,55 @@
+General  Information:
+
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5):	1
+Automation readiness	
+Reviewed by: Norman/UI Composer
+Description:
+
+Purpose/ goal of the test case:
+
+The user shall be able to create a new page in the map view from a dropped image. 
+ 
+Business scenario/User Story:
+
+When the user is in the map view, he shall be able to create a new page. This new page is an orphan page.
+
+Acceptance Criteria:
+
+•   The user shall have a visual indication on the map view that he can add a new page.
+•   The user shall be able to add a page that has no connection to any other existing pages, an orphan page.
+•   The user shall be able to add multiple pages without any connection among them or to other existing page in the city view 
+    by dropping multiple images in the city view. There shall be 1:1 relationship between the number of images created and the 
+    number of dropped images. (NOT IN SPRINT14)
+
+Preparations:
+
+Setup/Configuration steps (if necessary)
+A user had signed up to Project Norman with the name, email address and password.
+User Logon Information/Roles
+Navigation path to reach the application (i.e. URL)
+
+
+Test Scenarios/Steps: 
+                  
+1. Verify that user shall have a visual indication on the map view so he can add a new page.
+   - Create a project with default 2 pages.  On prototype page, click on Map View. 
+   - User will see two pages Page 1 and Page 2 and "ADD BLANK PAGE" button. 
+   - Click on "ADD BLANK PAGE" button, a new Page 3 is added.
+   
+2. Verify that The user shall be able to add a page that has no connection to any other existing pages, an orphan page.
+  - In Map view, check that the newly added Page 3 is not connected to any other pages Page 1 and Page 2.
+  - Add another page and repeat the step.
+  
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome  
+
+Revision History
+Date	Comment	Updated by
+04/06/2015	Initial draft	Chinh Nguyen
+06/02/2015        Updated Joe Cintas

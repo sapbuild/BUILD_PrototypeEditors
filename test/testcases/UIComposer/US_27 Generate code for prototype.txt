@@ -1,0 +1,59 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to generate code.  
+ 
+
+Business scenario/User Story
+	  
+
+The user shall be able to generate code.
+
+Acceptance Criteria	
+Not available in user story
+
+ 
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+ 
+Test Scenarios
+
+A zip file will be downloaded.  Unzip the file and check the content.
+  
+	
+
+Verify the consistency of code generation for the same UI element on the page   
+
+	
+
+Verify generated URL Link from the  UI element added on the page   
+ 
+	 
+
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Chrome and Safari
+
+
+
+Revision History
+Date	Comment	Updated by
+02/11/2015	Initial draft	David Lim
+		
+

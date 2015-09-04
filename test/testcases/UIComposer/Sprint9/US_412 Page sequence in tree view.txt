@@ -1,0 +1,57 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+The user shall be able to see page sequence in UI element hierarchy
+
+Before the page flow/map design is available the user shall be able to see page sequence in the hierarchy of the UI elements which is described in the user stories 380 & 381.
+Since the UI element hierarchical structure (tree structure) is replacing the pages view on the left side of the canvas in the composer, we need a temporary solution to display 
+pages of a prototype before the final page flow design is available.
+Refer to the UXD of the UI element tree structure for how to display pages in the tree.
+
+Acceptance Criteria
+_	The user shall be able to see all pages of a prototype linearly in the UI element hierarchical tree
+_	The user shall be able to go to a page by clicking on the page in the tree
+_	The user shall be able to add a new page to the tree
+
+Preparations
+Setup/Configuration steps (if necessary)
+
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+Test Scenarios/Steps 
+
+1.  Create a project with two pages.  On prototype page, click thumbnail of page 1 to go to composer page.
+    In Tree view that is on upper left panel, find the 'PAGES' tab
+    Verify that two pages Page 1 and Page 2 are shown in hierarchical tree view.
+    
+2. Verify the user shall be able to see page sequence in UI element hierarchy. 
+   In Tree view, you could see the two pages are numbered in sequence as Page 1 and Page 2.
+   
+3. Verify that user shall be able to go to a page by clicking on the page in the tree. 
+   The Tree view is just an alternative view of all pages, NOT an exclusive view.
+   
+4. Verify that user shall be able to add a new page to the tree. 
+   In Tree view, click on '+ New page' button to see a new page would be added.
+   If you click on 'New page' button in tree view, then a new page be shown as Page 3.
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome 
+
+Revision History
+Date	Comment	Updated by
+04/12/2015	Initial draft	Lucy Chernobrod
+05/29/2015	Updated	Lucy Chernobrod
+06/24/2015  Updated Sumayya Nausheen
+

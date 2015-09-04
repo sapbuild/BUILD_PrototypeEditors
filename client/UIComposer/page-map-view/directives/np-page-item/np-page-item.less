@@ -1,0 +1,72 @@
+/* -------------------------------------------------- */
+/* Norman project page tile item   */
+/* np: norman project                                 */
+/* p: page map                                      */
+/* -------------------------------------------------- */
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+
+@screen-box-color-border: #DBDFE1;
+
+.np-p {
+    &-page-map-tile-inner {
+        width: 160px;
+        height: 122px;
+        position: absolute;
+        background-color: white;
+        z-index: 100;
+        &:hover {
+            border: 1px solid @CuriousBlue-500;
+            box-shadow: 0px 0px 10px 0px rgba(51, 152, 219, 0.50);
+        }
+
+        &-bottom-box {
+            padding-top: 5px;
+            background-color:transparent;
+            padding-bottom: 5px;
+            position: relative;
+            max-width: 160px;
+            align-items: center;
+            display: flex;
+        }
+        &-screen-name-home {
+            margin-right:20px;
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            font-size: 10px;
+            background-color:white;
+            font-weight: 700;
+            flex-grow: 1;
+            text-align: center;
+            color: #2C3E50;
+            margin-left: 2px;
+            border: none;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width:50px;
+        }
+        &-home-icon{
+            width: 14px;
+            margin-left: 3px;
+        }
+
+        &-transparent-icon{
+            width: 23px;
+            margin-left: 3px;
+        }
+    }
+    &-page-map-tile-inner :hover {
+        cursor: pointer;
+    }
+    &-page-map-selected {
+        border: 1px solid @CuriousBlue-500;
+        box-shadow: 0px 0px 10px 0px rgba(51, 152, 219, 0.5);
+        z-index: 500;
+    }
+
+    &-page-map-grey {
+        opacity:0.2;
+    }
+
+
+}
+

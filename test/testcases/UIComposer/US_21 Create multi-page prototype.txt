@@ -1,0 +1,67 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to create multi-page prototypes the canvas  
+
+The user shall be able to create multi-page prototypes.
+The user shall be able to add additional pages to a new or existing project.
+The user shall be able to setup pages in a design by adding new pages. By default a new page is added to the end of the project.
+
+Acceptance Criteria	
+•	The user shall have the option to add a page to any project he is authorized to modify (authorizations are handled on the project level and are not part of the UI composer)
+•	The new page will be a blank page. (In the future the user may select a layout for the new page he is adding)
+•	The new page will be added to the bottom of the list of pages
+ 
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Steps/Procedures
+
+1.  Verify that the user be able to add a new blank page on the Prototype pages via Add Page button and to name the page
+    - Open an existing project or create a new one.
+    - Click on the project icon to open it.
+    - Check how many pages are shown in the "Prototype pages" view.
+    - In no page is shown, then click on "View all"Map" icon to open Page Map view.
+    - If there are pages createdbefore, then find the "Project" icon in left panel toolbar and click on it.
+    - Click on ADD PAGE button to add a new blank page.
+    - Preview new page is added in the "Prototype pages" view.
+    - Verify the new page is selectable     
+   
+2.  Verify the new page with page number is added to the bottom of the page list  
+   - Open a project that contains at least one page.
+   - Preview "Prototype pages" view.
+   - Chcek the number of pages shown at the top of the view.
+   - Click on on "View all"Map" icon to open Page Map view.
+   - Click on ADD PAGE button to add a new blank page.
+   - Check that new page with page number is added to the bottom of the page list.
+	 
+3.  Verify that there is no duplication page number for the added page 
+   - Open a project that contains at least one page.
+   - Preview "Prototype pages" view.
+   - Check that no duplicate page name exists.
+ 
+
+Variant (eg. iPhone vs iPad, browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Chrome and Safari
+
+Revision History
+Date	Comment	Updated by
+02/10/2015	Initial draft	David Lim
+06/25/2015	Updated	Lucy Chernobrod
+	
+

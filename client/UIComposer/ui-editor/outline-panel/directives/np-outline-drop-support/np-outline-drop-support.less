@@ -1,0 +1,18 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+.np-outline-drop-support {
+  width: 100%;
+  .np-e-tree-handle {
+    transition: background .2s ease;
+  }
+  &-accepted {
+    border-bottom: 2px solid @Shamrock-900;
+  }
+  &-refused {
+    .np-e-tree-handle {
+      background-color: @Cinnabar-900 !important;
+      transition: background .3s ease .4s;
+    }
+  }
+
+}

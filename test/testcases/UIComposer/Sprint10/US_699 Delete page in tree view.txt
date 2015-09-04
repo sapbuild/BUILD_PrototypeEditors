@@ -1,0 +1,84 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5): 1
+Automation readiness
+Reviewed by: Norman/UI Composer
+
+Description:
+
+User shall be able to delete a page. The interaction shall be the same as deleting another element in the tree. However, a 
+page cannot be deleted using the delete key. There shall be a notification to the user that he is about to delete a page. 
+The user shall need to confirm that he is deleting a page. If the page is the target of an action triggered on another page 
+the user shall be informed that that action will be removed.
+
+Acceptance criteria:
+
+•	A page is a UI element which means deleting a page in the tree is handled the same way as removing a UI element in the 
+    tree.
+•	A page cannot be deleted using the delete key.
+•	The user shall be notified that he is about to delete a page.
+•	The user shall need to confirm that he wants to delete a page before it is removed.
+•	 If the page is the target of an action (e.g. setting a value of a control, being the target of a navigation), the user 
+    shall be informed that this action will be removed.
+•	 The system shall remove the actions that target the deleted page. This is necessary to not break the prototype.
+•	 The user shall not be able to delete the last remaining page in a prototype. A prototype will always have at least one 
+    page.
+•	If the user deletes the first (leading) page in a prototype, the second page becomes the leading page.
+•	 Once the page is deleted, the page above the deleted page shall be selected.
+•	If the first page is deleted, the new first page shall be selected after the deletion.
+
+Preparations:
+
+Setup/Configuration steps (if necessary)
+A user has signed up to Project Norman with the name, email address and password
+User Logon Information/Roles
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures:
+
+1.  Verify user could delete a page when there is more than 1 page in a project.
+    _  Open a project (or create new one) that has more than two pages, let say Page 1, Page 2 and Page 3.
+    _  Select a page by clicking on the page name (Page 1) in the tree view.
+    _  Above Properties panel on right side, click on 'X' icon, verify that options 'Delete' and 'Keep' are displayed.
+    _  Click 'Delete' option, verify Page 1 is deleted; verify Page 2 is selected as default.
+    _  Click 'Home' menu button, then click on the same project name, verify only thumbnail of Page 2 is displayed.
+    _  Click on Page 2 thumbnail, verify only Page 2 displayed in UIComposer.
+    _  Verify user can still add new page.
+
+2.  Verify user cannot delete a page if project has only 1 page left. Verify delete icon (X) is not displayed.
+
+3.  Verify if user clicks 'Keep' option, then selected page is not deleted.
+
+4.  Verify user could delete more than one page.
+    _  Create a project, then add 2 more pages (total is 4 pages).
+    _  Drag drop image and button on each of the pages.
+    _  Select Page 2.
+    _  Try to delete Page 2 and Page 3, then verify that those pages and its content are deleted correctly.
+    _  Use Robomongo to verify back-end is deleted correctly.
+    _  Verify default page after Page 1 is deleted.
+    _  Verify Page 2 and Page 4 and its content are not lost.
+
+
+5.  Verify page navigation is reset if navigation to page is deleted.
+    _  Create a project with 2 pages, Page 1,  Page 2 and Page 3.
+    _  On Page 1, add a button.
+    _  On properties panel of button (on right side), go to 'ACTIONS' tab.
+    _  For Interaction, choose 'OnClick'; for Action, chose 'Naviagte To'; for Page, choose Page 2.
+    _  Wait until progress is saved.
+    _  Delete Page 2.
+    _  Go back to Page 1, select button and go to ACTIONS tab. Verify Page field under ACTIONS is empty.
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome.
+
+
+Revision History
+Date	Comment	Updated by
+04/07/2015	Initial draft	Chinh Nguyen
+06/02/2015 Updated Joe Cintas
+06/09/2015 Updated Joe Cintas

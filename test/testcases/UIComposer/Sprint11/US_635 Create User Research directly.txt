@@ -1,0 +1,72 @@
+General  Information:
+
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5): 1
+Automation readiness
+Reviewed by: Norman/UI Composer
+
+Description:
+
+The user shall be able to create a user research study directly from the composer. The user shall provide the name and
+description of the user study and upon creation will be moved to the study.
+In the background the system will create a snapshot of the current state of the prototype that will serve as the basis for the 
+user study.
+
+Acceptance Criteria:
+
+1.) The user shall be able to have an option to create a user research study in the UI Composer.
+2.) The user shall be able to choose a study name and provide an optional study description.
+3.) The system shall create a snapshot in the background, create the research study and navigate the user to the research study.
+4.) The user shall have the option to cancel the creation of the user study.
+
+Preparations:
+
+1.) Setup/Configuration steps (if necessary)
+2.) A user had signed up to Project Norman with the name, email address and password
+3.) User Logon Information/ Roles
+4.) Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures:
+//Have to be tested Later:
+1.  Verify user could create a research study by click 'Save' icon in composer.
+    _  Open a project (or create a project)
+    _  Click on Page1 thumbnail to go to Composer page
+    _  Drag drop a button in Page1
+    _  Drag drop an image in Page2
+    _  Click potion icon to create a study.  Verify Create Study dialog box pops up when this icon is clicked.
+    _  Verify pop up displayed with fields: Name, Description, 'Create and Go to Research' button, and Cancel link.
+    _  Enter 'User Research 1' in Name field, then click 'Create and Go to Research' button.
+    _  Verify Norman goes to User Research 1 page, verify new study created with name 'User Research 1'.
+    _  Verify correct thumbnails displayed in the newly created study.
+
+2.  Verify user could create new research study by enter value for Name and Description.  Verify Name and description displayed correctly in Research page after created.//check
+
+3.  Verify user could cancel of create a new research study.  Verify Composer page showed after click Cancel link.
+    Verify no research study created.
+
+4.  Verify user could create 2 research study on the row.  Verify 2 research study have correct thumbnails.
+
+5.  Verify user could create a research study after publish a prototype.
+
+6.  Create a research study with a long name, 45 characters.  Check to see how Name field displayed.
+
+7. check  Create a research study with a long description, 300 characters.  Check to see how Description field displayed.//verify
+
+8.  Create a research study for a project that has 20 pages.  Monitor performance of the application.
+
+9.  Negative test - check how application responses when snapshot is failed to create when user click on 'Save' button
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome
+
+
+
+Revision History
+Date	Comment	Updated by Vijay Enthran varadarjan Subramanian
+06/1/2015	Initial draft	Chinh Nguyen
+06/09/2015  Updated         Joe Cintas
