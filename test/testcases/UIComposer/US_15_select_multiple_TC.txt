@@ -1,0 +1,65 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to select an UI element on the canvas  
+ 
+
+Business scenario/User Story
+	  
+
+The user shall be able to select multiple UI element on the canvas by pressing down a mouse button, dragging the mouse and releasing the button. The UI elements can be a single controls, or patterns.
+The user shall be able to copy/paste the selected UI elements on the canvas, or move them around the canvas.
+
+Acceptance Criteria	
+•	All UI elements that the rectangular shape by the mouse dragging touches shall be selected
+•	There shall be some visual indication of the selected UI element
+•	when copying the selected UI elements the copies UI elements shall not cover the original UI elements completely
+
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Scenarios
+                  
+ 
+Verify an user be able to select the UI element from Open UI  onto the canvas
+ 
+	 
+
+Verify an user be able to select any elements placed on the canvas with indication it is selected
+ 
+	 
+
+Verify an user be able to resize the UI elements when it’s selected
+ 
+	 
+
+Verify an user be able to copy any elements placed on the canvas
+ 
+	 
+
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Chrome and Safari
+
+
+
+Revision History
+Date	Comment	Updated by
+02/09/2015	Initial draft	David Lim
+		
+

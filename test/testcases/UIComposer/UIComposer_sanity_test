@@ -1,0 +1,19 @@
+February 3rd 2015
+
+UIComposer sannity test steps for February release:
+
+1.  Login to Norman (sign up if have not done)
+2.  Click on Projects menu from left size
+3.  Create a project, for example name 'MyProject1'
+4.  Click on project MyProject1
+5.  Click on first default page (page1)
+6.  Drag and drop a Button control from the OpenUI5 control list on the right side.  Verify drag and drop is working.
+7.  Click plus button (+) on to add a new page, verify new page displayed
+8.  Click on setting gear icon next to Library, select 'Angular' option  (this is to check UICatalog service working)
+9.  Drag and drop ProgressBar in new page, verify ProgressBar displayed in new page (page3)
+10. Click Projects menu from left size
+11. Verify Projects page displayed  1 projects, 3 pages, 0 assets (this is to check projects service working)
+12. Verify project name (MyProject1) displayed correctly
+13. Click on MyProject1, verify three pages displayed, page1 selected
+14. Click camera icon from top blue bar to save a snapshot
+15.  Verify message displayed saying snapshot is save successfully.

@@ -1,0 +1,103 @@
+{
+  "rootControlId" : "root-ListReport-ListReport-Id",
+  "displayName" : "Page 1",
+  "name" : "S0",
+  "__v" : 0,
+  "mainEntity" : "Entity1",
+  "controls" : [
+    {
+      "controlId" : "root-ListReport-ListReport-Id",
+      "parentControlId" : null,
+      "catalogControlName" : "ListReport-ListReport",
+      "events" : [],
+      "groups" : [
+        {
+          "groupId" : "filterBars",
+          "binding" : {
+            "filterOptions" : [],
+            "sortOptions" : [],
+            "paths" : []
+          },
+          "children" : [
+            "np-ListReport-FilterBar-1"
+          ]
+        },
+        {
+          "groupId" : "tables",
+          "binding" : {
+            "filterOptions" : [],
+            "sortOptions" : [],
+            "paths" : []
+          },
+          "children" : []
+        }
+      ],
+      "floorplanProperties" : [],
+      "designProperties" : [],
+      "properties" : []
+    },
+    {
+      "catalogControlName" : "ListReport-FilterBar",
+      "controlId" : "np-ListReport-FilterBar-1",
+      "parentControlId" : "root-ListReport-ListReport-Id",
+      "parentGroupId" : "filterBars",
+      "parentGroupIndex" : 0,
+      "events" : [],
+      "groups" : [
+        {
+          "groupId" : "filters",
+          "binding" : {
+            "filterOptions" : [],
+            "sortOptions" : [],
+            "paths" : []
+          },
+          "children" : [
+            "np-ListReport-Filter-2"
+          ]
+        }
+      ],
+      "floorplanProperties" : [],
+      "designProperties" : [],
+      "properties" : [
+        {
+          "name" : "AllowFreeSearch",
+          "type" : "string",
+          "binding" : {
+            "paths" : []
+          }
+        }
+      ]
+    },
+    {
+      "catalogControlName" : "ListReport-Filter",
+      "controlId" : "np-ListReport-Filter-2",
+      "parentControlId" : "np-ListReport-FilterBar-1",
+      "parentGroupId" : "filters",
+      "parentGroupIndex" : 0,
+      "events" : [],
+      "groups" : [],
+      "floorplanProperties" : [],
+      "designProperties" : [],
+      "properties" : [
+
+        {
+          "name" : "Description",
+          "type" : "string",
+          "value" : "My Filter",
+          "binding" : {
+            "paths" : []
+          }
+        },
+        {
+          "name" : "FilterOn",
+          "type" : "string",
+          "value" : "MyValue",
+          "binding" : {
+            "paths": []
+          }
+        }
+      ]
+    }
+  ],
+  "floorplan" : "ListReport"
+}

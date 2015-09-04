@@ -1,0 +1,73 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5)	1
+Automation readiness
+Reviewed by	Norman/UI Composer
+Description
+
+The user shall be able to setup pages in a design by rearranging orders of pages in the page flow. The user shall be able to rearrange existing pages in page map.
+
+Acceptance criteria:
+
+•	The user shall be able to move a page up in the order. Actions that target the moved page have to be updated in the originating page
+•	The user shall be able to move a page down in the order. Actions that target the moved page have to be updated in the originating page
+•	The user shall be able to move a page to the top of the order. Actions that target the moved page have to be updated in the originating page
+•	The user shall be able to move a page to the bottom of the order. Actions that target the moved page have to be updated in the originating page
+
+
+Preparations
+Setup/Configuration steps (if necessary)
+A user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1.  Verify that user shall be able to move a page up in the order. Actions that target the moved page have to be updated in the originating page.
+    - Create a project with 2 pages.  On page map, click thumbnail of page 1 to go to composer page.
+    - Add a new page 3
+    - Add several controls in page 3
+    - Click on Project icon in tool bar on the left to go to page map.
+    - When in page map, click on "View all:Map" icon.
+    - Move page 3 up instead of page 2.
+    - Check that the page 3 has moved ahead of page 2 and all controls in page 3 are preserved.
+
+2.  Verify that the user shall be able to move a page down in the order. Actions that target the moved page have to be updated in the originating page
+    - Open page map, preview 3 pages that are created before.
+    - Click on page 1, add several controls on the canvas
+    - Navigate to "View all:Map" 
+    - Move page 1 down instead of the last page
+    - Check that the page 1 has moved behind of page 2 and all controls in page 1 are preserved.
+   
+3.  Verify that the user shall be able to move a page to the top of the order. Actions that target the moved page have to be updated in the originating page
+    - When on page map, click on "View all:Map" icon.
+    - Add new page 4 and open it in UI composer.
+    - Add several controls in page 4
+    - Navigate to "View all:Map" 
+    - Move page 4 up to the top 
+    - Check that the page 4 has moved before all other pages and all controls in page 4 are preserved.
+
+4.  Verify that the user shall be able to move a page to the bottom of the order. Actions that target the moved page have to be updated in the originating page
+    - Open page map, preview 4 pages that are created before.
+    - Click on "View all:Map" icon.
+    - Open page 2 in UI composer.
+    - Add several controls in page 2
+    - Navigate to "View all:Map" 
+    - Move page 2 down instead of the last page
+    - Check that the page 2 has moved behind all other pages and all controls in page 2 are preserved.
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome
+
+
+
+Revision History
+Date	Comment	Updated by
+05/19/2015	Initial draft	Lucy Chernobrod
+05/21/2015	Reviewd by QA team

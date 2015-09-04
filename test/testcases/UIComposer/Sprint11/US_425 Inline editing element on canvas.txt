@@ -1,0 +1,64 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5): 1
+Automation readiness
+Reviewed by: Norman/UI Composer
+
+Description:
+
+As a designer I shall be able to select (mouse click) a UI element property such as a Text value directly from the canvas.
+Once such property is selected I would be able to change it directly in the Canvas (inline editing).
+
+Acceptance criteria:
+
+1.) The user shall be able to change the value of a text property inline (in the canvas).
+2.) The user shall be able to select the text property of a control directly by double clicking on the text,
+    regardless of what has been selected prior by the user.
+3.) The user shall be able to select the text property by single clicking on the text in the case that
+    the parent of the text property is currently selected.
+4.) The user shall have a visual indication (e.g. input cursor) that the text can be edited when selected.
+5.) The user shall be able to use the delete key to delete characters.
+6.) The user shall be able to use the mouse to select one or multiple characters.
+7.) The user shall be able to press return and exit the inline editing, putting the focus (selection) on the parent.
+8.) The user shall be able to select a different element, which exits inline editing mode.
+
+Preparations:
+
+1.) Setup/Configuration steps (if necessary)
+2.) A user had signed up to Project Norman with the name, email address and password
+3.) User Logon Information/ Roles
+4.) Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures:
+
+Test Steps/Procedures
+
+1) Open a new project, drag and drop a list control inside the canvas, inside the list control there are several different list items.
+	-double click on the attribute field and verify if its name can be changed. 
+	-Now add a footer inside the canvas and verify it's selected and its properties are seen in the right-end side.
+	-now verify that without selecting the list control-when a double click action is performed on an attribute text property, the list item on a list control is selected.	
+2) Open a new project, drag and drop a list control inside the canvas,inside the list control there are several different list items.
+	-Drag and drop a list control in the canvas.
+	-Now drag and drop List Item control inside the list control. 
+	-verify with one click action on an attribute text property it is selected.
+	-verify that a blue colour highlighting mark is seen on the attribute,which is a visual indication indicating it can be edited.
+	-Double click on the attribute text field, Make sure the whole attribute name is selected, now press the delete key and verify that the characters are deleted.
+	-Now double click another new attribute inside the list control and then verify the attribute name of the attribute text field is selected, Now click somewhere inside the selected text field and then use mouse to select the characters 'att' from the attribute name of the text field.
+	-Double click on the attribute text field, Make sure the whole attribute name is selected, now press the return or enter key and verify that the selection of the attribute name is not present, but its parent text field should be selected.
+	-Double click on the attribute text field, Make sure the whole attribute name is selected.select somewhere else and make sure that the highlighting over the attribute name is gone.
+
+
+	
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome
+
+
+
+Revision History
+Date	Comment	Updated by Vijay Enthran Varadarajan Subramanian
+06/1/2015	Initial draft	Chinh Nguyen
+06/09/2015      Updated         Joe Cintas

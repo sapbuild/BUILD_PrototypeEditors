@@ -1,0 +1,62 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+
+The user shall not see the property pop-up in the canvas. The user shall be able to see the same content of the properties pop-up in a panel on the right-hand side of the canvas.
+
+In order to put the property content in the right side of the canvas, the Palette needs to be moved to the left-hand side of the canvas and on top of the UI element hierarchical view (tree).
+
+The user shall not be able to see the linear page layout after the layout is rearranged.
+Refer to the IxD
+
+Acceptance criteria:
+
+The user shall not be able to see the Properties pop-up when clicking on a UI element or a pattern
+The user shall be able to see the same content of the original properties pop-up in a panel on the right-hand side of the canvas
+The panel shall have the same tab content & user interactions as in the existing Properties pop-up
+The user shall be able to see the Palette on the left-hand side of the canvas
+The content and interactions of the Palette shall be the same as it was on the right-hand side
+The Palette shall be on top of the UI element hierarchical view (tree) <!--- @huboard:{"order":376.0390625,"milestone_order":593,"custom_state":""} -->
+
+
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Steps/Procedures
+
+_ Verify following default display when access Page1 or Page2 at first time:
+    +  Properties pop-up is converted to a panel that is displayed on the right, default is Page properties 
+    +  Tree view is on upper left panel
+    +  Control list panel is on lower left panel
+    +  Canvas is in middle.
+_  Verify when user drag and drop a control into Canvas then properties of that control displayed on Properties panel.
+_  Verify when user modify properties of a control from Properties panel, for example label, then value changes displayed on control.
+_  Verify when user delete a selected control, verify what properties panel will show the properties of 'Page' that is top in tree view
+_  Verify when select a different control then properties panel displayed correctly properties of selected control.
+_  Verify Properties control has correct control's name that is shown at the top of the properties panel on the right. For example, for the button control, user sees 'Button'. 
+_  Verify user could enter values in various fields under the categories 'PROPERTIES' and 'ACTIONS' on right hand side's control properties panel.
+_  Verify when user click on button, select 'Actions' tab from Properties panel, then event action attributes 'Interaction', 'Action' and 'Page' are avilable for configuration.
+_  Verify user could click on tabs 'UI ELEMENTS', 'ASSETS', 'DATA'  on Pallette tab
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome  
+
+
+Revision History
+Date	Comment	Updated by
+02/09/2015	Initial draft	Chinh Nguyen
+05/29/2015	Updated	Lucy Chernobrod

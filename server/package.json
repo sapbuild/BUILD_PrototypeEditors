@@ -1,0 +1,31 @@
+{
+  "name": "norman-prototype-editors-server",
+  "version": "0.1.0",
+  "description": "Prototype Editors Server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sapbuild/DataModeler.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/Build/blob/master/LICENSE.txt"
+    }
+  ],
+  "main": "index.js",
+  "peerDependencies": {
+    "norman-server-tp": "*",
+    "norman-common-server": "*"
+  },
+  "dependencies": {
+    "htmlparser2": "3.8.3",
+    "dagre": "0.7.0",
+    "xmlbuilder": "2.4.5",
+    "xlsx": "0.7.12",
+    "jszip": "2.4.0",
+    "mkdirp": "0.5.0",
+    "rimraf": "2.3.3",
+    "gridfs-stream": "0.5.3"
+  },
+  "readmeFilename": "README.md"
+}

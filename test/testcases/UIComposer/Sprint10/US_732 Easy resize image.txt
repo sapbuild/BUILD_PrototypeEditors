@@ -1,0 +1,94 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5): 1
+Automation readiness
+Reviewed by: Norman/UI Composer
+
+Description:
+
+The user shall be able to resize an image easily, mostly with just one click. For example, upon selection a action menu 
+appears. Using the actions there, the designer can expand the image to fit the canvas's width (fit page).
+
+Acceptance criteria:
+
+•	 Click on the image size control. The user sees a series of options to adjust the size & position of the image.
+•	 Fit image to width of the canvas.
+•	 Fill canvas with image.
+•	 Lock image aspect Ratio.
+•	 Move Image to 0,0 point on the ruler.
+•	 When resizing horizontally the vertical dimension is set to auto-resize.
+
+Preparations:
+
+Setup/Configuration steps (if necessary).
+A user has signed up into Project Norman with the name, email address and password.
+User Logon Information/Roles
+Test Fit and Fill using formulas:
+Fit = max (canvasWidth/newWidth, canvasHeight/newHeight)
+Fill = min (canvasWidth/newWidth, canvasHeight/newHeight)
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures:
+
+1. Verify that the following fields are displayed in image properties panel after an image is dragged and dropped onto the 
+    canvas:
+    _  Size (width and height) by default 1280px-960px
+    _  Scaling has FIT button and FILL button
+    _  Width and Height fields are editable
+    _  Width and Height fields only accept integer values
+    _  Lock icon displayed between width and height
+    
+
+2. Verify when image is locked, if user changes the width of an image, then height will be auto adjusted to keep image's 
+    aspect ratio.
+
+3. Verify when image is locked, if user changes height size, then the width is auto adjusted.
+
+4. Verify that if image is locked, the user could only enter integer number and px format, no %.
+
+5. Verify when unlocked, if user change the width of an image, then the height will not be auto adjusted.
+
+6. Verify when unlocked, if user changes the height of an image, then the width will not be auto adjusted.
+
+7. Verify when unlocked, if user drags the height to resize, verify only height changed; width will not change.
+
+8. Verify that if an image is unlocked, user could enter % to change value.
+
+9. Verify Fit function works for image size smaller than canvas size in desktop form factor.
+    _  Drag and drop an image size 800px (width) by 600px (height) to the middle of canvas.
+    _  Click 'Fit' button in image properties panel.
+    _  Verify image will move to 0,0 ruler position.
+    _  Verify width size will be changed to 1280px, and height is 960px.
+    _  Verify image is not losing aspect ratio.
+
+10. Verify Fit function works for image size to be exact with canvas size in desktop form factor.
+    _  Drag and drop an image size 1280px (width) by 960px (height) to the middle of canvas.
+    _  Click 'Fit' button in image properties panel.
+    _  Verify image will move to 0,0 ruler position.
+    _  Verify width and height size will NOT change.
+    _  Verify image is not losing aspect ratio.
+
+11. Verify that if user drags and drops an image with bigger size than canvas, then image will auto fit.
+    _  Drag and drop image with size 1600 (width) by 1060 pixels. Verify image will auto fit to 1280px x 960px.
+    _  Verify that no decimal number is displayed, will be rounded to integer.
+
+12. Verify Fill function works for image size smaller than canvas size in desktop form factor.
+    _  Drag drop an image size 800px (width) by 600px (height) to the middle of canvas.
+    _  Click 'Fill' button in image properties panel.
+    _  Verify image will move to 0,0 ruler position.
+    _  Verify width size will be changed to 1365px, and height is 1024px.
+    _  Verify image is not losing aspect ratio.
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome
+
+Revision History
+Date	Comment	Updated by
+04/07/2015	Initial draft	Chinh Nguyen
+06/09/2015 Updated Joe Cintas
+06/24/2015 Update  Sumayya Nausheen

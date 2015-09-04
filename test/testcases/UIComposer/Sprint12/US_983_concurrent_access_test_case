@@ -1,0 +1,76 @@
+General  Information:
+
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution: 30 min
+Risk Level (1-5): 1
+Automation readiness	
+Reviewed by: Norman/UI Composer
+Description:
+
+Purpose/goal of the test case:
+
+The user shall have a concurrent Access in UI Composer. 
+ 
+Business scenario/User Story:
+
+The UI composer shall allow concurrent access of users. In general, when a user accesses the composer of a prototype, if the 
+user is the first user accessing it, the user gains the full control of the prototype, including editing. When the user 
+accesses the composer, if the user is not the first user accessing the prototype, the user is directed to the Preview mode of 
+the prototype and is not able to edit the prototype, and the is user is informed about it. Following is the process flow.
+
+Acceptance Criteria:
+
+•   If user is the first user accessing the prototype via the composer, the user shall have full control of the prototype, 
+    including editing, and the user locks the prototype preventing other users from editing the prototype either via the 
+    composer or the data modeler.
+•    User is NOT the first user accessing a prototype at a time while another user has been accessing the prototype via either 
+    the composer or the data modeler.
+•    If user is NOT the first user accessing the prototype via the composer, the user shall be directed to the Preview mode 
+    within the composer and cannot change back to the Edit mode.
+•    If user is NOT the first user accessing the prototype, the user is NOT informed that the first user has left the 
+    prototype, and the prototype becomes editable while the user is in the Preview mode.
+•    If user is NOT the first user accessing the prototype, the user needs to exit the Preview mode and re-access the prototype 
+    via the composer to gain the full controls while there is no other user accessing the same prototype.
+•    When a user who is locking a prototype leaves either the composer or the data modeler, the user releases the lock on the 
+    prototype.
+•    When a user who is locking a prototype has no activity for over 30 minutes, the lock on the prototype is released
+    automatically by BUILD. In this case, if the user starts working within the composer or the data modeler again after more 
+    than 30 minutes, the user is re-directed to the prototype page where the user shall see why the user is re-directed to the 
+    prototype page (Another user is currently editing the prototype.)
+
+Preparations:
+
+Setup/Configuration steps (if necessary)
+A user had signed up to Project Norman with the name, email address and password
+User Logon Information/Roles
+Navigation path to reach the application (i.e. URL)
+
+Test Scenarios/Steps: 
+
+Lock flow:
+                  
+1. Verify that once the user enters any of the prototype editor the full prototype is locked.
+2. Verify that when second user tries to enter the prototype he is redirected directly to interactive mode with a message to
+    let him know that the prototype is locked.
+
+Unlock flow:
+
+1. Verify that an unlock call will be triggered if the user with lock navigates away from editor or if he is inactive for a 
+    certain duration of time configurable.
+2. Verify that when an unlock happens and the user is still on the edit screen, he will be automatically redirected to 
+    interactive mode with a message.
+3. Verify that when an unlock happens, user 2 who was in interactive mode will continue to remain in interactive mode. There 
+    will be no separate notification to inform the user that an unlock has been triggered.
+4. Verify that if user 2 refreshes or goes back to home screen and tries to come back, then if the lock is released he gets 
+    into edit mode and gets the lock.
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome  
+
+Revision History
+Date	Comment	Updated by
+04/06/2015	Initial draft	Chinh Nguyen
+06/02/2015        Updated Joe Cintas

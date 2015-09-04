@@ -1,0 +1,21 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zanno4sample_anno_mdl.v1">
+            <Annotations Target="MyTestProject.MyTestProject_Entities/Entity_0Set">
+                <Annotation Term="Org.OData.Capabilities.V1.SearchRestrictions">
+                    <Record Type="Org.OData.Capabilities.V1.SearchRestrictionsType">
+                        <PropertyValue Property="Searchable" Bool=""/>
+                        <PropertyValue Property="Bool" String=""/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="MyTestProject.Entity_0">
+                <Annotation Term="com.sap.vocabularies.UI.v1.SelectionFields">
+                    <Collection>
+                        <PropertyPath>MyValue</PropertyPath>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

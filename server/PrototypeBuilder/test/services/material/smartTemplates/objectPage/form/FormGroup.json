@@ -1,0 +1,252 @@
+{
+  "mainEntity": "SalesOrder",
+  "rootControlId": "root-ObjectPage-ObjectPage-Id",
+  "name": "S1",
+  "__v": 0,
+  "controls": [
+    {
+      "controlId": "root-ObjectPage-ObjectPage-Id",
+      "parentControlId": null,
+      "catalogControlName": "ObjectPage-ObjectPage",
+      "events": [],
+      "groups": [
+        {
+          "groupId": "headers",
+          "binding": {
+            "filterOptions": [],
+            "sortOptions": [],
+            "paths": []
+          },
+          "children": []
+        },
+        {
+          "groupId": "sections",
+          "binding": {
+            "filterOptions": [],
+            "sortOptions": [],
+            "paths": []
+          },
+          "children": [
+            "np-ObjectPage-Section-1"
+          ]
+        }
+      ],
+      "floorplanProperties": [],
+      "designProperties": [],
+      "properties": []
+    },
+    {
+      "catalogControlName": "ObjectPage-Section",
+      "controlId": "np-ObjectPage-Section-1",
+      "parentControlId": "root-ObjectPage-ObjectPage-Id",
+      "parentGroupId": "sections",
+      "parentGroupIndex": 0,
+      "events": [],
+      "groups": [
+        {
+          "groupId": "sectionContent",
+          "binding": {
+            "filterOptions": [],
+            "sortOptions": [],
+            "paths": []
+          },
+          "children": [
+            "np-ObjectPage-Form-2"
+          ]
+        }
+      ],
+      "floorplanProperties": [],
+      "designProperties": [],
+      "properties": [
+        {
+          "name": "Title",
+          "value": "Form",
+          "type": "string",
+          "binding": {
+            "paths": []
+          }
+        }
+      ]
+    },
+    {
+      "catalogControlName": "ObjectPage-Form",
+      "controlId": "np-ObjectPage-Form-2",
+      "parentControlId": "np-ObjectPage-Section-1",
+      "parentGroupId": "sectionContent",
+      "parentGroupIndex": 0,
+      "events": [],
+      "groups": [
+        {
+          "groupId": "formGroups",
+          "binding": {
+            "filterOptions": [],
+            "sortOptions": [],
+            "paths": []
+          },
+          "children": [
+            "np-ObjectPage-FormGroup-3"
+          ]
+        }
+      ],
+      "floorplanProperties": [],
+      "designProperties": [],
+      "properties": []
+    },
+    {
+      "catalogControlName": "ObjectPage-FormGroup",
+      "controlId": "np-ObjectPage-FormGroup-3",
+      "parentControlId": "np-ObjectPage-Form-2",
+      "parentGroupId": "formGroups",
+      "parentGroupIndex": 0,
+      "events": [],
+      "groups": [
+        {
+          "groupId": "formElements",
+          "binding": {
+            "filterOptions": [],
+            "sortOptions": [],
+            "paths": []
+          },
+          "children": [
+            "np-ObjectPage-FormElement-4",
+            "np-ObjectPage-FormElement-5",
+            "np-ObjectPage-FormElement-6"
+          ]
+        }
+      ],
+      "floorplanProperties": [],
+      "designProperties": [],
+      "properties": [
+        {
+          "name": "Title",
+          "value": "Group 1",
+          "type": "string",
+          "binding": {
+            "paths": []
+          }
+        }
+      ]
+    },
+    {
+      "catalogControlName": "ObjectPage-FormElement",
+      "controlId": "np-ObjectPage-FormElement-4",
+      "parentControlId": "np-ObjectPage-FormGroup-3",
+      "parentGroupId": "formElements",
+      "parentGroupIndex": 0,
+      "events": [],
+      "groups": [],
+      "floorplanProperties": [],
+      "designProperties": [],
+      "properties": [
+        {
+          "name": "Label",
+          "value": "Label",
+          "type": "string",
+          "binding": {
+            "paths": []
+          }
+        },
+        {
+          "name": "Value",
+          "value": "De Cadix",
+          "type": "string",
+          "binding": {
+            "paths": []
+          }
+        },
+        {
+          "name": "Url",
+          "type": "string",
+          "binding": {
+            "paths": []
+          }
+        }
+      ]
+    },
+    {
+      "catalogControlName": "ObjectPage-FormElement",
+      "controlId": "np-ObjectPage-FormElement-5",
+      "parentControlId": "np-ObjectPage-FormGroup-3",
+      "parentGroupId": "formElements",
+      "parentGroupIndex": 1,
+      "events": [],
+      "groups": [],
+      "floorplanProperties": [],
+      "designProperties": [],
+      "properties": [
+        {
+          "name": "Label",
+          "value": "A les yeux",
+          "type": "string",
+          "binding": {
+            "paths": []
+          }
+        },
+        {
+          "name": "Value",
+          "value": "Note",
+          "type": "string",
+          "binding": {
+            "isRelative": true,
+            "paths": [
+              {
+                "entityId": "Entity1",
+                "propertyId": "Prop1"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Url",
+          "type": "string",
+          "binding": {
+            "paths": []
+          }
+        }
+      ]
+    },
+    {
+      "catalogControlName": "ObjectPage-FormElement",
+      "controlId": "np-ObjectPage-FormElement-6",
+      "parentControlId": "np-ObjectPage-FormGroup-3",
+      "parentGroupId": "formElements",
+      "parentGroupIndex": 2,
+      "events": [],
+      "groups": [],
+      "floorplanProperties": [],
+      "designProperties": [],
+      "properties": [
+        {
+          "name": "Label",
+          "value": "Ou pas",
+          "type": "string",
+          "binding": {
+            "paths": []
+          }
+        },
+        {
+          "name": "Value",
+          "value": "ID",
+          "type": "string",
+          "binding": {
+            "isRelative": true,
+            "paths": [
+              {
+                "entityId": "Entity1",
+                "propertyId": "Prop2"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Url",
+          "type": "string",
+          "binding": {
+            "paths": []
+          }
+        }
+      ]
+    }
+  ],
+  "floorplan": "ObjectPage"
+}

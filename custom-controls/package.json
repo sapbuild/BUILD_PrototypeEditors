@@ -1,0 +1,12 @@
+{
+  "name": "norman-custom-controls",
+  "version": "0.1.0",
+  "description": "Custom SAPUI5 controls used by UIComposer ",
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "https://github.com/SAP/Build/blob/master/LICENSE.txt"
+    }
+  ],
+  "readmeFilename": "README.md"
+}

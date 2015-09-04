@@ -1,0 +1,69 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5):	1
+Automation readiness	
+Reviewed by:	Norman/UI Composer
+
+Description:
+
+Purpose/ goal of the test case:
+
+The user shall be able to delete a page in the map view. 
+
+Business scenario/User Story:
+
+Acceptance Criteria:
+
+•   The city view shall display all pages that are part of the project.
+•    A user shall be able to delete a page in map view by clicking on the 'X' icon.
+•    The user shall be notified that he is about to delete a page.
+•   The user shall need to confirm that he wants to delete a page before it is removed (NOT IN SPRINT12).
+•   If the page is the target of an action (e.g. setting a value of a control, being the target of a navigation), the user 
+    shall be informed that this action will be removed.
+•    The system shall remove the actions that target the deleted page. This is necessary to not break the prototype.
+•    If the user deletes the first (leading) page in a prototype, the second page becomes the leading page.
+•    Once the page is deleted the page above the deleted page shall be set as Home page.
+•    If the first page is deleted, the new first page shall be set as home page after the deletion.
+
+Preparations:
+
+Setup/Configuration steps (if necessary)
+A user had signed up to Project Norman with the name, email address and password.
+User Logon Information/Roles
+Navigation path to reach the application (i.e. URL)
+
+
+Test Scenarios/Steps: 
+                  
+1. Verify that the user can delete a page in map view using the delete key. For example, open Map view, select a page and 
+    click on delete key. 
+    - Create a project with default 2 pages.  On prototype page, click on Map View. 
+    - Click on Page 2, preview Page properties that are shown in the right panel.
+    - Click on delete icon 'x'. The Page 2 can be removed from Map view after the deletion is confirmed.
+    
+2. Verify that the user is notified that he is about to delete a page. Confirm that the user wants to delete a page before it 
+    is removed.
+    - In Map view, select Page 2.
+    - When user clicks on 'X' icon in properties panel, he sees a prompt to confirm  the page deletion or keep the page.
+    - Confirm the deletion. Check the page is removed from Map view
+    
+3. Verify that if the user deletes the first (leading) page in a prototype page, then the second page becomes the leading 
+    page. The new first page shall be set as home page after the deletion.
+    - Create a project with default 2 pages.  On prototype page, click on Map View. 
+    - Click on "ADD BLANK PAGE" button to add new Page3.
+    - Select Page 1 and delete it.
+    - Check that the Page 2 becomes the leading page in Map view.
+    - Select Page 2 and delete it.
+    - Check that the last Page 3 becomes the leading page .
+    
+    
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desk
+Revision History
+Date	Comment	Updated by
+04/06/2015	Initial draft	Chinh Nguyen
+06/02/2015        Updated Joe Cintas

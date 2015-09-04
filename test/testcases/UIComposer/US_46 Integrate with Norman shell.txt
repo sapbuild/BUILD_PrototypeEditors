@@ -1,0 +1,89 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Written by	David Lim
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify Integrate with Shell
+ 
+
+Business scenario/User Story
+	  
+The UI composer shall be integrated within the Norman shell. Visually the UI composer will have shell elements visible to the left and top. Please refer to IxDs.
+When a Norman user selects the prototype in the Norman navigation he shall be taken to the UI Composer
+
+ https://github.wdf.sap.corp/Norman/UIComposer/issues/46
+
+Acceptance Criteria
+•	The user shall see an option to navigate to the UI composer in the Norman shell (e.g. Prototype link)
+•	When the user selects the option to navigate to the UI composer the UI composer shall be launched within the shell
+•	When the user navigates to a different component of the Norman shell, e.g. Forum, he hall see the other component. The current state of work in the UI composer shall not be lost, but be available the next time the user opens the UI composer.
+•	When copying elements the elements themselves, their property settings and defined actions will be copied. The user expects everything to be copied. He can then make changes to the pasted elements as needed.
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+http://norman-hp-z820-workstation.dhcp.pal.sap.corp:9007/
+ 
+
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Scenarios  
+                  
+ 
+1. Verify a user has the option to navigate to UI composer in Norman shell
+	- Create a new project with at least one page.
+	- In Prototype pages. click on "View all: Map" prototype.
+	- Click on ADD PAGE button in upper right corner of the screen.
+	- Click on Blank Page template.
+	- Click on Page 1 prototype to go into UIComposer.
+	- Drag and drop some controls onto the canvas.
+	- Wait a few seconds until Norman shell says that all changes have been saved.
+	-
+
+	
+
+2. Verify the shell be launched when a user select navigation option
+	- Open an exisiting project then go into UIComposer.
+	- 
+	
+
+	
+
+3. Verify when a user navigates to a different component, the current state of work be available
+
+
+
+
+4. Verify that when copying elements, their property settings and defined actions will also be copied.
+	- Open existing project then go into UIComposer.
+	- Drag and drop a control (i.e. List) onto the canvas.
+	- While List is selected on the canvas, press Ctrl+C to copy it.
+	- Press Ctrl+V to paste List duplicate onto the canvas.
+	- Two identical lists along with their identical properties and actions should be visible to the user.
+
+	
+
+
+Variant (eg. iPhone vs iPad, browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Safari and Chrome  
+
+Revision History
+Date	Comment	Updated by
+02/12/2015	Initial draft	David Lim
+06/30/2015      Updated         Joe Cintas
+		
+ 
+ 
+	 
+

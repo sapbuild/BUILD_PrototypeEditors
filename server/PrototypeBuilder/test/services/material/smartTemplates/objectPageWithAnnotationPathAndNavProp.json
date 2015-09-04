@@ -1,0 +1,111 @@
+{
+  "name": "SimpleObjectPage",
+  "mainEntityId": "Entity1",
+  "rootControlId": "ObjectPageRoot",
+  "floorplan": "ObjectPage",
+  "controls": [
+    {
+      "controlId": "ObjectPageRoot",
+      "controlName" : "ObjectPage-ObjectPage",
+      "parentControlId" : null,
+      "catalogControlName" : "ObjectPage-ObjectPage",
+      "properties" : [],
+      "groups" : [
+        {
+          "groupId" : "headers",
+          "children" : ["ObjectPageHeader"]
+        },
+        {
+          "groupId" : "sections",
+          "children" : ["Section1"]
+        }
+      ]
+    },
+    {
+      "controlId": "Section1",
+      "controlName" : "ObjectPage-Section",
+      "parentControlId" : null,
+      "catalogControlName" : "ObjectPage-Section",
+      "properties" : [{
+        "name" : "Title",
+        "value" : "My Section"
+      }],
+      "groups" : [
+        {
+          "groupId" : "sectionContent",
+          "children" : ["ObjectPageTable"]
+        }
+      ]
+    },
+    {
+      "controlId": "ObjectPageTable",
+      "controlName" : "ObjectPage-Table",
+      "parentControlId" : null,
+      "catalogControlName" : "ObjectPage-Table",
+      "properties" : [{
+        "name" : "Items",
+        "value" : "",
+        "binding": {
+          "isRelative": true,
+          "paths": [
+            {
+              "entityId": "Entity1",
+              "propertyId": "NavProp1"
+            }
+          ]
+        }
+      }],
+      "groups" : [
+        {
+          "groupId" : "columns",
+          "children" : ["Column1","Column2"]
+        }
+      ]
+    },
+    {
+      "controlId": "Column1",
+      "controlName" : "ObjectPage-Column",
+      "parentControlId" : null,
+      "catalogControlName" : "ObjectPage-Column",
+      "properties" : [{
+        "name" : "Value",
+        "value" : "Value1"
+      },
+        {
+          "name" : "Title",
+          "value" : "Col1"
+        }],
+      "groups" : []
+    },
+    {
+      "controlId": "Column2",
+      "controlName" : "ObjectPage-Column",
+      "parentControlId" : null,
+      "catalogControlName" : "ObjectPage-Column",
+      "properties" : [{
+        "name" : "Value",
+        "value" : "Value2"
+      },
+        {
+          "name" : "Title",
+          "value" : "Col2"
+        }],
+      "groups" : []
+    },
+    {
+      "controlId" : "ObjectPageHeader",
+      "controlName" : "ObjectPage-Header",
+      "catalogControlName" : "ObjectPage-Header",
+      "properties" : [
+        {
+          "name" : "Title",
+          "value" : "My Sales Order"
+        },
+        {
+          "name" : "Description",
+          "value" : "My Crazy Customer"
+        }
+      ]
+    }
+  ]
+}

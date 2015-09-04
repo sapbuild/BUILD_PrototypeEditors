@@ -1,0 +1,58 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zanno4sample_anno_mdl.v1">
+            <Annotations Target="MyTestProject.SalesOrder">
+                <Annotation Term="com.sap.vocabularies.UI.v1.HeaderInfo">
+                    <Record Type="com.sap.vocabularies.UI.v1.HeaderInfoType">
+                        <PropertyValue Property="TypeName" String=""/>
+                        <PropertyValue Property="Title">
+                            <Record Type="com.sap.vocabularies.UI.v1.DataField">
+                                <PropertyValue Property="Value" Path="ID"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="Description">
+                            <Record Type="com.sap.vocabularies.UI.v1.DataField">
+                                <PropertyValue Property="Value" Path="Name"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="com.sap.vocabularies.UI.v1.Facets">
+                    <Collection>
+                        <Record Type="com.sap.vocabularies.UI.v1.ReferenceFacet">
+                            <PropertyValue Property="Label" String=""/>
+                            <PropertyValue Property="Target" AnnotationPath="NavToSalesOrderSet/@com.sap.vocabularies.UI.v1.LineItem"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="MyTestProject.SalesOrder/ID"/>
+            <Annotations Target="MyTestProject.SalesOrder/Name"/>
+            <Annotations Target="MyTestProject.SalesOrderItem">
+                <Annotation Term="com.sap.vocabularies.UI.v1.LineItem">
+                    <Collection>
+                        <Record Type="com.sap.vocabularies.UI.v1.DataFieldWithUrl">
+                            <Annotation Term="com.sap.vocabularies.UI.v1.Importance" EnumMember="com.sap.vocabularies.UI.v1.ImportanceType/High"/>
+                            <PropertyValue Property="Label" String="ID"/>
+                            <PropertyValue Property="Value" Path="Quantity"/>
+                            <PropertyValue Property="Url" String=""/>
+                        </Record>
+                        <Record Type="com.sap.vocabularies.UI.v1.DataFieldWithUrl">
+                            <Annotation Term="com.sap.vocabularies.UI.v1.Importance" EnumMember="com.sap.vocabularies.UI.v1.ImportanceType/High"/>
+                            <PropertyValue Property="Label" String=""/>
+                            <PropertyValue Property="Value" Path="ObjectPage-Column_0_1_Target_1_Value"/>
+                            <PropertyValue Property="Url" String=""/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="MyTestProject.SalesOrderItem/Quantity">
+                <Annotation Term="Org.OData.Measures.V1.ISOCurrency" Path="Quantity"/>
+                <Annotation Term="com.sap.vocabularies.Common.v1.Text" Path="Quantity"/>
+            </Annotations>
+            <Annotations Target="MyTestProject.SalesOrderItem/ObjectPage-Column_0_1_Target_1_Value">
+                <Annotation Term="com.sap.vocabularies.Common.v1.Text" Path="ObjectPage-Column_0_1_Target_1_Value_Text"/>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,62 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5)	1
+Automation readiness
+Reviewed by	Norman/UI Composer
+Description
+
+As a designer, I need to be able to create prototypes based on Smart Templates (ST) or FreeStyle (FS). The Beta2 of BUILD does not allow mixing FS and ST pages. 
+Therefore, I expect that the prototype will not have any pages by default. 
+If I attempt to open the UI Composer (UC) from the Data Modeler (DM) and if I had not created pages until then, BUILD will take me to the PageMap (PM). 
+There I will be able to add a page if I wish so.
+
+Acceptance criteria:
+
+•	When creating a new project/prototype a user shall not be able to see any default page being created in the Prototype page, except the link to the Page Map
+•	When a user is in the Data Modeler right after creating a new project and wants to go to the composer directly (either by prompt or by clicking the composer link in the tool bar) the user goes to the page map, instead of the composer canvas, since there isn't any page in the prototype yet.
+
+Preparations
+Setup/Configuration steps (if necessary)  
+A user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1.  Verify that when the user creating a new project/prototype a user shall not be able to see any default page being created in the Prototype page, except the link to the Page Map.
+    - Create a new project and click on it to open.
+    - Check that no pages are created by default.
+    - In the left panel tool bar, find the "Project" icon and click on it.
+    - Check that no pages are shown in the "Prototype pages" view.
+    - Click on the "View all:Map" icon to open Page Map view.
+    - Check that no pages are shown there too.
+    
+2.  Verify that the user user shall be able to open the UI Composer from the Data Modeler directly. 
+    The user shall go to the page map, instead of the composer canvas, since there isn't any page in the prototype yet.
+    - Create a project. Check that no pages are created by default.
+    - Click on "GO TO DATA MODEL" button, preview the options to proceed further. 
+    - In the top menu toolbar, find the "Prototype pages" icon and click on it.
+    - Check that you will be taken to Page Map.
+    - Click on ADD PAGE button to add a page, choose the "Blank Page" option.
+    - Check that the "Page 1" is shown as the first page in the "Prototype pages" view.
+
+3.  Verify that if there are already pages created in a project, than UI Composer shall be open the from the Data Modeler.
+    - Open a project that has pages shown in the "Prototype pages" view.
+    - Click on "GO TO DATA MODEL" button, preview the options to proceed further. 
+    - In the top menu toolbar, find the "Prototype pages" icon and click on it.
+    - Check that you will be taken to UI composer. 
+    - Check that the leading first page is open in edit mode.
+    
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome
+
+Revision History
+Date	Comment	Updated by
+06/17/2015	Initial draft	Lucy Chernobrod
+06/17/2015	Reviewed

@@ -1,0 +1,109 @@
+{
+  "rootControlId": "root-ListReport-ListReport-Id",
+  "name": "S0",
+  "controls": [
+    {
+      "controlId": "root-ListReport-ListReport-Id",
+      "parentControlId": null,
+      "catalogControlName": "ListReport-ListReport",
+      "groups": [
+        {
+          "groupId": "filterBars"
+        },
+        {
+          "groupId": "tables",
+          "children": [
+            "np-ListReport-Table-1"
+          ]
+        }
+      ]
+    },
+    {
+      "catalogControlName": "ListReport-Table",
+      "controlId": "np-ListReport-Table-1",
+      "parentControlId": "root-ListReport-ListReport-Id",
+      "parentGroupId": "tables",
+      "parentGroupIndex": 0,
+      "groups": [
+        {
+          "groupId": "actionButtons",
+          "children": [
+            "np-ListReport-ActionButton-2"
+          ]
+        },
+        {
+          "groupId": "columns",
+          "children": [
+            "np-ListReport-Column-3"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Title",
+          "value": "Hey",
+          "type": "string",
+          "binding": {
+            "paths": []
+          }
+        }
+      ]
+    },
+    {
+      "catalogControlName": "ListReport-ActionButton",
+      "controlId": "np-ListReport-ActionButton-2",
+      "parentControlId": "np-ListReport-Table-1",
+      "parentGroupId": "actionButtons",
+      "parentGroupIndex": 0,
+      "properties": [
+        {
+          "name": "Importance",
+          "type": "string"
+        },
+        {
+          "name": "Label",
+          "type": "string",
+          "value": "Action1"
+        }
+      ]
+    },
+    {
+      "catalogControlName": "ListReport-Column",
+      "controlId": "np-ListReport-Column-3",
+      "parentControlId": "np-ListReport-Table-1",
+      "parentGroupId": "columns",
+      "parentGroupIndex": 0,
+      "events": [],
+      "groups": [
+        {
+          "groupId": "additionalInfos"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Importance",
+          "type": "string"
+        },
+        {
+          "name": "Currency",
+          "type": "string"
+        },
+        {
+          "name": "Title",
+          "value": "Teite",
+          "type": "string"
+        },
+        {
+          "name": "Url",
+          "type": "string"
+        },
+        {
+          "name": "Value",
+          "value": "ID",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "floorplan": "ListReport"
+}

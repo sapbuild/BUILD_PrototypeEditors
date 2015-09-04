@@ -1,0 +1,55 @@
+
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	To verify there shall be a blank layout
+	  
+There shall be a blank layout (create a page) 
+
+An user shall be able to create a new page without selecting a layout (e.g. Master Detail or Object Page).
+The user shall see a blank canvas when selecting the blank layout for the page.
+
+Acceptance Criteria
+•	The user shall be able to create a page for a project
+•	The page created for the project shall be blank
+•	The blank page shall be shown on the canvas
+Preparations
+Setup/Configuration steps (if necessary)
+An user signed up to Project Norman with name, email address and password
+
+User Logon Information/ Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1.  Verify that the user shall be able to create a page for a project
+    - Create a new project and click on it to open.
+    - Check that no pages are created by default.
+    - In the left panel tool bar, find the "Project" icon and click on it.
+    - Click on the "View all:Map" icon to open Page Map view.
+    - Click on ADD PAGE button to add a page.
+    - Check that the "Page 1" is shown as the first page in the "Prototype pages" view.
+
+2.  Verify that the user shall be able to open and view the blank page on the canvas
+    - Open a project that has a least one blank page, open it.
+    - Preview  "Prototype pages" view.
+    - Select a blank page and click on it.
+    - Check that the blank canvas opens in UIComposer.
+
+Variant (eg. iPhone vs iPad, browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Chrome and Safari
+
+Revision History
+Date	Comment	Updated by
+02/10/2015	Initial draft	David Lim
+06/25/2015      Updated Lucy Chernobrod
+
+

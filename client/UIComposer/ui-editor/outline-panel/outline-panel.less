@@ -1,0 +1,249 @@
+/* -------------------------------------------------- */
+/* Norman project ui editor styling - library panel   */
+/* np: norman project                                 */
+/* e: ui editor                                       */
+/* -------------------------------------------------- */
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+/*
+ * namespace for outline panel styles
+ */
+.np-e {
+  /*
+   * sidebar styles
+   */
+  &-sidebar {
+    height: 100%;
+    box-sizing: border-box;
+
+    &-tabs-demi {
+      height: 50%;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  &-outline-panel {
+    width: 271px;
+    display: inline-block;
+    vertical-align: top;
+    border-left: 1px solid #132232;
+    height: 100%;
+    box-sizing: border-box;
+
+    &-add-page {
+      cursor: pointer;
+      padding: 0 15px;
+      text-align: end;
+      &:hover {
+        color: @CuriousBlue-300;
+      }
+    }
+    .np-e-outline {
+      box-sizing: border-box;
+    }
+    .drop-highlight {
+      position: absolute;
+      border: 2px solid #27ae60;
+      width: 100%;
+      height: 50%;
+      box-sizing: border-box;
+      top: 0;
+      z-index: 100;
+      pointer-events: none;
+    }
+    .accept-drop {
+      border-bottom: 2px solid @Shamrock-900;
+    }
+    .trashcan svg {
+
+    }
+
+  }
+
+  &-outline-tree {
+
+    &-heading {
+      box-sizing: border-box;
+      text-align: left;
+      height: 35px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    &-handle {
+      box-sizing: border-box;
+
+      &-text {
+        flex-grow: 1;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      &-img-container {
+        display: inline-block;
+        width: 12px;
+      }
+
+      &-delete-img-container {
+        display: inline-block;
+        width: 24px;
+        height: 12px;
+        visibility: hidden;
+        display: flex;
+        align-content: center;
+        align-self: center;
+        padding-right: 10px;
+      }
+
+      &-invisible-img {
+        margin-right: 2px;
+      }
+
+      &-selected {
+        background-color: @CuriousBlue-900;
+      }
+      .prototype-assets--images--gripper {
+        align-self: center;
+        margin-right: 5px;
+      }
+
+      .prototype-assets--images--gripper.inactive {
+        pointer-events: none;
+        background: none;
+      }
+
+    }
+
+    &-root {
+      box-sizing: border-box;
+      position: relative;
+      overflow: auto;
+      height: 100%;
+      color: white;
+      border-bottom: 2px solid #132232;
+
+      & [data-collapsed="false"] > div > div > .np-e-outline-tree-handle-arrow {
+        transform: rotate(90deg);
+      }
+
+      & [data-collapsed="false"] > div > div > div > .np-e-outline-tree-handle-arrow-outline {
+        transform: rotate(90deg);
+      }
+
+      & [data-node-type] {
+        cursor: pointer;
+        height: 28px;
+        line-height: 28px;
+        display: flex;
+      }
+
+      & [data-node-type]:not(.np-e-outline-tree-handle-selected) {
+        background-color: @PickledBluewood-1100;
+        &:hover:not([data-node-type="group"]):not(.np-e-outline-tree-handle-selected) {
+          background-color: fade(@CuriousBlue-900, 31%);
+        }
+      }
+
+      & [data-node-type="group"] {
+        color: #9C9C9C;
+        font-size: 13px;
+        font-style: italic;
+        cursor: auto;
+      }
+
+      & [data-node-type="page"] {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+        padding: 0 0;
+        background-color: @PickledBluewood-900;
+        & > span {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        &:hover {
+          background-color: lighten(@PickledBluewood-900, 2%);
+        }
+
+      }
+    }
+
+
+    &-handle:hover {
+      .np-e-outline-tree-delete-img-container {
+        visibility: visible;
+      }
+    }
+
+    &-delete-img-container {
+      display: inline-block;
+      width: 24px;
+      height: 12px;
+      visibility: hidden;
+      display: flex;
+      align-content: center;
+      align-self: center;
+      padding-right: 5px;
+    }
+    &-add-page {
+      margin: 10px 0;
+      cursor: pointer;
+      padding: 0 15px;
+      text-align: end;
+      &:hover {
+        color: @CuriousBlue-300;
+      }
+    }
+  }
+}
+
+.np-e-outline-drag-image {
+  display: inline-block;
+  box-sizing: border-box;
+  color: white;
+  font-size: 12px;
+  background-color: rgba(0, 124, 192, 0.31);
+  .np-e-outline-tree-handle {
+    display: flex;
+    box-sizing: border-box;
+    height: 28px;
+    line-height: 28px;
+    .np-e-outline-tree-handle-text {
+      flex-grow: 1;
+      width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .np-e-outline-tree-delete-img-container {
+      display: inline-block;
+      width: 24px;
+      height: 12px;
+      visibility: hidden;
+      display: flex;
+      align-content: center;
+      align-self: center;
+      padding-right: 5px;
+    }
+    .prototype-assets--images--gripper {
+      display: none;
+    }
+  }
+  .np-e-outline-tree-handle:hover {
+    .np-e-outline-tree-delete-img-container {
+      visibility: visible;
+    }
+  }
+  .np-e-outline {
+    box-sizing: border-box;
+  }
+}
+
+.np-e-outline-placeholder {
+  box-sizing: border-box;
+  border-bottom: 2px solid @Shamrock-900;
+}

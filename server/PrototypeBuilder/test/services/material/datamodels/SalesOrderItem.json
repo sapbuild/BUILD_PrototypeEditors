@@ -1,0 +1,75 @@
+{
+    "_id" : "SalesOrderItemID",
+    "name" : "SalesOrderItem",
+    "nameSet" : "SalesOrderItemSet",
+    "navigationProperties" : [
+        {
+            "_id" : "61674b5cbd48a89e0a7baf06",
+            "toEntityId" : "ProductID",
+            "name" : "ProductRelation",
+            "multiplicity" : false
+        }
+    ],
+    "properties" : [
+        {
+            "_id" : "716966c72c9faa100a7baf06",
+            "name" : "ID",
+            "label" : "ID",
+            "order" : 1,
+            "propertyType" : "String",
+            "isReadOnly" : false,
+            "isKey" : true,
+            "isNullable" : true,
+            "isForeignKey" : false,
+            "isAsset" : false,
+            "calculated" : {
+                "inputProperties" : []
+            }
+        },
+        {
+            "_id" : "9127b1e21cc6c97f0a7baf06",
+            "name" : "Quantity",
+            "label" : "Quantity",
+            "order" : 2,
+            "propertyType" : "Decimal",
+            "isReadOnly" : false,
+            "isKey" : false,
+            "isNullable" : true,
+            "isForeignKey" : false,
+            "isAsset" : false,
+            "calculated" : {
+                "inputProperties" : []
+            }
+        },
+        {
+            "_id" : "2e3477c5e1bb338d0a7baf06",
+            "name" : "___FK_f7eaf4c6fcab6e9d0a7baf06",
+            "label" : "___FK_f7eaf4c6fcab6e9d0a7baf06",
+            "order" : 3,
+            "propertyType" : "String",
+            "isReadOnly" : false,
+            "isKey" : false,
+            "isNullable" : false,
+            "isForeignKey" : true,
+            "isAsset" : false,
+            "calculated" : {
+                "inputProperties" : []
+            }
+        },
+        {
+            "_id" : "d50b6d646fe2461f0a7baf06",
+            "name" : "___FK_01f7ab7106cafe400a7baf06",
+            "label" : "___FK_01f7ab7106cafe400a7baf06",
+            "order" : 4,
+            "propertyType" : "String",
+            "isReadOnly" : false,
+            "isKey" : false,
+            "isNullable" : false,
+            "isForeignKey" : true,
+            "isAsset" : false,
+            "calculated" : {
+                "inputProperties" : []
+            }
+        }
+    ]
+}

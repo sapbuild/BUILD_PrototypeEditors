@@ -1,0 +1,78 @@
+{
+    "entityId" : "SalesOrderItemID",
+    "entityName" : "SalesOrderItem",
+    "properties" : [
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P0",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0001",
+            "Quantity" : 100,
+            "ID" : "D0"
+        },
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P1",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0001",
+            "Quantity" : 400,
+            "ID" : "D1"
+        },
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P2",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0001",
+            "Quantity" : 50,
+            "ID" : "D2"
+        },
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P2",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0002",
+            "Quantity" : 4000,
+            "ID" : "D3"
+        },
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P3",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0003",
+            "Quantity" : 1500,
+            "ID" : "D4"
+        },
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P4",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0003",
+            "Quantity" : 2000,
+            "ID" : "D5"
+        },
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P5",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0004",
+            "Quantity" : 150,
+            "ID" : "D6"
+        },
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P6",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0004",
+            "Quantity" : 150,
+            "ID" : "D7"
+        },
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P7",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0004",
+            "Quantity" : 150,
+            "ID" : "D8"
+        },
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P8",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0004",
+            "Quantity" : 150,
+            "ID" : "D9"
+        },
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P9",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0004",
+            "Quantity" : 150,
+            "ID" : "D10"
+        },
+        {
+            "___FK_01f7ab7106cafe400a7baf06" : "P10",
+            "___FK_f7eaf4c6fcab6e9d0a7baf06" : "SO0004",
+            "Quantity" : 150,
+            "ID" : "D11"
+        }
+    ]
+}

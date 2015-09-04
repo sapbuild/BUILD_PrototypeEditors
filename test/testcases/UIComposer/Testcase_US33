@@ -1,0 +1,64 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able view multiple supported UI Catalogs (Control Catalogs, Patterns, Floor plans, Action) and
+to select the UI element in each UI Catalog
+
+Business scenario/User Story
+	  
+
+Multiple UI Catalogs shall be supported.
+The user will need the ability to access UI elements from all UI catalogs supported by Norman 
+
+Acceptance Criteria
+•	When using the UI composer the user shall be able to select UI elements from all UI catalogs supported by Norman
+•	Supported catalogs can be found at Norman/UICatalogManager#4
+  
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Scenarios/Steps 
+                  
+
+Verify an user be able to view any available and supported UI Catalogs       
+
+	
+
+Verify an user be able to  to choose the supported catalog from UI library     
+
+	
+
+Verify an user be able to view the list of UI elements for each UI Catalog  
+
+	
+
+Verify an user be able to select each UI element in the Controls list  
+
+	
+
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+
+Revision History
+Date	Comment	Updated by
+02/11/2015	Initial draft	David Lim
+		
+

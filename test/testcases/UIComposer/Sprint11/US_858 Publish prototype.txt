@@ -1,0 +1,77 @@
+General  Information:
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5): 1
+Automation readiness
+Reviewed by: Norman/UI Composer
+
+Description:
+
+This is one part of the replacement for the current snapshot creation and sharing feature.
+
+The user shall be able to publish a prototype.
+When the user publishes a prototype the system will generate a snapshot and provide
+the user with a URL to access the published prototype. There is only one URL for any given prototype.
+If the user uses share again he will update the sharing and a new snapshot will be created.
+However the original URL is still valid and will now point to the newly published version of the prototype.
+
+Acceptance criteria:
+
+•   The user shall be able to publish a prototype.
+•   The user shall be able to publish a prototype multiple times.
+•   The user will receive a URL to share the published prototype.
+•   This URL will allow users outside of Build to access the interactive prototype.
+•   The URL of a given prototype will not change with subsequent publishing.
+•   Any user receiving the URL will be able to access the snapshot.
+•   While an updated snapshot is created in the background the user shall be notified that the the update is occurring.
+•   When the new snapshot is created the user will see that the update is completed.
+•   At any time after clicking Updating the user shall be able to close the update window by clicking outside the window.
+•   The user shall be able to copy the URL into the clipboard by clicking on he link icon.
+•   The URL shall be selected when the user clicks on the URL.
+•   If the user changes the URL in the display that change is not persisted. Upon reopening sharing the correct URL shall be 
+     displayed.
+•   The user shall see an indication that anyone who has this URL can access this prototype.
+•   On subsequent publishing the user shall see the date and time when the previous publishing occurred.
+•   While the publishing is updated the date and time of the previous publish shall be replaced by a message that an update 
+     is happening.
+•   Upon completion of the update, the date and time of the update shall be shown.
+•   Whenever the published URL is used, the user will access the latest published version (snapshot) of the prototype.
+
+Preparations:
+
+Setup/Configuration steps (if necessary)
+A user had signed up to Project Norman with the name, email address and password
+User Logon Information/ Roles
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures:
+
+1.) Verify user could publish a prototype.  Verify publish label changes on each stage.
+2.) Verify user could access the URL by copy/paste to the browser and see correct snapshot after published.
+3.) Verify user could publish the same prototype again although there is no change in project.
+    Verify URL is still the same, verify user could access the URL and see correct snapshot.
+4.) Verify time stamp is display correctly in local time when trying to publish again.
+5.) Open a browser in a computer that has eastern time zone, try to publish a prototype.  Verify time stamp
+    displayed correctly per local eastern time.
+6.) Verify user could publish the same prototype 10 times with changes on each time.  Verify user always see latest
+    snapshot published when access the URL.
+7.) Verify user could publish a prototype of each of a different project.  Verify URL is unique per project.
+8.) Verify status of publish button when publish 20 pages project.
+9.) Check behavior of publish when create snapshot is not success, or when system is not reach-able.
+10.) Try to create a research study, then try to publish after without change the page content.
+     Verify snapshot displayed correctly.
+11.) Try to create a research study, then modify the page, then try to publish.  Verify new snapshot created and URL
+     displayed correctly.
+12.) User has chance to cancel prior to click 'Publish Project'?
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome
+
+
+
+Revision History
+Date	Comment	Updated by
+04/20/2015	Initial draft	Chinh Nguyen

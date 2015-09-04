@@ -1,0 +1,122 @@
+General  Information:
+
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5): 1
+Automation readiness
+Reviewed by: Norman/UI Composer
+Description: 
+
+In Interactive Mode only the canvas shall be active (e.g. gray out everything but canvas). The user shall have a clear 
+indication that he is in interactive mode when he switches from edit mode.
+
+Acceptance criteria:
+
+•	The user shall have a way to switch from edit mode into interactive mode.
+•	The user shall have a way to switch from interactive mode into edit mode.
+•	When the user enters interactive mode, he shall be able to execute all functions of the prototype that have been created 
+    in edit mode.
+•	 There shall be a clear distinction between edit mode and interactive mode. The user shall never be confused in which mode 
+    he is.
+•	 When leaving interactive mode, the user shall see the page of the prototype in edit mode that he last saw in interactive 
+    mode.
+•	 Interactive mode shall display the prototype according to the form factor selected.
+•	 The user shall be able to switch the form factor in interactive mode.
+•	 The screen sizes should be as follows: Desktop 1280x1024; Tablet 1024 x 768; Phone 667 x 375.
+
+Preparations:
+
+Setup/Configuration steps (if necessary).
+A user has signed up to Project Norman with the name, email address and password.
+User Logon Information/Roles
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures:
+
+1. Create a project with default 2 pages.  On prototype page, click thumbnail of page 1 to go to composer page.
+    Add a button in page 1.  Click on the preview button the top right corner, which takes user into interactive mode. Verify 
+    these conditions:
+        _  Default form factor selected is desktop, with size is 1280 x 1024. Use vertical & horizontal rulers along the outer 
+            edges of the canvas to verify the size.
+        _  Black color surrounds the desktop form screen.
+        _  Palette (list of controls) cannot be seen.
+        _  Tree view cannot be seen.
+        _  On horizontal menu bar, default form factor selected is desktop.
+        _  Verify that these icons are displayed and still clickable: tablet icon, phone icon, Editor button (to switch back to 
+            edit mode), publish icon, study icon.
+        _  The eye icon not displayed.
+
+2. Click the editor button just above the canvas, which takes user to edit mode in prototype. Verify these conditions:
+        _  Default form factor is still desktop if desktop was selected during interactive mode.
+        _  Palette, tree view, and properties panels are working.
+        _  Verify Editor button is not displayed, and the preview button is displayed.
+
+
+3. Verify interactive mode is working with navigation in 3 pages.
+    Create a project, add a page (page 3).  In page 1, add a button (button 1), set actions for button 1 to navigate to page 2.
+    In page 2, add a button (button 2), set actions for button 2 to navigate to page 3.  In page 3 add a button (button 3), 
+    set actions for button 3 to navigate to page 1.  Switch to interactive mode by clicking on the Preview button.
+        _  Verify when user clicks on button 1, it goes to page 2.
+        _  Verify when user clicks on button 2, it goes to page 3.
+        _  Verify when user clicks on button 3, it goes to page 1.
+        _  Repeat above steps 3 times.  Verify interactive mode is still working.
+
+4. Verify that the resize windows in interactive mode are still working.
+    Create a project with 3 pages using the same routine as scenario #3, or use existing project.  Switch to interactive mode 
+    by clicking on the Preview button.  Resize the browser window to make it smaller.
+        _  Scroll the screen left and right, verify interactive mode is still on, and no ruler is displayed.
+        _  Verify that the enabled buttons are still available: Editor button, desktop, tablet, phone icon.
+
+
+5. Verify user shall be able to switch the form factor in interactive mode.
+    Create a project with 3 pages using the same routine as scenario #3, or use existing project.  Make sure desktop icon is 
+    selected. Switch to interactive mode then:
+        _  Verify desktop screen size displayed, with size 1280 x 1024. Verify navigation of button from each page is working.
+        _  Click tablet icon next to desktop icon, verify tablet screen size is displayed with size 768 x 1024. Verify 
+            navigation of button from each page is working.
+        _  Click phone icon next to table icon, verify phone screen size is displayed with size 320 x 568. Verify navigation 
+            of button from each page is working.
+
+
+6. Verify short cut keyboards are working.
+    Create a project with 3 pages using the same routine as scenario #3, or use existing project.  Click on a button in the 
+    canvas or click on the browser to get focus.
+        _  Use keyboard combination command + i (Mac), or ctrl + i (Windows).  Verify Norman can switch to interactive mode.
+        _  Click on button 1. It goes to page 2. Enter command + i (Mac), or ctrl + i (Windows) again, verify interactive mode 
+            is OFF.
+        _  Use keyboard combination command + i (Mac), or ctrl + i (Windows) to switch to interactive mode again.
+        _  Press 'esc' on the keyboard to exit interactive mode. Verify 'esc' function is working.
+
+7. Verify that when leaving interactive mode, the user can see the prototype page in edit mode that he last saw in interactive 
+    mode.
+    Create a project with 3 pages same as scenario #3, or use existing project.  Assume you are on page 1.  
+    Click on the preview button to switch to interactive mode.
+        _  Click on button 1. It goes to page 2. Click the Editor button to switch to edit mode. Verify page 2 is displayed, 
+            not page 1.
+
+8. Verify that the user can switch back and forth between interactive mode and edit mode multiple times without issue.
+
+9. Verify that the user can switch to interactive mode on different projects.
+        _ Click on the Home icon to go to top level screen. Click on New Project button to create a new project.
+        _ Repeat the above steps about switching between edit and interactive modes.
+
+10. Create a 20 page project with navigation set on each page. Switch to interactive mode, verify that the navigation between 
+    pages are working. Note the performance when you switch to interactive mode. It should not be more than 4 seconds.
+
+
+
+Variant (eg. Mac, Windows, browser compatibility)
+
+Execute the test with Desktop Windows /Chrome and Mac/Chrome
+
+
+
+Revision History
+Date	Comment	Updated by
+04/06/2015	Initial draft	Chinh Nguyen
+06/02/2015  Updated Joe Cintas
+06/19/2015  Update  Sumayya Nausheen
+06/23/2015  Update  Sumayya Nausheen
+06/24/2015  Update  Sumayya Nausheen

@@ -1,0 +1,68 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+
+The user shall be able to access every UI element inside an aggregation.
+Acceptance Criteria	
+•	When an aggregation is placed on the canvas and a user selects the aggregation or any element inside the aggregation, he shall be able to clearly see which element is selected
+•	The user can select every child element inside a parent
+•	The initial selection of an aggregation shall select the greatest aggregation in the stack within the target area (refer to IxD for visual explanation)
+•	The user shall then be able to select the next item down in the aggregation stack until he reaches the last element in the stack
+•	Within each level of the stack the user may see multiple UI elements he shall be able to navigate from element to element within the level of the stack
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Steps/Procedures
+                  
+Scenario:  assume there is a ActionList aggregation.  There are 5 list items inside the list.
+
+_  Do single click on the ActionList control. Verify user could select the list control by perform single click.  Verify properties pop up of list control displayed.
+_  Double click on first item list inside the list control. Verify user could select the first list item by double click.  Verify properties pop up of list item control displayed.
+_  Do right click on item list, verify list of all items in the hierarchy up to the root displayed.
+_  Double click on itemlist. Verify itemlist control selected, pop up properties of itemlist control displayed.
+_  Do right click on the whole item list, item list inside the item list control, or attribute field inside the list item and verify list of all items in the hierarchy up to the root displayed.
+_  Do click away from this list aggregation. Verify no selection on this aggregation.
+_  Double click on List control. Verify item-list inside.  List control is still selected.
+_  Try to resize List control by single select on list control and drag the square to resize it bigger.	Verify user could resize. 
+_  Click on List control to select List, Single click on item list. Item list should be selected. 
+_  Verify user could use up/down keyboard to move between sibling inside the aggregation. For example, user could move up and down between the list items inside ActionList control. 	
+_  Verify user could use left/right keyboard to move between sibling inside the aggregation. For example, user could move left and right between buttons of a footer. 
+
+	
+
+
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome  
+
+
+
+Revision History
+Date	Comment	Updated by:Vijay Enthran Varadarajan Subramanian.
+6/1/2015	Initial draft	Chinh Nguyen
+6/23/2015       Update    Sumayya Nausheen
+6/24/2015       Update    Sumayya Nausheen
+		
+
+
+	
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+@import (reference) '../node_modules/norman-client-tp/node_modules/angular-sap-ui-elements/styles/variables';
+
+@icon-hover-color: #3999D9;
+@drag-background-color: #1D2F41;
+
+.np-component-library-item {
+    display: flex;
+    align-items: center;
+    height: 43px;
+    background: @PickledBluewood-900;
+    cursor: -webkit-grab;
+    transition-duration: .5s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+    padding-right:10px;
+
+
+    &-icon {
+        overflow: hidden;
+        height: 30px;
+        width: 30px;
+        margin-left: 22px;
+    }
+
+    &-icon > svg path {
+        fill: white;
+    }
+
+    &-title {
+        &-wrapper {
+            height: 30px;
+            margin-left: 22px;
+            flex-grow:2;
+        }
+        font-family: @roboto-font;
+        font-size: 12px;
+        color: @White;
+
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 400;
+        overflow: hidden;
+    }
+
+    &-gripper {
+        visibility: hidden;
+    }
+    &:hover {
+        background-color: lighten(@PickledBluewood-900, 2%);
+        .np-component-library-item-gripper {
+            visibility: visible;
+        }
+
+    }
+}
+
+.np-component-library-item {
+    .np-component-library-item-icon > svg {
+        path, rect, polygon {
+            transition-duration: .2s;
+        }
+    }
+}
+
+.np-component-library-drag-bgd {
+    background:@drag-background-color !important;
+    .np-component-library-item-title {
+        color: @icon-hover-color;
+    }
+}
+
+

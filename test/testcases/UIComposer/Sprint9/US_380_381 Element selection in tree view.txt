@@ -1,0 +1,98 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+The user shall be able to select a UI element in the tree
+
+The user shall be able to select a UI element in the hierarchical view. 
+When the user selects an element in the hierarchical view that selection shall be reflected in the selection on the canvas. 
+Refer to the UXD for how to display this hierarchical view of the UI elements.
+
+
+Acceptance Criteria
+_	The user shall be able to select a UI element in the hierarchy view (e.g. a tree view). Note: there is always at least one element selected in the tree. In a new prototype 
+this would be page 1
+_	The user shall be able to select a UI element by clicking on it using the mouse
+_	The user shall be able to select a UI element above the current selected UI element by using the keyboard
+_	The user shall be able to select a UI element below the current selected UI element by using the keyboard
+_	The UI element may be part of an aggregation of elements, a single non-aggregated element
+_	The property panel shall be updated according to the UI element selection in the hierarchical view
+_	The selection on the canvas shall be updated to show that the same element is selected.
+_	If the selected UI element is on a part of the canvas that is currently not visible to the user because it is located outside the visible part of the canvas, i.e. he would 
+have to scroll to see it, the canvas shall be scrolled automatically to bring the selected UI element into view. 
+_	If the selected UI element is a page, that page shall be displayed on the canvas
+_	If an action needs to be executed to make the UI element visible, that action shall be defined in the control definition stored in the UI catalog. Please refer to the UI 
+catalog user stories for details.
+_	Invisible UI elements will have a visual indication that they have no visual representation on the canvas
+_	When a user selects a invisible UI element properties will displayed in the properties panel, if they exist.
+_	When a user selects an invisible UI element there will be no visible selection on the canvas
+
+When a user selects a UI element on the canvas this element shall be shown as selected in the hierarchy view (e.g. a tree view). Refer to the UXD for how to display this 
+
+hierarchical view of the UI elements.
+
+
+Acceptance Criteria
+_	The user will have to have a UI element selected. When the user enters a prototype initially, page 1 will be selected. An exception is when the user has currently an 
+invisible element selected in the tree there will be no selection on the canvas
+_	Once he has selected a UI element that element will show to be selected in the hierarchy view (tree view)
+
+
+Preparations
+Setup/Configuration steps (if necessary)
+
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1. Create a project with 2 pages.  On prototype page, click thumbnail of page 1 to go to composer page.
+   Select a UI element in Tree view that is on upper left panel           
+   Verify that the user shall be able to select a UI element in the hierarchical view. It is always at least one element selected in the tree that is Page 1.
+   There is no way to make multiple selection. 
+
+2. Verify that if you click on a control using  mouse, the control is selected on canvas. 
+   Drag and drop a list control on page 1, the list would be highlighted on canvas.
+   Repeat the step with other action controls.
+
+3. Verify that after selection a list item, you could use keyboard to go over the item attributes.
+   Click on arrow-up or arrow-down using keyboard.
+
+4. Verify that if an item is not visible on canvas, you will see it after click on the item in tree view on left panel. 
+   Drag and drop a button on canvas and then move it to the very right.
+   Scroll to the left until the button is not visible on the canvas.
+   After you select the button in tree view, the focus will be moved on the button to make it visible on canvas.
+   
+5. Verify the property panel shall be updated according to the UI element selection in the hierarchical view. 
+   For example, if you select a text control in tree view, the 'Text' properties would be shown in property panel.
+   Repeat the step with other action controls.
+   
+6. Verify if the selected UI element is a page, that page shall be displayed on the canvas. 
+   For example, you see two pages Page 1 or Page 2.
+   When you select Page 2 in tree view, then the page will be shown on the canvas.
+
+7. Verify that properties would be shown for invisible elements.
+   When you select the invisible element in tree view, you will see it with an eyeball icon.
+   For example, an Icon Tab Bar control has a text element that is invisible.
+   When you select  an invisible text element in navigation tree, its properties are shown in properties panel on the right.
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome  
+
+Revision History
+Date	Comment	Updated by
+04/12/2015	Initial draft	Lucy Chernobrod
+05/29/2015	Updated	Lucy Chernobrod
+06/08/2015 Updated Joe Cintas
+06/23/2015 Update Sumayya Nausheen
+06/24/2015 Update Sumayya Nausheen
