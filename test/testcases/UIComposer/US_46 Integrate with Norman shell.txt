@@ -5,7 +5,6 @@ CSN Component
 Estimated time for manual test execution	30 min
 Risk Level (1-5)	1
 Automation readiness	
-Written by	David Lim
 Reviewed by	Norman/UI Composer
 Description
 Purpose/ goal of the test case	
@@ -17,8 +16,6 @@ Business scenario/User Story
 The UI composer shall be integrated within the Norman shell. Visually the UI composer will have shell elements visible to the left and top. Please refer to IxDs.
 When a Norman user selects the prototype in the Norman navigation he shall be taken to the UI Composer
 
- https://github.wdf.sap.corp/Norman/UIComposer/issues/46
-
 Acceptance Criteria
 •	The user shall see an option to navigate to the UI composer in the Norman shell (e.g. Prototype link)
 •	When the user selects the option to navigate to the UI composer the UI composer shall be launched within the shell
@@ -29,9 +26,6 @@ Setup/Configuration steps (if necessary)
 An user had signed up to Project Norman with the name, email address and password
 
 User Logon Information/ Roles
-
-http://norman-hp-z820-workstation.dhcp.pal.sap.corp:9007/
- 
 
 
 Navigation path to reach the application (i.e. URL)

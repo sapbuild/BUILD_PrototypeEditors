@@ -5,10 +5,8 @@ CSN Component
 Estimated time for manual test execution	
 Risk Level (1-5)	1
 Automation readiness	
-Written by	Chinh Nguyen
 Reviewed by	Norman/UI Composer
 Description
-Business scenario/User Story #307
 	  
 The user shall be able to move a UI element in an aggregation. For example he might want to move the icon that is to the left of an input field in an aggregation to the right of that input field.
 Acceptance Criteria:	
@@ -21,17 +19,12 @@ An user had signed up to Project Norman with the name, email address and passwor
 
 User Logon Information/ Roles
 
-http://norman-hp-z820-workstation.dhcp.pal.sap.corp:9007/
- 
-
-
 Navigation path to reach the application (i.e. URL)
 
 
 Test Steps/Procedures
                   
-Scenario:  assume there is a list aggregation.  There are 4 list items inside the list.  Each list items has a checkbox, a text field.  See UX design doc at 
-\\USPALG01.pal.sap.corp\DesignandFrontlineApps\Norman\UX_2_13
+Scenario:  assume there is a list aggregation.  There are 4 list items inside the list.  Each list items has a checkbox, a text field.
 See Inspector Panel page for details of children tab.	
 
 	
