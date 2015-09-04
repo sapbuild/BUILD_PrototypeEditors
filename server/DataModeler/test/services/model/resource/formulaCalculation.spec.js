@@ -1,6 +1,6 @@
 'use strict';
 
-var formulaCalculation = require('norman-prototype-editors-server/DataModeler/lib/services/model/resource/formulaCalculation.js');
+var formulaCalculation = require('../../../../lib/services/model/resource/formulaCalculation.js');
 var chai = require('norman-testing-tp').chai;
 var expect = chai.expect;
 var data = function () {

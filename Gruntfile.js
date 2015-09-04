@@ -116,7 +116,7 @@ module.exports = function (grunt) {
     grunt.registerTask('test', function (target) {
         var tasks = {
                 client: ['clean:dev', 'env:dev', 'copy:UITests', 'browserify:dev', 'karma:DataModeler', 'karma:Previewer', 'karma:SharedWorkSpace', 'karma:SampleDataManager', 'karma:UIComposer'],
-                server: ['env:dev', 'mocha_istanbul:DataModeler', 'mocha_istanbul:PrototypeBuilder', 'mocha_istanbul:SampleDataManager', 'mocha_istanbul:SharedWorkSpace', 'mocha_istanbul:SharedWorkSpace_int', 'mocha_istanbul:UIComposer', 'mocha_istanbul:UIComposer_int', 'mocha_istanbul:Previewer'],
+                server: ['env:dev', 'mocha_istanbul:DataModeler', 'mocha_istanbul:PrototypeBuilder', 'mocha_istanbul:SampleDataManager', 'mocha_istanbul:SharedWorkSpace', 'mocha_istanbul:UIComposer', 'mocha_istanbul:Previewer'],
                 clientDataModeler: ['copy:UITests', 'browserify:dev', 'karma:DataModeler'],
                 clientPreviewer: ['copy:UITests', 'browserify:dev', 'karma:Previewer'],
                 clientSharedWorkSpace: ['copy:UITests', 'browserify:dev', 'karma:SharedWorkSpace'],

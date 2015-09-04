@@ -22,7 +22,7 @@ function initialize(user, password) {
 module.exports = {
     getServerPromise: function() {
         if (!appServerStarted) {
-            appServerStarted = initialize('entity.datamodeler@sap.com', 'Minipas!1');
+            appServerStarted = initialize('entity.datamodeler@example.com', 'Minipas!1');
         }
         return appServerStarted;
     }

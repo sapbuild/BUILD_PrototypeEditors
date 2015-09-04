@@ -1041,7 +1041,7 @@
         });
 
         describe('updateNavigationInSmartAppMetadata check', function () {
-            var process = require('norman-prototype-editors-server/UIComposer/lib/services/pageMetadata');
+            var process = require('../lib/services/pageMetadata');
             var allPagesObjs = require('./material/allPagesObjs.json');
             var dataModel = require('./material/dataModel.json');
             var refAppMetadata = require('./material/appMetadata.json');

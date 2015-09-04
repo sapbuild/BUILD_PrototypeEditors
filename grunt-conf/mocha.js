@@ -3,13 +3,12 @@ module.exports = {
 
     SampleDataManager: {
         src: [
-            'node_modules/norman-prototype-editors-server/SampleDataManager/**/*.spec.js',
-            'node_modules/norman-prototype-editors-test/int/SampleDataManager/server/*.spec.js'
+            'server/SampleDataManager/**/*.spec.js'
         ], // a folder works nicely
         options: {
             reporter: 'mocha-jenkins-reporter',
             coverageFolder: 'reports/coverage/server/SampleDataManager',
-            root: './node_modules/norman-prototype-editors-server/SampleDataManager',
+            root: './server/SampleDataManager',
             reportFormats: ['lcov'],
             check: {
                 lines: 0,
@@ -19,13 +18,13 @@ module.exports = {
     },
     Previewer: {
         src: [
-            'node_modules/norman-prototype-editors-server/Previewer/**/*.spec.js',
-            'node_modules/norman-prototype-editors-test/Previewer/int/server/*.spec.js'
+            'server/Previewer/**/*.spec.js',
+            'test/Previewer/int/server/*.spec.js'
         ], // a folder works nicely
         options: {
             reporter: 'mocha-jenkins-reporter',
             coverageFolder: 'reports/coverage/server/Previewer',
-            root: './node_modules/norman-prototype-editors-server/Previewer',
+            root: './server/Previewer',
             reportFormats: ['lcov'],
             check: {
                 lines: 0,
@@ -36,14 +35,14 @@ module.exports = {
 
     PrototypeBuilder: {
         src: [
-            'node_modules/norman-prototype-editors-server/PrototypeBuilder/**/*.spec.js',
-            'node_modules/norman-prototype-editors-test/int/PrototypeBuilder/server/*.spec.js'
+            'server/PrototypeBuilder/**/*.spec.js',
+            'test/int/PrototypeBuilder/server/*.spec.js'
         ], // a folder works nicely
         options: {
             reporter: 'mocha-jenkins-reporter',
             coverageFolder: 'reports/coverage/server/PrototypeBuilder',
             timeout: 5000,
-            root: './node_modules/norman-prototype-editors-server/PrototypeBuilder',
+            root: './server/PrototypeBuilder',
             reportFormats: ['lcov'],
             check: {
                 lines: 50,
@@ -54,13 +53,13 @@ module.exports = {
 
     DataModeler: {
         src: [
-            'node_modules/norman-prototype-editors-server/DataModeler/**/*.spec.js',
-            'node_modules/norman-prototype-editors-test/int/DataModeler/server/*.spec.js'
+            'server/DataModeler/**/*.spec.js',
+            'test/int/DataModeler/server/*.spec.js'
         ], // a folder works nicely
         options: {
             reporter: 'mocha-jenkins-reporter',
             coverageFolder: 'reports/coverage/server/DataModeler',
-            root: './node_modules/norman-prototype-editors-server/DataModeler',
+            root: './server/DataModeler',
             reportFormats: ['lcov'],
             check: {
                 lines: 20,
@@ -71,7 +70,7 @@ module.exports = {
 
     UIComposer: {
         src: [
-            'node_modules/norman-prototype-editors-server/UIComposer/**/*.spec.js'
+            'server/UIComposer/**/*.spec.js'
             // TODO UIComposer team fix prototypeService.prototype.createDataDrivenPrototype 'node_modules/norman-prototype-editors-test/UIComposer/**/*.spec.js'
         ],
 
@@ -79,7 +78,7 @@ module.exports = {
             coverage: false,
             reporter: 'mocha-jenkins-reporter',
             coverageFolder: 'reports/coverage/server/UIComposer',
-            root: './node_modules/norman-prototype-editors-server/UIComposer',
+            root: './server/UIComposer',
             reportFormats: ['lcov'],
             check: {
                 lines: 20,
@@ -90,12 +89,12 @@ module.exports = {
 
     UIComposer_int: {
         src: [
-            'node_modules/norman-prototype-editors-test/int/UIComposer/**/*.spec.js'
+            'test/int/UIComposer/**/*.spec.js'
         ], // a folder works nicely
         options: {
             reporter: 'mocha-jenkins-reporter',
             coverageFolder: 'reports/coverage/integration/UIComposer_int',
-            root: './node_modules/norman-prototype-editors-server/UIComposer',
+            root: './server/UIComposer',
             reportFormats: ['lcov'],
             check: {
                 lines: 20,
@@ -106,13 +105,13 @@ module.exports = {
 
     SharedWorkSpace: {
         src: [
-            'node_modules/norman-prototype-editors-server/SharedWorkSpace/**/*.spec.js'
+            'server/SharedWorkSpace/**/*.spec.js'
 // TODO BY SharedWorkSpace team             'node_modules/norman-prototype-editors-test/SharedWorkSpace/**/*.spec.js'
         ], // a folder works nicely
         options: {
             reporter: 'mocha-jenkins-reporter',
             coverageFolder: 'reports/coverage/server/SharedWorkSpace',
-            root: './node_modules/norman-prototype-editors-server/SharedWorkSpace',
+            root: './server/SharedWorkSpace',
             reportFormats: ['lcov'],
             check: {
                 lines: 0,
@@ -123,12 +122,12 @@ module.exports = {
 
     SharedWorkSpace_int: {
         src: [
-            'node_modules/norman-prototype-editors-test/int/SharedWorkSpace/**/*.spec.js'
+            'test/int/SharedWorkSpace/**/*.spec.js'
         ], // a folder works nicely
         options: {
             reporter: 'mocha-jenkins-reporter',
             coverageFolder: 'reports/coverage/integration/SharedWorkSpace_int',
-            root: './node_modules/norman-prototype-editors-server/SharedWorkSpace',
+            root: './server/SharedWorkSpace',
             reportFormats: ['lcov'],
             check: {
                 lines: 20,
@@ -139,12 +138,12 @@ module.exports = {
 
     ui5Acceptance: {
         src: [
-            'node_modules/norman-prototype-editors-test/UI5Acceptance/ui5_acceptance_test.js'
+            'test/UI5Acceptance/ui5_acceptance_test.js'
         ],
         options: {
             reporter: 'mocha-jenkins-reporter',
             coverageFolder: 'reports/coverage/server/UI5Acceptance',
-            root: './node_modules/norman-prototype-editors-server/PrototypeBuilder',
+            root: './server/PrototypeBuilder',
             reportFormats: ['lcov'],
             check: {
                 lines: 0,
