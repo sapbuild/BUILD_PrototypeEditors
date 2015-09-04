@@ -1,0 +1,91 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to switch between pages  
+ 
+Business scenario/User Story #28
+	  
+The user shall be able to switch between pages. The user shall have a visual representation of the pages in his project. He shall be able to switch between pages when designing without loosing any work and without needing to explicitly save his work.
+
+Acceptance Criteria
+•	The user shall see a list of page thumbnails
+•	The user shall be able to select a thumbnail
+•	Upon selecting a thumbnail the corresponding page shall be displayed in the composer
+•	The state of work in the page that was shown before shall be preserved.
+ 
+Preparations
+Setup/Configuration steps (if necessary)
+
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Steps/Procedures
+
+1. Verify a user is able to view page thumbnail list with a page number
+   - Create a project with two pages, Page 1 and Page 2. 
+   - Click on the project to open it.
+   - On Prototype pages view, preview thumbnail of Page 1 and Page 2.
+   - Find the page number at the top of the view.
+   - Check the number is equal 2.
+
+2. Verify a user is able to select and deselect any pages on the page thumbnail list
+   - On Prototype pages view, preview thumbnail of Page 1 and Page 2.
+   - Hover over the thumbnail of Page 1.
+   - Check that he thumbnail of Page 1 is highlighted.
+   - Hover over the thumbnail of Page 2.
+   - Check that he thumbnail of Page 2 is highlighted.
+
+3. Verify a user is able to select only one page at a time from the page thumbnail list 
+   - Open Prototype pages view for the project.
+   - Make sure two thumbnails of Page 1 and Page 2 are shown.
+   - Hover over the thumbnail of Page 1.
+   - Check that the thumbnail of Page 1 is highlighted.
+   - Hover over the thumbnail of Page 2.
+   - Check that thumbnail of Page 2 is highlighted, but the thumbnail of Page 1 is not highlighted anymore.
+
+4. Verify a user is able to view the selected page thumbnail in composer
+   - On Prototype pages view, preview thumbnail of Page 1 and Page 2.
+   - Click on the thumbnail of Page 1.
+   - Check that UI composer is open for Page 1.
+   - Click on Project icon on the left to go back Prototype pages view.
+   - Click on the thumbnail of Page 2.
+   - Check that UI composer is open for Page 2.	 
+
+5. Verify a user is able to view the selected page thumbnail with any existing UI elements added on the page
+   - On Prototype pages view, click on the thumbnail of Page 1.
+   - Check that UI composer is open for Page 1.
+   - In UI controls, select a button and drag and drop it onto the canvas.
+   - Click on Project icon on the left to go back Prototype pages view.
+   - Preview the thumbnail of Page 1.
+   - Ensure that the button is shown on the Page 1 thumbnail.
+
+6. Verify a user is able to view all the work completed on the page be saved and displayed
+   - Open Page 1 in UI composer.
+   - In UI controls, select another element and drag and drop it onto the canvas.
+   - Repeat the step multiple time with more UI controls.	
+   - Click on Project icon on the left to go back Prototype pages view.
+   - Ensure that all the UI controls are shown on the Page 1 thumbnail.
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+Revision History
+Date	Comment	Updated by
+02/10/2015	Initial draft	David Lim
+06/18/2015      Updated         Joe Cintas
+		
+

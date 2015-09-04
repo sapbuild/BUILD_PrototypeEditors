@@ -1,0 +1,38 @@
+{
+    "entityId" : "SalesOrderID",
+    "entityName" : "SalesOrder",
+    "properties" : [
+        {
+            "Date" : "2015-01-23T00:00:00.000Z",
+            "Currency" : "USD",
+            "Amount" : 697500,
+            "Author" : "Sophie Defin",
+            "Name" : "Colgate toothpaste",
+            "ID" : "SO0001"
+        },
+        {
+            "Date" : "2015-01-24T00:00:00.000Z",
+            "Currency" : "USD",
+            "Amount" : 600000,
+            "Author" : "Sophie Defin",
+            "Name" : "Colgate toothpaste complement",
+            "ID" : "SO0002"
+        },
+        {
+            "Date" : "2015-01-25T00:00:00.000Z",
+            "Currency" : "USD",
+            "Amount" : 380000,
+            "Author" : "Sophie Defin",
+            "Name" : "Danone yogurt",
+            "ID" : "SO0003"
+        },
+        {
+            "Date" : "2015-01-26T00:00:00.000Z",
+            "Currency" : "USD",
+            "Amount" : 106500,
+            "Author" : "Sophie Defin",
+            "Name" : "Coca Cola drinks ",
+            "ID" : "SO0004"
+        }
+    ]
+}

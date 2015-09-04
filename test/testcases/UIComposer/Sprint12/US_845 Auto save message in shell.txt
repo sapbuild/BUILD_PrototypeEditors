@@ -1,0 +1,68 @@
+General  Information:
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution: 30 min
+Risk Level (1-5): 1
+Automation readiness	
+Reviewed by: Norman/UI Composer
+
+Description:
+
+Purpose/ goal of the test case:	
+Provide messages to the user about the auto-save state.
+
+Business scenario/User Story:
+
+The user shall see the state of auto save in the Shell. While content in the UI composer is being saved the user shall see a 
+message that a save is being processed. Once the saving process has completed, the user shall see a message that shows content 
+was saved. When there hasn't been any recent save action, the user shall see when the UI composer was last saved. If an error 
+occurs during saving, the user shall be notified of that error.
+
+Acceptance Criteria:
+
+•   If the UI composer is in the process of saving the user's work, the user shall see a message that saving is in progress. 
+    This shall be shown until the UI composer finished saving or an error occurred.
+•   Once the UI composer finishes saving, the user shall see a message that the saving is completed.
+•    If no changes are made for more than 7 minutes, then the user shall see a message describing WHEN the UI composer last 
+    saved the user's work (i.e. 'All changes saved at 1:07 p.m.).
+•   If the UI composer experienced an error while saving, the user shall see a red rectangle with an error message that reads,
+    "Error: Prototype not saved."
+•   The user can click on the 'X' icon in the upper-right corner of error message to get rid of it.
+•    The error message shall provide the user with an option (link) to reload the page.
+
+Preparations:
+
+Setup/Configuration steps (if necessary)
+A user had signed up to Project Norman with the name, email address and password.
+User Logon Information/Roles
+Navigation path to reach the application (i.e. URL)
+
+Test Scenarios/Steps: 
+                  
+1. Verify that the user sees a message that notifies him that saving is in progress.
+   - Create a project with 2 pages.  On prototype page, click on Map View. 
+   - User will see two pages Page 1 and Page 2. 
+   - Click on Page 1, drag and drop a button in Page 1.
+   - On top bar menu, the message "Saving..." is shown to the user.
+
+2. Verify that once the UI composer finishes saving, the user sees a complete message.
+  - When in Page 1, drag and drop more actionn controld to canvas.
+  - Wait till you see the message "All Changes Saved".
+  
+3. Verify that if the UI composer experienced an error while saving, the user shall see an error message.
+  - The error message "Error: Prototype not saved" will be shown on top bar menu.
+  - Click on the 'X' icon in the upper-right corner of error message to get rid of error.
+  
+4. Verify that if an error message occurs, it will provide the user with an option to reload the page.
+  - Click on reload the browser icon to continue working on prototype.
+  - User can create a new project to avoid more errors to occur.
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome  
+
+Revision History
+Date	Comment	Updated by
+04/06/2015	Initial draft	Chinh Nguyen
+06/02/2015        Updated Joe Cintas

@@ -1,0 +1,98 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to define navigation and transition of pages  
+ 
+
+Business scenario/User Story
+	  
+
+The user shall be able to define navigation and transition of pages.
+
+Acceptance Criteria
+The user shall be able to create a flow for the prototype.
+The available transitions are defined by what the UI framework supports. All transitions will be defaulted to the default transition type in UI5.
+ 
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Scenarios 
+                  
+
+1. Verify a user be able to define a flow of prototype pages via Events tab of the UI element
+	- Create a new project with at least two pages (Page 1 and Page 2).
+	- In Prototype pages, click on a page to go into UIComposer.
+	- Drag and drop a button onto the canvas.
+	- In ACTIONS tab, user can define Navigation To or Show Alert and what page.
+
+	 
+
+2. Verify a user be able to select and define Actions in Events for page navigation
+	- Open a exisitng project with at least two pages, then go into UIComposer.
+	- Drag and drop a button onto the canvas.
+	- In ACTIONS tab, user can set Action field to "Navigate To" and the Page field to a page of his choice.
+ 
+
+	
+3. Verify a user be able to enter the text for the Events for the Event
+	- Open a exisitng project with at least two pages, then go into UIComposer.
+	- Drag and drop a button onto the canvas.
+	- In ACTIONS tab, set Action field to "Show Alert".
+	- In Text field, enter text of your choice.
+ 
+	 
+
+4. Verify the Events properties defined for each element is saved successfully
+	- Open a exisitng project with at least two pages, then go into UIComposer.
+	- Drag and drop a button onto the canvas.
+	- In ACTIONS tab, user can view the exisitng Event properties.
+	- Wait a few seconds, then check to see that "All Changes Saved" appears above upper left corner of canvas.
+	
+
+
+5. Verify any changes to the Events properties for each element is saved
+	- Open a exisitng project with at least two pages, then go into UIComposer.
+	- Drag and drop a button onto the canvas.
+	- In ACTIONS tab, user can make changes to the Event properties fields to his preference.
+	- Wait a few seconds, then check to see that "All Changes Saved" appears above upper left corner of canvas.
+	
+
+
+
+6. Verify a user be able to navigate between pages according to the Events defined in element properties
+	- Open a exisitng project with at least two pages, then go into UIComposer.
+	- Drag and drop a button onto the canvas.
+	- In ACTIONS tab, set Action field to "Navigate To" and Page field to Page 2.
+	- While in Page 1, click on Preview button to switch to Interactive mode.
+	- In Interactive mode, click on Button in Page 1.
+	- User should be navigated to Page 2.
+ 
+	 
+
+
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Chrome and Safari
+
+
+
+Revision History
+Date	Comment	Updated by
+02/11/2015	Initial draft	David Lim
+06/29/2015      Updated         Joe Cintas
+		

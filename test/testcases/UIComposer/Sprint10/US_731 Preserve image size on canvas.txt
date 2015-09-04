@@ -1,0 +1,65 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5): 1
+Automation readiness
+Reviewed by: Norman/UI Composer
+
+Description:
+
+When a user drops an image onto the canvas, the original image size shall be preserved.
+
+Acceptance criteria:
+
+•	If the image is larger than the canvas, it will be resized to fit the canvas.
+•	If the image is smaller than the canvas size, it will retain its original size.
+•	The image center shall be dropped at the cursor position.
+•	If the image is dropped and the top left corner is off of the canvas, then the image will be positioned at 0,0.
+
+Preparations:
+
+Setup/Configuration steps (if necessary)
+A user has signed up to Project Norman with the name, email address and password.
+User Logon Information/Roles
+Navigation path to reach the application (i.e. URL)
+
+
+Test Steps/Procedures:
+
+1. Verify that if the image is larger than the canvas, it will be resize to fit the canvas.
+    Drag and drop an image size 1600 x 1060 pixels (width x height) from Mac Finder (or a folder in Windows system). 
+    Verify that UIComposer will show height is 960 and width is 1280.
+
+2. Drag and drop an image size 800 x 600 pixels from Mac Finder or Windows.  Verify that Norman will show height is 600,
+    width is 800.
+
+3. Drag drop an image size 1280 x 1024 pixels from Mac Finder or Windows.  Verify Norman will show correct height
+    and width on both interactive mode and edit mode.
+
+4. Verify that if the image is smaller than the canvas size, it will retain its original size.
+    Drag and drop the image size 800 x 600 pixels.  Verify the original size of image is retained.
+    In image properties panel, verify width has value 800 pixels, height has 600 pixels.
+
+5. Verify that if user drops an image in the canvas, the center of the image will be where the arrow on the screen is set.
+
+6. Verify that a large image will be positioned at the 0,0 position at the top left when an image is dropped.
+   Drag and drop the image size 1600 x 1060 pixels.
+   In this latest build, the image does not position itself at the 0, 0, but at the position where I ask it to drop.
+   
+7. Repeat step 1 to 6 against different image file formats. (png, gif, jpeg)
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome
+
+
+Revision History
+Date	Comment	Updated by
+04/07/2015	Initial draft	Chinh Nguyen
+06/02/2015  Updated         Joe Cintas
+06/09/2015  Updated         Joe Cintas
+06/19/2015  Updated         Sumayya Nausheen
+06/23/2015  Updated         Sumayya Nausheen
+06/24/2015  Updated         Sumayya Nausheen

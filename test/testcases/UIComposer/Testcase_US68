@@ -1,0 +1,62 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to view UI Library Mash Up in UI Composer
+
+Business scenario/User Story
+	  
+
+The user shall be able to use all UI libraries that are set up available in the tenant. The user shall be able to pick up UI elements from these libraries, mix them up and place them on the canvas.
+The initial libraries are of UI5 and Angular for Jan.
+ 
+Acceptance Criteria
+•	The user shall be able to see all UI libraries that are set up in the tenant.
+•	The library list is selectable.
+•	While working on the canvas, the user shall be able to drag a UI element from a selected UI library and drop it on the canvas.
+•	While working on the canvas the user shall be able to drag a UI element from another selected UI library and drop it on the canvas in the mix of UI elements from different UI libraries.
+  
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Scenarios 
+                  
+
+Verify an user be able to view the list of UI libraries
+
+	
+
+Verify anuser be able to select each UI Catalog from the Library list
+
+	
+
+Verify an user be able to view the list of UI elements of each UI library   
+
+	
+
+Verify an user be able to drag and drop an element from UI Element list for each libraries onto the page   
+
+	
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+Revision History
+Date	Comment	Updated by
+02/09/2015	Initial draft	David Lim
+		
+

@@ -1,0 +1,118 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5): 1
+Automation readiness
+Reviewed by: Norman/UI Composer
+
+Description:
+
+The user shall be able to rename a page in the tree
+
+Acceptance criteria:
+
+- The user shall be able to rename any page in the tree
+- The name of a page may be up to 60 char long
+= The name of a page must be at least 1 char long
+= If the user tries to rename the page to have 0 characters the system shall use the default name for the page, e.g. Page 2
+- The name of a page may contain special characters
+- The name of the page must include at least one non-blank character
+
+Preparations:
+
+Setup/Configuration steps (if necessary)
+A user has signed up to Project Norman with the name, email address and password
+User Logon Information/Roles
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures:
+
+1. Verify Rename control only visible on Selected Page
+
+    _  Open a project (or create new one) that has one or more pages - Page 1, Page 2 and Page 3.
+    _  Select a page by clicking on the page name (Page 1) in the tree view.
+    _  In control panel, locate 'edit/rename' icon, verify that edit option is displayed next to delete option 'x' on selected page only. 
+    
+2. Verify On Hover of Rename/Edit Icon = Show Tooltip
+
+     - Open a project (or create new one) that has one or more pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Mouse over the Rename icon to verify the tooltip is displayed - 'Rename Page'
+
+3. Verify On Click of Rename Icon = Inline Edit
+
+     - Open a project (or create new one) that has one or more pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Click the Rename icon to verify the inline edit is displayed in the tree
+
+
+4. Double Click on Page Title = Inline Edit
+
+     - Open a project (or create new one) that has one or more pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Click the Rename icon to verify the inline edit is displayed
+     - Rename the page from Page 1 to Test 1
+     - Double Click on the page title to verify the inline edit is displayed
+
+
+5. Verify Inline Edit functionality with more than 60 char long
+
+     - Open a project (or create new one) that has one or more pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Click the Rename icon to verify the inline edit is displayed
+     - Try to rename any page in the tree - Page 1, Page 2 and Page 3.
+     - Enter the the name of a page 60 char long +, then verify you cannot enter more than 60 char 
+     - The appropriate error message should appear
+
+6. Verify Inline Edit functionality with less than 60 char long
+
+     - Open a project (or create new one) that has one or more pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Click the Rename icon to verify the inline edit is displayed
+     - Try to rename any page in the tree - Page 1, Page 2 and Page 3.
+     - Enter the the name of a page 60 char long or less, then verify you can enter up to 60 char long name
+
+7. Verify Inline Edit functionality with special characters in the name 
+
+     - Open a project (or create new one) that has one or more pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Click the Rename icon to verify the inline edit is displayed
+     - Try to rename any page in the tree - Page 1, Page 2 and Page 3.
+     - Enter the name with the special characters @#$, then verify it's accepted
+   
+8. Verify Inline Edit functionality with 0 characters in the name 
+
+     - Open a project (or create new one) that has one or more pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Click the Rename icon to verify the inline edit is displayed
+     - Try to rename any page in the tree - Page 1, Page 2 and Page 3.
+     - Try to rename the page to have 0 characters, then verify the system uses the default name for the page, e.g. Page 2
+  
+9. Vrify the user can duplicate names for pages in the same project
+
+     - Open a project (or create new one) that has more than two pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Click the Rename icon to open the inline edit
+     - Try to rename any page in the tree - Page 1, Page 2 and Page 3.
+     - Select another page and enter the same name, then verify that duplicate names are accepted
+
+10  Verify undo/redo the rename option
+
+     - Open a project (or create new one) that has more than two pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Click the Rename icon to open the inline edit
+     - Try to rename any page in the tree - Page 1, Page 2 and Page 3.
+     - Select the same page, then try to undo/redo your change and confirm it's possible by changing the name in the tree back to the original or a new one
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome.
+
+
+Revision History
+Date	       Comment	                    Updated by
+06/12/2015	    Initial draft	            Maya Aprelenko
+06/18/2015      updated after review        Maya Aprelenko

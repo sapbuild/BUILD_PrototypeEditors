@@ -1,0 +1,138 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5): 1
+Automation readiness
+Reviewed by: Norman/UI Composer
+
+Description:
+
+User shall be able to delete a page from the tree. If the page is the target of an action triggered on another page the user shall be informed that that 
+
+action will be removed and be asked to confirm or cancel the delete.
+
+
+Acceptance criteria:
+
+
+- The user shall be able to select a page in the tree and use a control in the tree to delete it
+- The user shall be able to select a page on the canvas and use a control in the tree to delete it
+- The delete key shall not delete a selected page
+- If the page is the target of an action (e.g. setting a value of a control, being the target of a navigation), the user shall be - informed that this action 
+
+will be removed. The user shall have to confirm deletion in this case
+- The system shall remove the actions that target the deleted page if the user confirms the page deletion. This is necessary to not break the prototype
+- If the user deletes the last remaining page in a prototype he will be sent back to the Page Map.
+- If the user deletes the first (leading) page in a prototype, the second page becomes the leading page
+- Once the page is deleted the page above the deleted page shall be selected.
+- If the first page is deleted, the new first page shall be selected after the deletion.
+
+Preparations:
+
+Setup/Configuration steps (if necessary)
+A user has signed up to Project Norman with the name, email address and password
+User Logon Information/Roles
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures:
+
+1. Verify Delete control only visible on Selected Page. Test that even the last page can be deleted from the tree and on deletion of the last page, 
+
+navigation should happen to Page Map View. 
+
+    _  Open a project (or create new one) that has more than two pages - Page 1, Page 2 and Page 3.
+    _  Select a page by clicking on the page name (Page 1) in the tree view.
+    _  In control panel, locate 'delete' icon in Page 1, verify that option 'x' DELETE is visible next to option Rename/Edit on selected page only.
+    -  Select Page 2 - delete from the tree by clicking 'x' icon
+    -  Select Page 3 - delete from the tree by clicking 'x'icon
+    -  Verify that the last page can be deleted from the tree. Then confirm that on deletion of the last page, navigation goes to Page Map View. 
+  
+    2. Verify On Hover of Delete Icon = Show Tooltip
+
+     - Open a project (or create new one) that has more than two pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Mouse over the 'x' icon to verify the tooltip is displayed - 'Delete Page'
+
+3. Delete with tooltip. Then verify on click, there is no confirmation if no referring links. Delete any page, even last page in the project.
+
+     - Open a project (or create new one) that has more than two pages - Page 1, Page 2 and Page 3.
+     - Do not add any controls / referring links to any of the pages
+     - Select a page by clicking on the page name (Page 1) in the tree view
+     - Mouse over the Delete icon in the tree to show tooltip - 'Delete Page'
+     - Click the 'x' icon to verify there is no confirmation - deleted successfully
+     - Select the last page in the project and click 'x' to verify you can delete even last page if there are no links connected.
+     _ Verify user can still add a new page.
+
+4. Verify the confrmation Pop up - Delete Page with Referring Links
+
+     - Open a project (or create new one) that has more than two pages - Page 1, Page 2
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Drag/drop an inbound link to Page 1
+     - Select your link control in Page 1 and navigate to Link properties panel
+     - Add a navigation to Page 2   
+     - Try to delete Page 2 with referring link
+     - Verify the following message is displayed: "1 link connected to this page, and will be removed. Are you sure you want to delete this page?"
+     - Click 'Delete' button in the pop up, then verify the page is deleted successfully
+     - Click 'Cancel' button in the pop up, then verify the action is canceled.
+
+5. Verify the delete key does not delete a selected page, only the control 'x' in the tree
+
+     - Open a project (or create new one) that has more than two pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Hit 'delete' key, then verify it does not delete the selected page
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Click the control 'x' in the tree. then verify the page is deleted successfully 
+
+6. Verify the system removes the actions that target the deleted page if the user confirms the page deletion. 
+
+     - Open a project (or create new one) that has more than two pages - Page 1, Page 2 and Page 3.
+     - Select a page by clicking on the page name (Page 1) in the tree view.
+     - Drag/drop an inbound link to Page 1
+     - Select your link control in Page 1 and navigate to Link properties panel
+     - Add a navigation to Page 2   
+     - Try to delete Page 2 with referring link
+     - Verify the following message is displayed: "1 link connected to this page, and will be removed. Are you sure you want to delete this page?"
+     - Click 'Delete' button in the pop up, then verify the page is deleted successfully from the tree
+
+7. Verify the deleted page is not displayed in the Prototype Pages view. 
+
+   - Once deleted the page in case 6 above, click Home icon on your left
+   - Select your project in Home screen
+   - Verify the Prototype Pages view is not showing the deleted page
+
+8. Verify the deleted page is not displayed in the Map view. 
+
+   - Once confirmed the deletion of the page in case 6 above, click Home icon on your left
+   - Select your project in Home screen
+   - Click View All: Map
+   - Verify the Map view is not showing the deleted page
+
+9. Verify the home icon is dipslayed in the leading page. Delete a leading page and verify the next page becomes a leading page (with a home icon).
+
+    - Open a project (or create new one) that has more than two pages - Page 1, Page 2 and Page 3.
+    - Select a page by clicking on the page name (Page 1) in the tree view.
+    - Delete a leaidng Page 1 and click Home, then select your project
+    - Go to Map view by clicking 'View All: Map'
+    - Verify the next Page 2 is showing a Home icon now and is a leading page
+
+  
+10.Test redirection from one page to another after deletion
+
+- Delete the last remaining page in a prototype to verify you have been sent back to the Page Map.
+- Delete the first (leading) page in a prototype to verify the second page becomes the leading page
+- Delete the page to verify the page above the deleted page has been selected.
+- Delete the first page to verify the new first page has been selected after the deletion.
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome.
+
+
+
+Revision History
+Date	       Comment	                    Updated by
+06/12/2015	    Initial draft	            Maya Aprelenko
+06/18/2015      updated after review        Maya Aprelenko

@@ -1,0 +1,83 @@
+{
+    "entityId" : "ProductID",
+    "entityName" : "Product",
+    "properties" : [
+        {
+            "Picture" : "Assets\\Pic1.jpg",
+            "Currency" : "USD",
+            "Amount" : 500,
+            "Description" : "Colgate Total ",
+            "ID" : "P0"
+        },
+        {
+            "Picture" : "Assets\\Pic2.jpg",
+            "Currency" : "USD",
+            "Amount" : 1600,
+            "Description" : "Colgate white",
+            "ID" : "P1"
+        },
+        {
+            "Picture" : "Assets\\Pic3.jpg",
+            "Currency" : "USD",
+            "Amount" : 150,
+            "Description" : "Colgate Fresh",
+            "ID" : "P2"
+        },
+        {
+            "Picture" : "Assets\\Pic4.jpg",
+            "Currency" : "USD",
+            "Amount" : 120,
+            "Description" : "Bifidus ",
+            "ID" : "P3"
+        },
+        {
+            "Picture" : "Assets\\Pic5.jpg",
+            "Currency" : "USD",
+            "Amount" : 100,
+            "Description" : "Biolait",
+            "ID" : "P4"
+        },
+        {
+            "Picture" : "Assets\\Pic6.jpg",
+            "Currency" : "USD",
+            "Amount" : 90,
+            "Description" : "Coca Light",
+            "ID" : "P5"
+        },
+        {
+            "Picture" : "Assets\\Pic7.jpg",
+            "Currency" : "USD",
+            "Amount" : 90,
+            "Description" : "Coca Zero",
+            "ID" : "P6"
+        },
+        {
+            "Picture" : "Assets\\Pic8.jpg",
+            "Currency" : "USD",
+            "Amount" : 90,
+            "Description" : "Coca no caf",
+            "ID" : "P7"
+        },
+        {
+            "Picture" : "Assets\\Pic9.jpg",
+            "Currency" : "USD",
+            "Amount" : 90,
+            "Description" : "Coca Lemon",
+            "ID" : "P8"
+        },
+        {
+            "Picture" : "Assets\\Pic10.jpg",
+            "Currency" : "USD",
+            "Amount" : 150,
+            "Description" : "Coca Red Bull",
+            "ID" : "P9"
+        },
+        {
+            "Picture" : "Assets\\Pic11.jpg",
+            "Currency" : "USD",
+            "Amount" : 200,
+            "Description" : "Coca Rhun",
+            "ID" : "P10"
+        }
+    ]
+}

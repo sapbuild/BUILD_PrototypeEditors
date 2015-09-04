@@ -1,0 +1,1234 @@
+{
+    "_id" : "designCatalog",
+    "controls": {
+        "ListReport-Filter": {
+            "additionalMetadata": {
+                "aggregations": {},
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "FilterOn": {
+                        "displayName": "FilterOn",
+                        "name": "FilterOn",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "Description": {
+                        "displayName": "Description",
+                        "name": "Description",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/Filter.svg"
+            },
+            "description": "Filter",
+            "displayName": "Filter",
+            "displayToUser": true,
+            "diffName": "Description",
+            "groupName": "FilterBar Controls",
+            "name": "ListReport-Filter"
+        },
+        "ListReport-FilterBar": {
+            "additionalMetadata": {
+                "aggregations": {
+                    "filters": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "filters",
+                        "multiple": true,
+                        "name": "filters",
+                        "types": ["ListReport-Filter"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    }
+                },
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "AllowFreeSearch": {
+                        "displayName": "AllowFreeSearch",
+                        "name": "AllowFreeSearch",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false,
+                        "possibleValues": ["true", "false"]
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/FilterBar.svg"
+            },
+            "description": "FilterBar",
+            "displayName": "FilterBar",
+            "displayToUser": true,
+            "diffName": "",
+            "groupName": "ListReport Controls",
+            "name": "ListReport-FilterBar"
+        },
+        "ListReport-ActionButton": {
+            "additionalMetadata": {
+                "aggregations": {},
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Label": {
+                        "displayName": "Label",
+                        "name": "Label",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    },
+                    "Importance": {
+                        "displayName": "Importance",
+                        "name": "Importance",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false,
+                        "possibleValues": ["High", "Medium", "Low"],
+                        "defaultValue": "High"
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/ActionButton.svg"
+            },
+            "description": "ActionButton",
+            "displayName": "ActionButton",
+            "displayToUser": true,
+            "diffName": "Label",
+            "groupName": "Table Controls",
+            "name": "ListReport-ActionButton"
+        },
+        "ListReport-Column": {
+            "additionalMetadata": {
+                "aggregations": {},
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Importance": {
+                        "displayName": "Importance",
+                        "name": "Importance",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false,
+                        "possibleValues": ["High", "Medium", "Low"],
+                        "defaultValue": "High"
+                    },
+                    "Title": {
+                        "displayName": "Title",
+                        "name": "Title",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    },
+                    "AdditionalValue": {
+                        "displayName": "AdditionalValue",
+                        "name": "AdditionalValue",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "Value": {
+                        "displayName": "Value",
+                        "name": "Value",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "Currency": {
+                        "displayName": "Currency",
+                        "name": "Currency",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "Url": {
+                        "displayName": "Url",
+                        "name": "Url",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": true,
+                        "isDataDriven": true
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/Column.svg"
+            },
+            "description": "Column",
+            "displayName": "Column",
+            "displayToUser": true,
+            "diffName": "Title",
+            "groupName": "Table Controls",
+            "name": "ListReport-Column"
+        },
+        "ListReport-Table": {
+            "additionalMetadata": {
+                "aggregations": {
+                    "actionButtons": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "actionButtons",
+                        "multiple": true,
+                        "name": "actionButtons",
+                        "types": ["ListReport-ActionButton"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    },
+                    "columns": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "columns",
+                        "multiple": true,
+                        "name": "columns",
+                        "types": ["ListReport-Column"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    }
+                },
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Title": {
+                        "displayName": "Title",
+                        "name": "Title",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/Table.svg"
+            },
+            "description": "Table",
+            "displayName": "Table",
+            "displayToUser": true,
+            "diffName": "Title",
+            "groupName": "ListReport Controls",
+            "name": "ListReport-Table"
+        },
+        "ListReport-ListReport": {
+            "additionalMetadata": {
+                "aggregations": {
+                    "filterBars": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "filterBars",
+                        "multiple": false,
+                        "name": "filterBars",
+                        "types": ["ListReport-FilterBar"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    },
+                    "tables": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "tables",
+                        "multiple": false,
+                        "name": "tables",
+                        "types": ["ListReport-Table"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    }
+                },
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {},
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/ListReport.svg"
+            },
+            "description": "ListReport",
+            "displayName": "ListReport",
+            "displayToUser": false,
+            "diffName": "",
+            "groupName": "root Controls",
+            "name": "ListReport-ListReport"
+        },
+        "ObjectPage-ActionButton": {
+            "additionalMetadata": {
+                "aggregations": {},
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Label": {
+                        "displayName": "Label",
+                        "name": "Label",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/ActionButton.svg"
+            },
+            "description": "ActionButton",
+            "displayName": "ActionButton",
+            "displayToUser": true,
+            "diffName": "Label",
+            "groupName": "Header Controls",
+            "name": "ObjectPage-ActionButton"
+        },
+        "ObjectPage-KPI": {
+            "additionalMetadata": {
+                "aggregations": {},
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Title": {
+                        "displayName": "Title",
+                        "name": "Title",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    },
+                    "Value": {
+                        "displayName": "Value",
+                        "name": "Value",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "Currency": {
+                        "displayName": "Currency",
+                        "name": "Currency",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/KPI.svg"
+            },
+            "description": "KPI",
+            "displayName": "KPI",
+            "displayToUser": true,
+            "diffName": "Title",
+            "groupName": "Header Controls",
+            "name": "ObjectPage-KPI"
+        },
+        "ObjectPage-Header": {
+            "additionalMetadata": {
+                "aggregations": {
+                    "actionButtons": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "actionButtons",
+                        "multiple": true,
+                        "name": "actionButtons",
+                        "types": ["ObjectPage-ActionButton"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    },
+                    "kPIs": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "kPIs",
+                        "multiple": true,
+                        "name": "kPIs",
+                        "types": ["ObjectPage-KPI"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    }
+                },
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Title": {
+                        "displayName": "Title",
+                        "name": "Title",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "Description": {
+                        "displayName": "Description",
+                        "name": "Description",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "ImageSource": {
+                        "displayName": "ImageSource",
+                        "name": "ImageSource",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "HeaderBarText": {
+                        "displayName": "HeaderBarText",
+                        "name": "HeaderBarText",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/Header.svg"
+            },
+            "description": "Header",
+            "displayName": "Header",
+            "displayToUser": true,
+            "diffName": "",
+            "groupName": "ObjectPage Controls",
+            "name": "ObjectPage-Header"
+        },
+        "ObjectPage-TableAction": {
+            "additionalMetadata": {
+                "aggregations": {},
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Label": {
+                        "displayName": "Label",
+                        "name": "Label",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    },
+                    "Importance": {
+                        "displayName": "Importance",
+                        "name": "Importance",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false,
+                        "possibleValues": ["High", "Medium", "Low"],
+                        "defaultValue": "High"
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/TableAction.svg"
+            },
+            "description": "TableAction",
+            "displayName": "TableAction",
+            "displayToUser": true,
+            "diffName": "",
+            "groupName": "Table Controls",
+            "name": "ObjectPage-TableAction"
+        },
+        "ObjectPage-Column": {
+            "additionalMetadata": {
+                "aggregations": {},
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Importance": {
+                        "displayName": "Importance",
+                        "name": "Importance",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false,
+                        "possibleValues": ["High", "Medium", "Low"],
+                        "defaultValue": "High"
+                    },
+                    "Title": {
+                        "displayName": "Title",
+                        "name": "Title",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    },
+                    "AdditionalValue": {
+                        "displayName": "AdditionalValue",
+                        "name": "AdditionalValue",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "Value": {
+                        "displayName": "Value",
+                        "name": "Value",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "Currency": {
+                        "displayName": "Currency",
+                        "name": "Currency",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "Url": {
+                        "displayName": "Url",
+                        "name": "Url",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": true,
+                        "isDataDriven": true
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/Column.svg"
+            },
+            "description": "Column",
+            "displayName": "Column",
+            "displayToUser": true,
+            "diffName": "Title",
+            "groupName": "Table Controls",
+            "name": "ObjectPage-Column"
+        },
+        "ObjectPage-Table": {
+            "additionalMetadata": {
+                "aggregations": {
+                    "tableActions": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "tableActions",
+                        "multiple": true,
+                        "name": "tableActions",
+                        "types": ["ObjectPage-TableAction"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    },
+                    "columns": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "columns",
+                        "multiple": true,
+                        "name": "columns",
+                        "types": ["ObjectPage-Column"],
+                        "displayToUser": true,
+                        "visibility": "public",
+                        "contextProperty": "Items"
+                    }
+                },
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Items": {
+                        "displayName": "Items",
+                        "name": "Items",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true,
+                        "isContextProperty": true
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/Table.svg"
+            },
+            "description": "Table",
+            "displayName": "Table",
+            "displayToUser": true,
+            "diffName": "Title",
+            "groupName": "Section Controls",
+            "name": "ObjectPage-Table"
+        },
+        "ObjectPage-FormElement": {
+            "additionalMetadata": {
+                "aggregations": {},
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Label": {
+                        "displayName": "Label",
+                        "name": "Label",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    },
+                    "Value": {
+                        "displayName": "Value",
+                        "name": "Value",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    },
+                    "Url": {
+                        "displayName": "Url",
+                        "name": "Url",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": true,
+                        "isDataDriven": true
+                    },
+                    "Nullable": {
+                        "displayName": "Nullable",
+                        "name": "Nullable",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    },
+                    "Currency": {
+                        "displayName": "Currency",
+                        "name": "Currency",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": true
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/FormElement.svg"
+            },
+            "description": "FormElement",
+            "displayName": "FormElement",
+            "displayToUser": true,
+            "diffName": "Label",
+            "groupName": "FormGroup Controls",
+            "name": "ObjectPage-FormElement"
+        },
+        "ObjectPage-FormGroup": {
+            "additionalMetadata": {
+                "aggregations": {
+                    "formElements": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "formElements",
+                        "multiple": true,
+                        "name": "formElements",
+                        "types": ["ObjectPage-FormElement"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    }
+                },
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Title": {
+                        "displayName": "Title",
+                        "name": "Title",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/FormGroup.svg"
+            },
+            "description": "FormGroup",
+            "displayName": "FormGroup",
+            "displayToUser": true,
+            "diffName": "Title",
+            "groupName": "Form Controls",
+            "name": "ObjectPage-FormGroup"
+        },
+        "ObjectPage-Form": {
+            "additionalMetadata": {
+                "aggregations": {
+                    "formGroups": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "formGroups",
+                        "multiple": true,
+                        "name": "formGroups",
+                        "types": ["ObjectPage-FormGroup"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    }
+                },
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {},
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/Form.svg"
+            },
+            "description": "Form",
+            "displayName": "Form",
+            "displayToUser": true,
+            "diffName": "",
+            "groupName": "Section Controls",
+            "name": "ObjectPage-Form"
+        },
+        "ObjectPage-Section": {
+            "additionalMetadata": {
+                "aggregations": {
+                    "sectionContent": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "sectionContent",
+                        "multiple": false,
+                        "name": "sectionContent",
+                        "types": ["ObjectPage-Table", "ObjectPage-Form"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    }
+                },
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {
+                    "Title": {
+                        "displayName": "Title",
+                        "name": "Title",
+                        "type": "string",
+                        "displayToUser": true,
+                        "isLinkProperty": false,
+                        "isDataDriven": false
+                    }
+                },
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/Section.svg"
+            },
+            "description": "Section",
+            "displayName": "Section",
+            "displayToUser": true,
+            "diffName": "Title",
+            "groupName": "ObjectPage Controls",
+            "name": "ObjectPage-Section"
+        },
+        "ObjectPage-ObjectPage": {
+            "additionalMetadata": {
+                "aggregations": {
+                    "headers": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "headers",
+                        "multiple": false,
+                        "name": "headers",
+                        "types": ["ObjectPage-Header"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    },
+                    "sections": {
+                        "altTypes": ["string"],
+                        "isDataDriven": false,
+                        "displayName": "sections",
+                        "multiple": true,
+                        "name": "sections",
+                        "types": ["ObjectPage-Section"],
+                        "displayToUser": true,
+                        "visibility": "public"
+                    }
+                },
+                "associations": [],
+                "defaultAggregation": "",
+                "properties": {},
+                "icon": "/resources/norman-ui-catalog-manager-client/assets/smartTemplates/ObjectPage.svg"
+            },
+            "description": "ObjectPage",
+            "displayName": "ObjectPage",
+            "displayToUser": false,
+            "diffName": "",
+            "groupName": "root Controls",
+            "name": "ObjectPage-ObjectPage"
+        }
+    }, "floorPlans": {
+    "ListReport": {
+        "name": "ListReport",
+        "isSmart": true,
+        "description": "ListReport",
+        "designTemplate": {
+            "type": "ListReport-ListReport",
+            "template": {
+                "var": {
+                    "entityType": "sap.ui.model.odata.AnnotationHelper.gotoEntityType(entitySet>entityType)"
+                }
+            },
+            "properties": {},
+            "groups": {
+                "filterBars": {
+                    "type": "ListReport-FilterBar",
+                    "properties": {
+                        "AllowFreeSearch": {
+                            "model": "entitySet",
+                            "path": "Org.OData.Capabilities.V1.SearchRestrictions/Searchable/Bool",
+                            "static": true
+                        }
+                    },
+                    "groups": {
+                        "filters": {
+                            "type": "ListReport-Filter",
+                            "template": {
+                                "var": {
+                                    "selectionField": "repeat",
+                                    "descriptionGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(selectionField>PropertyPath)"
+                                },
+                                "repeat": "entityType>com.sap.vocabularies.UI.v1.SelectionFields"
+                            },
+                            "properties": {
+                                "FilterOn": {
+                                    "path": "PropertyPath",
+                                    "model": "selectionField"
+                                },
+                                "Description": {
+                                    "model": "descriptionGeneratedVar",
+                                    "path": "sap:label",
+                                    "static": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "tables": {
+                    "type": "ListReport-Table",
+                    "template": {
+                        "var": {
+                            "header": "meta>com.sap.vocabularies.UI.v1.HeaderInfo"
+                        }
+                    },
+                    "properties": {
+                        "Title": {
+                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                            "model": "header",
+                            "path": "TypeNamePlural",
+                            "static": true
+                        }
+                    },
+                    "groups": {
+                        "actionButtons": {
+                            "type": "ListReport-ActionButton",
+                            "template": {
+                                "var": {
+                                    "dataField": "repeat",
+                                    "action": "sap.ui.model.odata.AnnotationHelper.gotoFunctionImport(dataField>Action)"
+                                },
+                                "repeat": "meta>com.sap.vocabularies.UI.v1.LineItem",
+                                "conditions": [],
+                                "repeatType": "com.sap.vocabularies.UI.v1.DataFieldForAction"
+                            },
+                            "properties": {
+                                "Label": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                    "model": "dataField",
+                                    "path": "Label",
+                                    "static": true
+                                },
+                                "Importance": {
+                                    "path": "com.sap.vocabularies.UI.v1.Importance/EnumMember",
+                                    "model": "dataField",
+                                    "static": true
+                                }
+                            }
+                        },
+                        "columns": {
+                            "type": "ListReport-Column",
+                            "template": {
+                                "var": {
+                                    "dataField": "repeat",
+                                    "target": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>)",
+                                    "dataFieldValue": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                    "additionalValueGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                    "virtualProp2GeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                    "listEntitySet": "entitySet>",
+                                    "collection": "meta>com.sap.vocabularies.UI.v1.LineItem"
+                                },
+                                "repeat": "collection>",
+                                "conditions": [
+                                    {
+                                        "type": "if",
+                                        "target": "collection>AnnotationType",
+                                        "value": "com.sap.vocabularies.UI.v1.LineItem"
+                                    }
+                                ],
+                                "termInfo": {
+                                    "collection": "com.sap.vocabularies.UI.v1.LineItem"
+                                }
+                            },
+                            "properties": {
+                                "Importance": {
+                                    "path": "com.sap.vocabularies.UI.v1.Importance/EnumMember",
+                                    "model": "target",
+                                    "static": true
+                                },
+                                "Title": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                    "model": "dataField",
+                                    "path": "Label",
+                                    "static": true
+                                },
+                                "AdditionalValue": {
+                                    "path": "com.sap.vocabularies.Common.v1.Text",
+                                    "model": "additionalValueGeneratedVar"
+                                },
+                                "Value": {
+                                    "path": "Value",
+                                    "model": "dataField"
+                                },
+                                "Currency": {
+                                    "path": "Org.OData.Measures.V1.ISOCurrency",
+                                    "model": "virtualProp2GeneratedVar"
+                                },
+                                "Url": {
+                                    "path": "Url",
+                                    "model": "dataField"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "templateName": "sap.suite.ui.generic.template.ListReport",
+        "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAQAAQMAAACEXWYAAAAAA1BMVEX///+nxBvIAAAAtElEQVQYGe3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGIQeAAHYiJ6XAAAAAElFTkSuQmCC",
+        "controls": {
+            "name": "ListReport",
+            "rootControlId": "root-ListReport-ListReport-Id",
+            "controls": [
+                {
+                    "controlId": "root-ListReport-ListReport-Id",
+                    "controlName": "ListReport-ListReport",
+                    "parentControlId": null,
+                    "catalogControlName": "ListReport-ListReport",
+                    "properties": [],
+                    "groups": [
+                        {
+                            "groupId": "filterBars",
+                            "children": []
+                        },
+                        {
+                            "groupId": "tables",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "ObjectPage": {
+        "name": "ObjectPage",
+        "isSmart": true,
+        "description": "ObjectPage",
+        "designTemplate": {
+            "type": "ObjectPage-ObjectPage",
+            "properties": {},
+            "groups": {
+                "headers": {
+                    "type": "ObjectPage-Header",
+                    "properties": {
+                        "Title": {
+                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                            "model": "",
+                            "path": "com.sap.vocabularies.UI.v1.HeaderInfo/Title/Value"
+                        },
+                        "Description": {
+                            "model": "",
+                            "path": "com.sap.vocabularies.UI.v1.HeaderInfo/Description/Value"
+                        },
+                        "ImageSource": {
+                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                            "model": "",
+                            "path": "com.sap.vocabularies.UI.v1.HeaderInfo/ImageUrl"
+                        },
+                        "HeaderBarText": {
+                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                            "model": "",
+                            "path": "com.sap.vocabularies.UI.v1.HeaderInfo/TypeName"
+                        }
+                    },
+                    "groups": {
+                        "actionButtons": {
+                            "type": "ObjectPage-ActionButton",
+                            "template": {
+                                "var": {
+                                    "dataField": "repeat"
+                                },
+                                "repeat": "meta>com.sap.vocabularies.UI.v1.Identification",
+                                "conditions": [],
+                                "repeatType": "com.sap.vocabularies.UI.v1.DataFieldForAction"
+                            },
+                            "properties": {
+                                "Label": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                    "model": "dataField",
+                                    "path": "Label",
+                                    "static": true
+                                }
+                            }
+                        },
+                        "kPIs": {
+                            "type": "ObjectPage-KPI",
+                            "template": {
+                                "var": {
+                                    "dataPoint": "repeat",
+                                    "currencyGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataPoint>Value)"
+                                },
+                                "repeat": "meta>",
+                                "conditions": [],
+                                "repeatType": "com.sap.vocabularies.UI.v1.DataPoint"
+                            },
+                            "properties": {
+                                "Title": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                    "model": "dataPoint",
+                                    "path": "Title",
+                                    "static": true
+                                },
+                                "Value": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                    "model": "dataPoint",
+                                    "path": "Value"
+                                },
+                                "Currency": {
+                                    "path": "Org.OData.Measures.V1.ISOCurrency",
+                                    "model": "currencyGeneratedVar"
+                                }
+                            }
+                        }
+                    }
+                },
+                "sections": {
+                    "type": "ObjectPage-Section",
+                    "template": {
+                        "var": {
+                            "facets": "meta>com.sap.vocabularies.UI.v1.Facets",
+                            "facet": "repeat"
+                        },
+                        "repeat": "facets>"
+                    },
+                    "properties": {
+                        "Title": {
+                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                            "model": "facet",
+                            "path": "Label",
+                            "static": true
+                        }
+                    },
+                    "groups": {
+                        "tables": {
+                            "type": "ObjectPage-Table",
+                            "template": {
+                                "var": {
+                                    "target": "facet>Target",
+                                    "subEntitySet": "sap.suite.ui.generic.template.js.AnnotationHelper.getEntitySetOfPath(target>)",
+                                    "listEntitySet": "sap.ui.model.odata.AnnotationHelper.gotoEntitySet(target>)",
+                                    "collection": "sap.ui.model.odata.AnnotationHelper.resolvePath(target>)"
+                                },
+                                "conditions": [
+                                    {
+                                        "type": "if",
+                                        "test": "{path: 'facet>Target', formatter: 'sap.ui.model.odata.AnnotationHelper.isMultiple'}"
+                                    }
+                                ]
+                            },
+                            "properties": {
+                                "Items": {
+                                    "formatter": "sap.ui.model.odata.AnnotationHelper.getNavigationPath",
+                                    "model": "target",
+                                    "path": "",
+                                    "attribute": "EntityPath"
+                                }
+                            },
+                            "groups": {
+                                "tableActions": {
+                                    "type": "ObjectPage-TableAction",
+                                    "template": {
+                                        "var": {
+                                            "dataField": "repeat",
+                                            "action": "sap.ui.model.odata.AnnotationHelper.gotoFunctionImport(dataField>Action)"
+                                        },
+                                        "repeat": "collection>",
+                                        "conditions": [],
+                                        "repeatType": "com.sap.vocabularies.UI.v1.DataFieldForAction"
+                                    },
+                                    "properties": {
+                                        "Label": {
+                                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                            "model": "dataField",
+                                            "path": "Label",
+                                            "static": true
+                                        },
+                                        "Importance": {
+                                            "path": "com.sap.vocabularies.UI.v1.Importance/EnumMember",
+                                            "model": "dataField",
+                                            "static": true
+                                        }
+                                    }
+                                },
+                                "columns": {
+                                    "type": "ObjectPage-Column",
+                                    "template": {
+                                        "var": {
+                                            "dataField": "repeat",
+                                            "target": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>)",
+                                            "dataFieldValue": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                            "additionalValueGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                            "virtualProp2GeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)"
+                                        },
+                                        "repeat": "collection>",
+                                        "conditions": [
+                                            {
+                                                "type": "if",
+                                                "target": "collection>AnnotationType",
+                                                "value": "com.sap.vocabularies.UI.v1.LineItem"
+                                            }
+                                        ],
+                                        "termInfo": {
+                                            "collection": "com.sap.vocabularies.UI.v1.LineItem"
+                                        }
+                                    },
+                                    "properties": {
+                                        "Importance": {
+                                            "path": "com.sap.vocabularies.UI.v1.Importance/EnumMember",
+                                            "model": "target",
+                                            "static": true
+                                        },
+                                        "Title": {
+                                            "formatter": "sap.ui.model.odata.AnnotationHelper.format",
+                                            "model": "dataField",
+                                            "path": "Label",
+                                            "static": true
+                                        },
+                                        "AdditionalValue": {
+                                            "path": "com.sap.vocabularies.Common.v1.Text",
+                                            "model": "additionalValueGeneratedVar"
+                                        },
+                                        "Value": {
+                                            "path": "Value",
+                                            "model": "dataField"
+                                        },
+                                        "Currency": {
+                                            "path": "Org.OData.Measures.V1.ISOCurrency",
+                                            "model": "virtualProp2GeneratedVar"
+                                        },
+                                        "Url": {
+                                            "path": "Url",
+                                            "model": "dataField"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "forms": {
+                            "type": "ObjectPage-Form",
+                            "template": {
+                                "conditions": [
+                                    {
+                                        "type": "else"
+                                    }
+                                ]
+                            },
+                            "properties": {},
+                            "groups": {
+                                "formGroups": {
+                                    "type": "ObjectPage-FormGroup",
+                                    "template": {
+                                        "var": {
+                                            "groupFacet": "repeat",
+                                            "target": "sap.ui.model.odata.AnnotationHelper.resolvePath(groupFacet>Target)"
+                                        },
+                                        "repeat": "facet>Facets",
+                                        "conditions": [
+                                            {
+                                                "type": "if",
+                                                "target": "target>AnnotationType",
+                                                "value": "com.sap.vocabularies.UI.v1.FieldGroup"
+                                            }
+                                        ],
+                                        "termInfo": {
+                                            "target": "com.sap.vocabularies.UI.v1.FieldGroup"
+                                        }
+                                    },
+                                    "properties": {
+                                        "Title": {
+                                            "model": "groupFacet",
+                                            "path": "Label",
+                                            "static": true
+                                        }
+                                    },
+                                    "groups": {
+                                        "formElements": {
+                                            "type": "ObjectPage-FormElement",
+                                            "template": {
+                                                "var": {
+                                                    "labelGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                                    "nullableGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                                    "currencyGeneratedVar": "sap.ui.model.odata.AnnotationHelper.resolvePath(dataField>Value)",
+                                                    "dataField": "repeat"
+                                                },
+                                                "repeat": "target>Data"
+                                            },
+                                            "properties": {
+                                                "Label": {
+                                                    "path": "sap:label",
+                                                    "model": "labelGeneratedVar",
+                                                    "static": true
+                                                },
+                                                "Value": {
+                                                    "path": "Value",
+                                                    "model": "dataField"
+                                                },
+                                                "Url": {
+                                                    "path": "Url",
+                                                    "model": "dataField"
+                                                },
+                                                "Nullable": {
+                                                    "path": "sap:nullable",
+                                                    "model": "nullableGeneratedVar",
+                                                    "static": true
+                                                },
+                                                "Currency": {
+                                                    "path": "Org.OData.Measures.V1.ISOCurrency",
+                                                    "model": "currencyGeneratedVar"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "templateName": "sap.suite.ui.generic.template.ObjectPage",
+        "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAAQAAQMAAACEXWYAAAAAA1BMVEX///+nxBvIAAAAtElEQVQYGe3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGIQeAAHYiJ6XAAAAAElFTkSuQmCC",
+        "controls": {
+            "name": "ObjectPage",
+            "rootControlId": "root-ObjectPage-ObjectPage-Id",
+            "controls": [
+                {
+                    "controlId": "root-ObjectPage-ObjectPage-Id",
+                    "controlName": "ObjectPage-ObjectPage",
+                    "parentControlId": null,
+                    "catalogControlName": "ObjectPage-ObjectPage",
+                    "properties": [],
+                    "groups": [
+                        {
+                            "groupId": "headers",
+                            "children": []
+                        },
+                        {
+                            "groupId": "sections",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+},
+    "catalogName" : "designCatalog",
+    "catalogId" : "designCatalog",
+    "description" : "Smart Template Root 1.30.556",
+    "displayName" : "Smart Template",
+    "catalogLang" : "sapui5",
+    "libraryVersion" : "1.30.556",
+    "isRootCatalog" : true,
+    "libraryURL" : "/api/uicatalogs/public/uilib/sapui5/1.30.556/sap-ui-core.js",
+    "libraryPublicURL" : "/api/uicatalogs/public/uilib/sapui5/1.30.556/sap-ui-core.js",
+    "rootCatalogId" : null,
+    "actions" : {
+        "Navigation" : {
+            "displayName" : "Navigation",
+            "name" : "Navigation",
+            "actionParam" : [
+                {
+                    "paramType" : "PAGE",
+                    "paramDisplayName" : "Page",
+                    "paramName" : "routeName"
+                }
+            ],
+            "actionId" : "NAVTO",
+            "actionFn" : "",
+            "displayToUser" : true,
+            "Library" : "SAPUI5"
+        }
+    },
+    "__v" : 0
+}

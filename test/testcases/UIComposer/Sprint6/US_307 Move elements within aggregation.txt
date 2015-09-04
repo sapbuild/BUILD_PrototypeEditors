@@ -1,0 +1,57 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+	  
+The user shall be able to move a UI element in an aggregation. For example he might want to move the icon that is to the left of an input field in an aggregation to the right of that input field.
+Acceptance Criteria:	
+•	Prerequisite is that the user can select a UI element in an aggregation
+•	The user can move any element in the aggregation to a new position within the aggregation
+
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Steps/Procedures
+                  
+Scenario:  assume there is a list aggregation.  There are 4 list items inside the list.  Each list items has a checkbox, a text field.
+See Inspector Panel page for details of children tab.	
+
+	
+_  Verify user could move first list item to fourth place.
+
+_ Verify user could move attribute text field within list item area.
+
+_ Verify user could move attribute text field  outside of aggregation.
+
+_ Verify user could move any controls inside the aggregation out to the canvas by selecting a specific control.	
+
+_What happened if I move attribute text field inside the item list on top of another attribute text field?	
+
+_Verify auto save works after move the control inside aggregation.
+
+_What if you move a text field to half way between list control and canvas; half text field inside, half text field outside.	
+
+_ Verify user could move parent control and children together.  Single click on list control.  Drag the list control to a new place in the canvas.  Verify list control, list item, attribute text fields, all can be moved.	
+	
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+Revision History
+Date	Comment	Updated by Vijay Enthran Varadarajan Subramanian.
+06/1/2015	Initial draft	Chinh Nguyen
+		
+

@@ -1,0 +1,93 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+
+The user may want to add elements to an aggregation. He shall be able to add a UI element to the aggregation.
+Acceptance Criteria	
+•	The user shall be able to add a UI element anywhere within an aggregation
+•	The user shall be able to add a UI element from the palette
+•	The user shall be able to add a UI element from anywhere else on the page of the canvas
+•	The user shall be able to add a UI element from another page by using copy and paste
+
+User story #343	Not all UI elements can be added to an aggregation. Since it cannot be expected that the user knows which UI elements may be added it shall be indicated to him which elements are valid to be added to a selected aggregation. This shall also be true when the aggregation container (parent) does not contain any UI elements (empty aggregation).
+
+Acceptance criteria:
+
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Steps/Procedures           
+
+_ User drag and drop an empty List control into the canvas.  Drag the customListItem into the list control.  Verify the corresponding area where the custom item list is to be dropped inside the parent list control is highlighted with dotted red lines.  User drops the new custom list item.  Verify list item ''is not'' displayed inside list.
+
+_ Verify user could add 3 custom list items in the list control.
+
+_ Verify user could add an item attribute inside custom list item control.
+
+_ Verify user could add a label, in a simple form control.
+_ Verify user could add 2 item attribute in custom list item control, using the children tab.
+_  Copy a text field from page 2, go to list aggregation, pastes the copied text field in list item control.  Verify it works.	
+
+_  Assume list aggregation already in page 1, drag and drop an item attribute on the canvas but outside the aggregation.  Now try to move the item attribute into the custom list item control of the aggregation.  Verify it works.	
+
+_  Copy a text box from the aggregation (in list item) then paste in the same list item.  Verify it works.	
+
+-Drag and drop a Icon Tab bar control into the canvas.
+	-Now select the ok, Attachements or notes Icon tab present in the header of the icon Tab bar and try it to move it out to the canvas.
+	-The composer should throw an error called Control cannot be moved at that position.
+	-Drag a Icon tab control into the canvas, the composer should again throw an error , saying Control cannot be moved at that position.
+	-Drag a Icon tab control into the header of Icon Tab Bar control, the composer should not throw an error.
+	
+	
+	
+User story 343:	
+
+_Verify canvas will be highlighted(dotted red lines) if user tries to drop a control that is not valid in an already added list control.  Verify no error displayed.  Drag drop a list control in canvas.  Drag and drop a calendar control on top of list.  Verify canvas is highlighted while drag calendar on top of list.  Verify user could drop calendar in canvas on top of list control.
+
+_  Verify user could add another control on an existing pattern loaded from UI catalog.  
+Steps: drag and drop a pattern imported from UI catalog.  Try to drag a control that is valid to add in this pattern.  Verify new control is added in the pattern.	
+
+_  Verify user could add a valid control into a certain aggregation (list item is a valid control to add in list control) using Children+ tab.  Drag and drop a list into canvas.  Click on List to select, a property pop up displayed.  Go to ‘Children’ tab, verify only controls that are valid to add to list control to be displayed.  Select a control to add, verify user could add successfully.	
+	
+
+
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+
+
+Revision History
+Date	Comment	Updated by
+02/10/2015	Initial draft	Chinh Nguyen
+		
+
+
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Safari and Chrome  
+
+
+
+Revision History
+Date	Comment	Updated by: Vijay Enthran Varadarajan Subramanian
+06/1/2015	Initial draft	Chinh Nguyen
+		
+

@@ -1,0 +1,46 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution:	30 min
+Risk Level (1-5):	1
+Automation readiness	
+Reviewed by:	Norman/UI Composer
+Description:
+Purpose/ goal of the test case	
+The user shall be able to create a blank page in the map view. 
+
+Business scenario/User Story:
+
+Acceptance Criteria:
+
+•   The user shall be able to add a new blank page to the project in the map view.
+•   The new page shall be added as the last page in the project.
+
+
+Preparations:
+
+Setup/Configuration steps (if necessary).
+A user has signed up to Project Norman with the name, email address and password.
+User Logon Information/Roles
+Navigation path to reach the application (i.e. URL)
+
+Test Scenarios/Steps: 
+                  
+1. Verify that when the user is in map view, he sees the "ADD BLANK PAGE" button. Click on the button to add a new page.
+   - Create a project with default 2 pages.  On prototype page, click on Map View. 
+   - User will see two pages Page 1 and Page 2. 
+   - When user clicks on "ADD BLANK PAGE" button, a new Page 3 is added.
+   
+2. Verify that the new blank page shall be added as the last page in the project.
+   - After user added Page 3, the page is shown after Page 1 and Page 2.
+   - Click on "ADD BLANK PAGE" button once again, you will see a new Page 4 added after Page 3.
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome  
+
+Revision History
+Date	Comment	Updated by
+04/06/2015	Initial draft	Chinh Nguyen
+06/02/2015        Updated Joe Cintas

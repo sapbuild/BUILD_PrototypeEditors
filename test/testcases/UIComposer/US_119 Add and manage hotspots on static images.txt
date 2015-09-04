@@ -1,0 +1,80 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+
+The user shall be able to add hotspots on images he inserted as a placeholder for custom UI elements .
+The user shall be able to define one or more hotspots once the image is placed on the canvas. 
+The user shall be able to connect interactions to these hotspots allowing the proposed UI element to be interactive when running the prototype.
+
+Acceptance Criteria
+•	The user shall be able to define multiple hotspots on the image
+•	The user shall be able to resize hotspots on the image
+•	The user shall be able to associate events/alerts for each hotspot
+•	The user shall be able to click on hotspot to set up page navigation
+
+Preparations
+Setup/Configuration steps (if necessary)  
+A user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1. Verify that the user shall be able to define multiple hotspots on the image
+   - Create a project with at least one page. Click on the project to open it.
+   - On Prototype pages view, click thumbnail of the page to go to UI composer.
+   - Open your local file system. Select an image file and drag and drop it on the canvas.
+   - In action panel of UI controls, select Hotspot and drag and drop it on the image on the canvas.
+   - Repeat drag and drop of Hotspot control on the image several times.
+   - Preview the image on canvas that has multiple hotspots.
+
+2. Verify that the user shall be able to resize hotspots on the image
+   - Open a page and drag and drop of Hotspot control on the canvas.
+   - Resize the hotspot horizontally and vertically.
+   - Resize the hotspot to cover the whole image.
+   
+ 3. Verify that the user shall be able to associate events for each hotspot
+   - Open a page and drag and drop an image file from your local file system onto the canvas.
+   - From UI controls panel, drag and drop a hotspot onto the image on the canvas.
+   - Click on the hotspot to see its properties in the right-hand panel. 
+   - In ACTIONS section, find Interaction field that has one option "On Click".
+   - In Action field, select the option "Show Alert". 
+   - Write some free text in "Text" field.  
+   - In top menu toolbar, click on preview icon. 
+   - In interactive mode, press on the hotspot. 
+   - A small popup opens that should show to you the free text as a message.
+   - Click on OK button to close the message popup. 
+   - Click on edit button to return to composer.
+   - Repeat the step with other hotspots.
+   
+4. Verify that the user shall be able to click on hotspot to set up page navigation    
+   - Create a project with two pages Page 1 and Page 2.
+   - Open Page 1 and select a hotspot that is placed on an image.
+   - Click on the hotspot to see its properties.
+   - In Action field, select the option "Navigate To".  
+   - In Page field, select the Page 2 in drop down.  
+   - Click on preview icon in top menu toolbar. 
+   - When you see Page 1 in interactive mode, press on the hotspot. 
+   - You should be navigated to Page 2. 
+   - Click on edit button to return to composer.
+   - Repeat the step with other hotspots and more pages in the project.
+
+Variant (eg. iPhone vs iPad, browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Chrome and Safari
+
+Revision History
+Date	Comment	Updated by
+02/11/2015	Initial draft	David Lim
+06/05/2015	Updated		Lucy Chernobrod 	
+06/23/2015  Updated     Joe Cintas
+06/24/2015  Updated     Joe Cintas
+

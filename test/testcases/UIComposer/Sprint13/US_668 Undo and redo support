@@ -1,0 +1,127 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component
+Estimated time for manual test execution
+Risk Level (1-5)	1
+Automation readiness
+Reviewed by	Norman/UI Composer
+Description
+
+The user shall be able to redo and undo actions he has performed in the UI composer. He shall be able to undo all actions of the current session. He shall be able to redo actions he had undone in the current session back to the newest state.
+
+Acceptance criteria:
+
+•	If the user has performed at least one action in the composer during the current session he shall be able to undo an action
+•	Each undo will undo one action
+•	Once the user has executed at least one undo in the current session he shall be able to redo an action
+•	Each redo will redo one action
+•	Undo shall be executable by keyboard (CTRL Z/CMND Z) & by clicking the undo button in the toolbar
+•	Redo shall be executable only once a undo has been performed.
+•	Redo is executed by (SHFT + CTRL/CMND Z) & by clicking the redo button in the toolbar
+•	If the UI Composer is reloaded the user can no longer undo or redo actions from the time before he reloaded the browser
+•	The state of the UI Composer Canvas will be the confirmation that a change has occurred.
+•	When redoing an action the selection will move to the element the action was performed on
+•	When undoing an action the selection will move the element the action was performed on
+•	Undo/redo will only apply on actions that change meta data (e.g. not on actions such as showing/hiding the grid)
+•	The undo limit is 100 actions
+•	A new action will clear the redos
+•	If the user deletes a control on page 1, then navigates to page 2 and then undoes the deletion we navigate back to page 1 before re-adding the control so that we can show/select it on the canvas.
+
+Preparations
+Setup/Configuration steps (if necessary)
+A user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1.  Create a project with default 2 pages.  On prototype page, click thumbnail of page 1 to go to composer page.
+    Verify that the user shall be able to undo actions in page 1. 
+    - Add a button in page 1. 
+    - Undo adding button in page 1.
+    - Undo shall be executed by keyboard (CTRL Z) in PC or (CMND Z) in Mac and by clicking the undo button in the toolbar.
+    - Repeat the step with other control in page 1.
+    
+2.  Verify that after the user has executed one undo in the current session he shall be able to redo an action. 
+    - Add a button in page 1 
+    - Undo adding button in page 1
+    - Redo adding button in page 1     
+    - Redo shall be executed by keyboard (SHFT + CTRL Z) in PC or (SHFT + CMND Z) in Mac and by clicking the redo button in the toolbar.
+
+3.  Verify that redo shall be executable only once a undo has been performed.
+    - Try to redo adding a button in page 1 once again, that should be no action. 
+    - Repeat the step with other control and page 2.
+   
+4.  Verify that the user can no longer undo or redo actions from the time before he reloaded the browser.
+    - Add a button in page 2.
+    - Reload UI Composer.
+    - Try to undo adding a button in page 2, that should fail.
+
+5.  Verify that user shall be able to see on UI Composer canvas after every undo/redo action occurred. 
+     - Add page 3 and add a new button in page 3.
+     - Undo adding button in page 3 and check that the button is not shown in page 3
+     - Redo adding button in page 3 and check that the button apprears in page 3
+
+6.  Verify that when undoing an action the selection will move to the element the action was performed on. 
+    - Add a button 1 in page 1 
+    - Add a button 2 in page 1 
+    - Undo adding button 2
+    - Check that the selection is moved to the button 1. 
+
+7.  Verify that When redoing an action the selection will move to the element the action was performed on. 
+    - Add a button 1 in page 1 
+    - Add a button 2 in page 1 
+    - Undo adding button 2
+    - Redo adding button 2
+    - Check that the selection is moved to the button 2. 
+ 
+8.  Verify that Undo/redo will only apply on actions that change meta data.
+    - Open page 1,  preview actions in top menu bar. 
+    - Apply undo/redo to Show/Hide Navigations,  Show/Hide Ruler, Activate/Deactivate Snapping, etc. 
+    - Check that undo/redo is not possible.
+
+9. Verify that a new action that change meta data will clear the redos. 
+    - Open page 1
+    - Repeat adding a new button in page 1 at least 2 times.
+    - Redo adding buttons in page 1 once
+    - Drag an image to page 1
+    - Try to redo the second buttons in page 1, that should fail.
+ 
+10.  Verify that undo limit is 100 actions.
+    - Reload UI Composer. 
+    - When in the page 1, add 101 buttons in page 1.
+    - Repeat a undo till it possible that should be 100 times. 
+    - Verify that one button left that cannot be undo.
+ 
+11. Verify that a navigation out of one page to other will keep the undos. 
+    - Open page 1
+    - Add a button in page 1 
+    - Navigate to other page 2
+    - Go to page 1 back and undo adding button in page 1
+     
+12. Reload UI Composer
+    - Open page 1, add a button. 
+    - Delete a button in page 1
+    - Navigate to page 2
+    - Undo the deletion of the button on page 1.
+    - Check that the user navigates back to page 1 before re-adding the button so that we can show/select it on the canvas.
+
+13. Verify that Undo/redo will work for a control properties. 
+    - Open page 1 and add a button  
+    - Preview the button properties Text, Type, Enabled and Page navigation.
+    - Change the text property and then undo
+    - Redo the text property
+    - Repeat Undo/redo for other controls and other properties.
+
+
+Variant (eg. Mac,  Windows,  browser compatibility)
+
+Execute the test with  Desktop Windows /Chrome and Mac/Chrome
+
+Revision History
+Date	Comment	Updated by
+05/19/2015	Initial draft	Lucy Chernobrod
+05/21/2015	Reviewd by QA team

@@ -1,0 +1,61 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify the user be able to copy and paste multiple UI elements
+ 
+
+Business scenario/User Story
+	  
+Once a user has selected multiple UI elements he shall be able to copy and paste them.
+
+Acceptance Criteria	•	 
+•	A prerequisite is that the user has selected multiple UI elements
+•	As per the UX industry standard keyboard combinations will be used to copy and paste the UI elements
+•	The elements may be pasted on the same page or on a different page
+•	The elements may be pasted multiple times until the user copies another element(s) at which time only the new element can be pasted
+•	When copying elements the elements themselves, their property settings and defined actions will be copied. The user expects everything to be copied. He can then make changes to the pasted elements as needed.
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Scenarios 
+                  
+
+ 
+Verify an user be able to copy any UI elements on the page via standard keyboard    
+
+	
+
+Verify an user be able to paste the copied UI element  via  standard keyboard multiple times on the same page or  on a different page
+
+	
+
+ Verify everything is to be copied from the UI element is pasted on the page
+
+	
+
+Verify an user be able to edit and making changes to the copied element pasted on the page same page or on a different page
+ 
+	 
+
+
+Variant (eg. iPhone vs iPad, browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Safari and Chrome  
+
+Revision History
+Date	Comment	Updated by
+02/12/2015	Initial draft	David Lim
+		

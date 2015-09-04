@@ -1,0 +1,76 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	30 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify the user be able to share the URL of the prototype internally
+ 
+
+Business scenario/User Story
+	  
+The user shall be able to share a URL to the prototype internally. The recipient of the URL shall be able to access a "snapshot" of the prototype and run it, executing all defined interaction, as long as he is within the same network as Norman
+
+Acceptance Criteria
+•	The user shall be able to share the URL of a prototype snapshot with other users.
+•	The URL may be shared with other named Norman users or via email (manual cut and paste the URL to an email client)
+•	When the recipient accesses the URL he shall be able to see the prototype and be able to use defined interactions and see transitions and sample data, if defined
+•	Access management to snapshot using authentication is covered in a separate user story.
+
+
+Preparations
+Setup/Configuration steps (if necessary)
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+
+Navigation path to reach the application (i.e. URL)
+
+
+Test Scenarios  
+ 
+1. Verify an user be able to copy the URL of the prototype from the snapshot
+	- Create a new project with at least one page.
+	- From Prototype pages, go into UIComposer.
+	- Drag and drop some controls onto the canvas.
+	- Click on the Publish arrow icon.
+	- When popup appears, click Publish button.
+	- Copy the URL link, then open a new browser page.
+	- Paste the URL link into link field in new browser page. Press Enter key.
+	- User should see saved prototype in new window.
+
+	
+
+2. Verify an user be able to cut and paste the copied onto email and to share with other user 
+	- Open an exisitng project, then go into UIComposer.
+	- Drag and drop some controls onto the canvas.
+	- Click on the Publish arrow icon.
+	- When popup appears, click Publish button.
+	- Copy the URL link, then open Microsoft Outlook.
+	- Open new e-mail message. Paste the URL link into message window.
+	- In recipients window, enter all recepients you would like to view contents in URL link.
+
+	
+
+3. Verify the recipient of the email be able to view the prototype via the URL link
+	- 
+
+	
+
+4. Verify the recipient be able to use the defined interactions and the transitions and data if defined in the shared prototype
+	- 
+ 
+	 
+
+Variant (eg. iPhone vs iPad, browser compatibility)
+
+Execute the test with Windows Desktop/Chrome and Mac/Safari and Chrome  
+
+Revision History
+Date	Comment	Updated by
+02/12/2015	Initial draft	David Lim
+06/29/2015      Updated         Joe Cintas

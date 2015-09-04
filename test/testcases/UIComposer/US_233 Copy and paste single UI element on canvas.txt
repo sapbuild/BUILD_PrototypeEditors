@@ -1,0 +1,67 @@
+General  Information
+Test case description	Norman/UI Composer
+Test case ID		Version	V1
+CSN Component	  
+Estimated time for manual test execution	15 min
+Risk Level (1-5)	1
+Automation readiness	
+Reviewed by	Norman/UI Composer
+Description
+Purpose/ goal of the test case	
+Verify that an user be able to remove UI elements from the canvas  	  
+
+Once a user has selected an UI element he shall be able to copy and paste it.
+ 
+Acceptance criteria:
+
+•	A prerequisite is that the user has selected a single UI element
+•	As per the UX industry standard keyboard combinations will be used to copy and paste the UI element
+•	The element may be pasted on the same page or on a different page
+•	The element may be pasted multiple times until the user copies another element at which time only the new element can be pasted
+•	When copying an element the element itself, its property settings and defined actions will be copied. The user expects everything to be copied. He can then make changes to the pasted element as needed.
+ 
+Preparations
+Setup/Configuration steps (if necessary)
+
+An user had signed up to Project Norman with the name, email address and password
+
+User Logon Information/ Roles
+ 
+Navigation path to reach the application (i.e. URL)
+
+Test Steps/Procedures
+
+1.  Verify an user be able to select a single UI element 
+   - Create a project with at least two pages. Click on the project to open it.
+   - On Prototype pages view, click thumbnail of the page to go to UI composer.
+   - In the left panel, select a UI element.
+   - Drag and drop the element onto the canvas. 
+   
+ 2. Verify that the user shall be able to use keyboard combinations will be used to copy and paste the UI element on canvas
+   - Open a page in prototype, go to UI Elements panel
+    - Select the UI element. 
+    - Use shortcat command  Ctrl+C (on Windows) and Cmd+C (on Mac) to copy UI element
+    - Use shortcat command  Ctrl+V (on Windows) and Cmd+V (on Mac) to paste UI elemnt onto canvas
+    - Paste the copied control onto the canvas
+    - Repeat the step with other UI controls.
+
+ 3. Verify that the user shall be able to paste UI element on a different page
+   - Create a project with at least two pages, Page 1 and Page 2. Click on the project to open it.
+    - Open Page 1 in prototype, drag and drop an UI Element onto the canvas
+    - Select the UI element for copy. 
+    - Open Page 2, paste the copied UI element onto the canvas
+    - Repeat the step with other UI controls.
+
+4. Verify that when copying an element the element itself, its property settings and defined actions will be copied. 
+   - Open Page 1 in prototype, drag and drop an UI Element onto the canvas.
+    - Select the UI element, preview its properties in the right panel. 
+    - Select the UI element for copy. 
+    - Open Page 2, paste the copied UI element onto the canvas
+    - Preview the copied element properties in the right panel. 
+    - Check that the element properties are the same in Page 1 and Page 2.
+    - Repeat the step with other UI controls.
+
+Revision History
+Date	Comment	Updated by
+02/10//2015	Initial draft	David Lim
+06/18/2015 	Updated Lucy Chernobrod		
