@@ -18,7 +18,7 @@
     "norman-ng-grid": "0.1.1"
   },
   "peerDependencies": {
-    "norman-client-tp": "*",
+    "norman-client-tp": "0.1.12",
     "norman-common-client": "*"
   },
   "readmeFilename": "README.md"
