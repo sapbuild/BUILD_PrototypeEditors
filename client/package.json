@@ -13,9 +13,9 @@
     }
   ],
   "dependencies": {
-    "norman-angular-ui-tree": "2.1.8",
-    "norman-keyboard-event-polyfill": "0.1.4",
-    "norman-ng-grid": "0.9.1"
+    "norman-angular-ui-tree": "*",
+    "norman-keyboard-event-polyfill": "*",
+    "norman-ng-grid": "*"
   },
   "peerDependencies": {
     "norman-client-tp": "*",
