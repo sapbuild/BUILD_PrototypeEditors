@@ -17,8 +17,5 @@
   },
   "devDependencies": {
     "superagent": "^0.21.0"
-  },
-  "peerDepencies": {
-    "norman-server-tp": "*"
   }
 }
