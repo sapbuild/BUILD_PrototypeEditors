@@ -13,10 +13,6 @@
     }
   ],
   "main": "index.js",
-  "peerDependencies": {
-    "norman-server-tp": "*",
-    "norman-common-server": "*"
-  },
   "dependencies": {
     "htmlparser2": "3.8.3",
     "dagre": "0.7.0",

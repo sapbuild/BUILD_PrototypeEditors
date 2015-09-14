@@ -17,9 +17,5 @@
     "norman-keyboard-event-polyfill": "*",
     "norman-ng-grid": "*"
   },
-  "peerDependencies": {
-    "norman-client-tp": "*",
-    "norman-common-client": "*"
-  },
   "readmeFilename": "README.md"
 }
