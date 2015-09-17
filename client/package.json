@@ -1,6 +1,6 @@
 {
   "name": "norman-prototype-editors-client",
-  "version": "0.1.3",
+  "version": "0.3.0",
   "description": "Prototype Editors Client",
   "repository": {
     "type": "git",
@@ -13,9 +13,9 @@
     }
   ],
   "dependencies": {
-    "norman-angular-ui-tree": "*",
-    "norman-keyboard-event-polyfill": "*",
-    "norman-ng-grid": "*"
+    "norman-angular-ui-tree": "0.3.0",
+    "norman-keyboard-event-polyfill": "0.3.0",
+    "norman-ng-grid": "0.3.0"
   },
   "readmeFilename": "README.md"
 }
