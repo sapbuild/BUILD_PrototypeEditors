@@ -60,17 +60,21 @@ var npUiCanvasOverlay = ['$document', 'jQuery', 'npCanvasElementDrop', 'npCanvas
                     }
                 };
 
+                
                 var onDrop = function (event) {
+
                     _dragEnterCount = 0;
                     _dragData = npDragHelper.getDragData();
+                    npMessaging.clearAllMsgs();
                     if (_dragData) {
                         addDropPosition(_dragData, event);
                         var targetElement = npGridPosition.getSiblingAtPosition(_dragData, _dragData.x, _dragData.y) || {};
-
+                        var eP;
                         npCanvasElementDrop.dropAtTarget(_dragData, targetElement.controlMd, {
                             x: _dragData.x,
                             y: _dragData.y
                         }).catch(npMessaging.showError);
+                        
                         npCanvasElementHighlight.clearElementHighlights();
                         npDragHelper.endDrag();
                         _dragData = undefined;

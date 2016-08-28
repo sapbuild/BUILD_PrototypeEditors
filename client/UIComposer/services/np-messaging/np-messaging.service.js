@@ -14,7 +14,12 @@ var npMessaging = ['$log', '$timeout', 'uiError', 'npConstants',
             timeBeforeShowingBusy = 1000;
 
 
+        var clearAllMsgs = function(){
+            uiError.dismiss();
+        }
+
         var showError = function (displayError, logError) {
+            
             uiError.create({
                 content: displayError,
                 dismissOnTimeout: false
@@ -45,6 +50,7 @@ var npMessaging = ['$log', '$timeout', 'uiError', 'npConstants',
         };
 
         return {
+            clearAllMsgs:clearAllMsgs,
             showError: showError,
             isShowingBusyIndicator: isShowingBusyIndicator,
             showBusyIndicator: showBusyIndicator,
